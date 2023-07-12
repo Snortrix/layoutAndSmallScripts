@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/7a57c86913.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../Rosnou-v6.3/demo-files/demo.css">
+    <link rel="stylesheet" href="../Rosnou-v6.3/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../lk_V2/portal-ui.css">
+    <link rel="stylesheet" href="../lk_V2/lk_styleshit.css">
+</head>
+<style>
+    @font-face { font-family: "PT Root";
+        src: local("../fonts/PT Root UI_Regular"),
+        url("../fonts/PT Root UI_Regular.woff2") format("woff2"),
+        url("../fonts/PT Root UI_Regular.woff") format("woff");
+        font-style: normal; font-weight: 400; font-display: swap; }
+
+    @font-face { font-family: "PT Root";
+        src: local("../fonts/PT Root UI_Medium"),
+        url("../fonts/PT Root UI_Medium.woff2") format("woff2"),
+        url("../fonts/PT Root UI_Medium.woff") format("woff");
+        font-style: normal; font-weight: 500; font-display: swap; }
+
+    @font-face { font-family: "PT Root";
+        src: local("../fonts/PT Root UI_Bold"),
+        url("../fonts/PT Root UI_Bold.woff2") format("woff2"),
+        url("../fonts/PT Root UI_Bold.woff") format("woff");
+        font-style: normal; font-weight: 700; font-display: swap; }
+</style>
+<body>
+<div class="container-fluid">
+    <div class="display-flex-column gap-24 flex-wrap" style="padding: 40px 24px 0px 9px">
+        <h3 class="text-color-midnight-2">Абитуриенту</h3>
+        <div class="d-flex flex-row gap-24">
+            <div class="dashboard gap-16">
+                <h4 class="text-color-midnight-2">Приемная кампания 2023</h4>
+                <div class="w-100">
+                    <div class="nav nav-tabs-dashboard" id="nav-tab" role="tablist">
+                        <a class="nav-item nav-items nav-items-dashboard show active" id="navDashboardUndergraduate" data-toggle="tab" href="#navDashboardUndergraduateShow" role="tab" aria-controls="nav-home" aria-selected="true">Бакалавриат (специалитет)</a>
+                        <a class="nav-item nav-items nav-items-dashboard" id="navDashboardCollege" data-toggle="tab" href="#navDashboardCollegeShow" role="tab" aria-controls="nav-profile" aria-selected="false">Колледж</a>
+                        <a class="nav-item nav-items nav-items-dashboard" id="navDashboardMagistracy" data-toggle="tab" href="#navDashboardMagistracyShow" role="tab" aria-controls="nav-contact" aria-selected="false">Магистратура</a>
+                        <a class="nav-item nav-items nav-items-dashboard" id="navDashboardTraineeship" data-toggle="tab" href="#navDashboardTraineeshipShow" role="tab" aria-controls="nav-contact" aria-selected="false">Аспирантура</a>
+                    </div>
+                    <div class="tab-content tab-content-dashboard w-100" id="nav-tabContent">
+                        <base target="_blank">
+                        <div class="tab-pane fade show active p-0 m-0 tab-content-dashboard" id="navDashboardUndergraduateShow" role="tabpanel">
+                            <a href="https://rosnou.ru/bak/" class="d-flex flex-row align-items-center padding-16-0-16-8 cursor-pointer">
+                                <div class="icon-circle-dashboard margin-right-12"><span class="icon-Graduation-cap-24"></span></div>
+                                <p class="m-0 portal-ui subtitle-text">О поступлении в Бакалавриат (Специалитет)</p>
+                            </a>
+                            <a href="https://rosnou.ru/uploads/file/4/e/f/4efc406038e1ab245e61070e084cf8ab.pdf" class="d-flex flex-row align-items-center padding-16-0-16-8 cursor-pointer">
+                                <div class="icon-circle-dashboard margin-right-12"><span class="icon-documents-24"></span></div>
+                                <p class="m-0 portal-ui subtitle-text">Правила приема</p>
+                            </a>
+                            <a href="https://rosnou.ru/bak/official/" class="d-flex flex-row align-items-center padding-16-0-16-8 cursor-pointer">
+                                <div class="icon-circle-dashboard margin-right-12"><span class="icon-info-24"></span></div>
+                                <p class="m-0 portal-ui subtitle-text">Официальная информация приёмной комиссии</p>
+                            </a>
+                            <a href="https://rosnou.ru/faq/?tag=31" class="d-flex flex-row align-items-center padding-16-0-16-8 cursor-pointer">
+                                <div class="icon-circle-dashboard margin-right-12"><span class="icon-question-mark-24"></span></div>
+                                <p class="m-0 portal-ui subtitle-text">Часто задаваемые вопросы</p>
+                            </a>
+                            <a href="https://rosnou.ru/bak/date/" class="d-flex flex-row align-items-center padding-16-0-16-8 cursor-pointer">
+                                <div class="icon-circle-dashboard margin-right-12"><span class="icon-calendar-24"></span></div>
+                                <p class="m-0 portal-ui subtitle-text">Сроки приёмной компании</p>
+                            </a>
+                            <a href = "https://rosnou.ru/university/hostel/" class="d-flex flex-row align-items-center padding-16-0-16-8 cursor-pointer">
+                                <div class="icon-circle-dashboard margin-right-12"><span class="icon-dorms-24"></span></div>
+                                <p class="m-0 portal-ui subtitle-text">Общежитие</p>
+                            </a>
+                            <a href = "https://rosnou.ru/uploads/file/4/c/c/4cc66fc0d1fd6e98e2ff3cc928cacc22.pdf" class="d-flex flex-row align-items-center padding-16-0-16-8 cursor-pointer">
+                                <div class="icon-circle-dashboard margin-right-12"><span class="icon-booklet-24"></span></div>
+                                <p class="m-0 portal-ui subtitle-text">Путеводитель абитуриента</p>
+                            </a>
+                        </div>
+                        <div class="tab-pane fade  p-0 m-0 tab-content-dashboard" id="navDashboardCollegeShow" role="tabpanel">
+                            <a href="https://rosnou.ru/spo/" class="d-flex flex-row align-items-center padding-16-0-16-8 cursor-pointer">
+                                <div class="icon-circle-dashboard margin-right-12"><span class="icon-Graduation-cap-24"></span></div>
+                                <p class="m-0 portal-ui subtitle-text">О поступлении в колледж</p>
+                            </a>
+                            <a href="https://rosnou.ru/uploads/file/4/e/d/4ed1de4f0cb0317f479e019c09c05895.pdf" class="d-flex flex-row align-items-center padding-16-0-16-8 cursor-pointer">
+                                <div class="icon-circle-dashboard margin-right-12"><span class="icon-documents-24"></span></div>
+                                <p class="m-0 portal-ui subtitle-text">Правила приема</p>
+                            </a>
+                            <a href="https://rosnou.ru/spo/official/" class="d-flex flex-row align-items-center padding-16-0-16-8 cursor-pointer">
+                                <div class="icon-circle-dashboard margin-right-12"><span class="icon-info-24"></span></div>
+                                <p class="m-0 portal-ui subtitle-text">Официальная информация приёмной комиссии</p>
+                            </a>
+                            <a href="https://rosnou.ru/faq/?tag=31" class="d-flex flex-row align-items-center padding-16-0-16-8 cursor-pointer">
+                                <div class="icon-circle-dashboard margin-right-12"><span class="icon-question-mark-24"></span></div>
+                                <p class="m-0 portal-ui subtitle-text">Часто задаваемые вопросы</p>
+                            </a>
+                            <a href="https://rosnou.ru/spo/date/" class="d-flex flex-row align-items-center padding-16-0-16-8 cursor-pointer">
+                                <div class="icon-circle-dashboard margin-right-12"><span class="icon-calendar-24"></span></div>
+                                <p class="m-0 portal-ui subtitle-text">Сроки приёмной компании</p>
+                            </a>
+                            <a href = "https://rosnou.ru/university/hostel/" class="d-flex flex-row align-items-center padding-16-0-16-8 cursor-pointer">
+                                <div class="icon-circle-dashboard margin-right-12"><span class="icon-dorms-24"></span></div>
+                                <p class="m-0 portal-ui subtitle-text">Общежитие</p>
+                            </a>
+                            <a href = "https://rosnou.ru/uploads/file/4/c/c/4cc66fc0d1fd6e98e2ff3cc928cacc22.pdf" class="d-flex flex-row align-items-center padding-16-0-16-8 cursor-pointer">
+                                <div class="icon-circle-dashboard margin-right-12"><span class="icon-booklet-24"></span></div>
+                                <p class="m-0 portal-ui subtitle-text">Путеводитель абитуриента</p>
+                            </a>
+                        </div>
+                        <div class="tab-pane fade  p-0 m-0 tab-content-dashboard" id="navDashboardMagistracyShow" role="tabpanel">
+                            <a href="https://rosnou.ru/mag/" class="d-flex flex-row align-items-center padding-16-0-16-8 cursor-pointer">
+                                <div class="icon-circle-dashboard margin-right-12"><span class="icon-Graduation-cap-24"></span></div>
+                                <p class="m-0 portal-ui subtitle-text">О поступлении в Магистратуру</p>
+                            </a>
+                            <a href="https://rosnou.ru/uploads/file/4/e/f/4efc406038e1ab245e61070e084cf8ab.pdf" class="d-flex flex-row align-items-center padding-16-0-16-8 cursor-pointer">
+                                <div class="icon-circle-dashboard margin-right-12"><span class="icon-documents-24"></span></div>
+                                <p class="m-0 portal-ui subtitle-text">Правила приема</p>
+                            </a>
+                            <a href="https://rosnou.ru/mag/official/" class="d-flex flex-row align-items-center padding-16-0-16-8 cursor-pointer">
+                                <div class="icon-circle-dashboard margin-right-12"><span class="icon-info-24"></span></div>
+                                <p class="m-0 portal-ui subtitle-text">Официальная информация приёмной комиссии</p>
+                            </a>
+                            <a href="https://rosnou.ru/faq/?tag=31" class="d-flex flex-row align-items-center padding-16-0-16-8 cursor-pointer">
+                                <div class="icon-circle-dashboard margin-right-12"><span class="icon-question-mark-24"></span></div>
+                                <p class="m-0 portal-ui subtitle-text">Часто задаваемые вопросы</p>
+                            </a>
+                            <a href="https://rosnou.ru/mag/date/" class="d-flex flex-row align-items-center padding-16-0-16-8 cursor-pointer">
+                                <div class="icon-circle-dashboard margin-right-12"><span class="icon-calendar-24"></span></div>
+                                <p class="m-0 portal-ui subtitle-text">Сроки приёмной компании</p>
+                            </a>
+                            <a href = "https://rosnou.ru/university/hostel/" class="d-flex flex-row align-items-center padding-16-0-16-8 cursor-pointer">
+                                <div class="icon-circle-dashboard margin-right-12"><span class="icon-dorms-24"></span></div>
+                                <p class="m-0 portal-ui subtitle-text">Общежитие</p>
+                            </a>
+                            <a href = "https://rosnou.ru/uploads/file/4/c/c/4cc66fc0d1fd6e98e2ff3cc928cacc22.pdf" class="d-flex flex-row align-items-center padding-16-0-16-8 cursor-pointer">
+                                <div class="icon-circle-dashboard margin-right-12"><span class="icon-booklet-24"></span></div>
+                                <p class="m-0 portal-ui subtitle-text">Путеводитель абитуриента</p>
+                            </a>
+                        </div>
+                        <div class="tab-pane fade  p-0 m-0 tab-content-dashboard" id="navDashboardTraineeshipShow" role="tabpanel">
+                            <a href="https://rosnou.ru/asp/" class="d-flex flex-row align-items-center padding-16-0-16-8 cursor-pointer">
+                                <div class="icon-circle-dashboard margin-right-12"><span class="icon-Graduation-cap-24"></span></div>
+                                <p class="m-0 portal-ui subtitle-text">О поступлении в Аспирантуру</p>
+                            </a>
+                            <a href="https://rosnou.ru/uploads/file/9/f/1/9f156095a1334c8f0b6963c11c66cd61.pdf" class="d-flex flex-row align-items-center padding-16-0-16-8 cursor-pointer">
+                                <div class="icon-circle-dashboard margin-right-12"><span class="icon-documents-24"></span></div>
+                                <p class="m-0 portal-ui subtitle-text">Правила приема</p>
+                            </a>
+                            <a href="https://rosnou.ru/asp/official/" class="d-flex flex-row align-items-center padding-16-0-16-8 cursor-pointer">
+                                <div class="icon-circle-dashboard margin-right-12"><span class="icon-info-24"></span></div>
+                                <p class="m-0 portal-ui subtitle-text">Официальная информация приёмной комиссии</p>
+                            </a>
+                            <a href="https://rosnou.ru/faq/?tag=31" class="d-flex flex-row align-items-center padding-16-0-16-8 cursor-pointer">
+                                <div class="icon-circle-dashboard margin-right-12"><span class="icon-question-mark-24"></span></div>
+                                <p class="m-0 portal-ui subtitle-text">Часто задаваемые вопросы</p>
+                            </a>
+                            <a href="https://rosnou.ru/asp/date/" class="d-flex flex-row align-items-center padding-16-0-16-8 cursor-pointer">
+                                <div class="icon-circle-dashboard margin-right-12"><span class="icon-calendar-24"></span></div>
+                                <p class="m-0 portal-ui subtitle-text">Сроки приёмной компании</p>
+                            </a>
+                            <a href = "https://rosnou.ru/university/hostel/" class="d-flex flex-row align-items-center padding-16-0-16-8 cursor-pointer">
+                                <div class="icon-circle-dashboard margin-right-12"><span class="icon-dorms-24"></span></div>
+                                <p class="m-0 portal-ui subtitle-text">Общежитие</p>
+                            </a>
+                            <a href = "https://rosnou.ru/uploads/file/4/c/c/4cc66fc0d1fd6e98e2ff3cc928cacc22.pdf" class="d-flex flex-row align-items-center padding-16-0-16-8 cursor-pointer">
+                                <div class="icon-circle-dashboard margin-right-12"><span class="icon-booklet-24"></span></div>
+                                <p class="m-0 portal-ui subtitle-text">Путеводитель абитуриента</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dashboard">
+                <div class="d-flex justify-content-center align-items-center  w-100 h-100" style="margin: 100px 0px">
+                    <div class="display-flex-column gap-16 justify-content-center">
+                        <div class="d-flex justify-content-center">
+                            <div class="contests_here"></div>
+                        </div>
+                        <h3 style="color: var(--base-midnight-5)">Здесь будут конкурсные списки</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,376 @@
+body{
+    background: var(--base-bg_color);
+    font-family: "PT Root" !important;
+}
+
+/****** SVG компоненты ******/
+.background_image{
+    background-image:url("data:image/svg+xml, %0A%3Csvg%20width%3D%221440%22%20height%3D%22671%22%20viewBox%3D%220%200%201440%20671%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cellipse%20cx%3D%2269.8451%22%20cy%3D%22100.456%22%20rx%3D%224.51647%22%20ry%3D%224.37449%22%20fill%3D%22%23F0F5FB%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%225%22%2F%3E%0A%3Cellipse%20cx%3D%2249.5214%22%20cy%3D%22298.037%22%20rx%3D%224.51647%22%20ry%3D%224.37448%22%20fill%3D%22%23F0F5FB%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%225%22%2F%3E%0A%3Cellipse%20cx%3D%2249.5214%22%20cy%3D%22400.837%22%20rx%3D%224.51647%22%20ry%3D%224.37448%22%20fill%3D%22%23F0F5FB%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%225%22%2F%3E%0A%3Cellipse%20cx%3D%22148.131%22%20cy%3D%22508.012%22%20rx%3D%224.51646%22%20ry%3D%224.37448%22%20fill%3D%22%23F0F5FB%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%225%22%2F%3E%0A%3Cellipse%20cx%3D%22349.114%22%20cy%3D%22311.16%22%20rx%3D%224.51645%22%20ry%3D%224.3745%22%20fill%3D%22%23F0F5FB%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%225%22%2F%3E%0A%3Cellipse%20cx%3D%22214.372%22%20cy%3D%22378.965%22%20rx%3D%224.51646%22%20ry%3D%224.37448%22%20fill%3D%22%23F0F5FB%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%225%22%2F%3E%0A%3Cellipse%20cx%3D%22160.927%22%20cy%3D%22405.94%22%20rx%3D%224.51646%22%20ry%3D%224.3745%22%20fill%3D%22%23F0F5FB%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%225%22%2F%3E%0A%3Cellipse%20cx%3D%22497.404%22%20cy%3D%22280.539%22%20rx%3D%224.51645%22%20ry%3D%224.3745%22%20fill%3D%22%23F0F5FB%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%225%22%2F%3E%0A%3Cellipse%20cx%3D%2248.0155%22%20cy%3D%22206.172%22%20rx%3D%224.51646%22%20ry%3D%224.37449%22%20fill%3D%22%23F0F5FB%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%225%22%2F%3E%0A%3Cellipse%20cx%3D%22309.218%22%20cy%3D%2269.8342%22%20rx%3D%224.51646%22%20ry%3D%224.37449%22%20fill%3D%22%23F0F5FB%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%225%22%2F%3E%0A%3Cellipse%20cx%3D%2219.4115%22%20cy%3D%22534.259%22%20rx%3D%224.51646%22%20ry%3D%224.37448%22%20fill%3D%22%23F0F5FB%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%225%22%2F%3E%0A%3Cellipse%20cx%3D%22242.976%22%20cy%3D%22182.113%22%20rx%3D%224.51646%22%20ry%3D%224.37448%22%20fill%3D%22%23F0F5FB%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%225%22%2F%3E%0A%3Cellipse%20cx%3D%22581.711%22%20cy%3D%22354.905%22%20rx%3D%224.51648%22%20ry%3D%224.37448%22%20fill%3D%22%23F0F5FB%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%225%22%2F%3E%0A%3Cellipse%20cx%3D%22547.838%22%20cy%3D%22466.454%22%20rx%3D%224.51648%22%20ry%3D%224.37448%22%20fill%3D%22%23F0F5FB%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%225%22%2F%3E%0A%3Cellipse%20cx%3D%22329.542%22%20cy%3D%22605.709%22%20rx%3D%224.51648%22%20ry%3D%224.37448%22%20fill%3D%22%23F0F5FB%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%225%22%2F%3E%0A%3Cellipse%20cx%3D%22513.212%22%20cy%3D%22634.872%22%20rx%3D%224.51645%22%20ry%3D%224.37448%22%20fill%3D%22%23F0F5FB%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%225%22%2F%3E%0A%3Cellipse%20cx%3D%22635.156%22%20cy%3D%22532.072%22%20rx%3D%224.51648%22%20ry%3D%224.37451%22%20fill%3D%22%23F0F5FB%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%225%22%2F%3E%0A%3Cellipse%20cx%3D%22848.935%22%20cy%3D%22408.128%22%20rx%3D%224.51648%22%20ry%3D%224.37448%22%20fill%3D%22%23F0F5FB%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%225%22%2F%3E%0A%3Cellipse%20cx%3D%221010.02%22%20cy%3D%22494.888%22%20rx%3D%224.51642%22%20ry%3D%224.37448%22%20fill%3D%22%23F0F5FB%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%225%22%2F%3E%0A%3Cellipse%20cx%3D%221338.97%22%20cy%3D%22545.195%22%20rx%3D%224.51648%22%20ry%3D%224.37448%22%20fill%3D%22%23F0F5FB%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%225%22%2F%3E%0A%3Cellipse%20cx%3D%221362.31%22%20cy%3D%22635.601%22%20rx%3D%224.51648%22%20ry%3D%224.37448%22%20fill%3D%22%23F0F5FB%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%225%22%2F%3E%0A%3Cellipse%20cx%3D%22888.078%22%20cy%3D%22558.318%22%20rx%3D%224.51648%22%20ry%3D%224.37448%22%20fill%3D%22%23F0F5FB%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%225%22%2F%3E%0A%3Cellipse%20cx%3D%22797.749%22%20cy%3D%22628.31%22%20rx%3D%224.51648%22%20ry%3D%224.37448%22%20fill%3D%22%23F0F5FB%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%225%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22242.118%22%20y2%3D%22-2%22%20transform%3D%22matrix(0.0808339%200.996728%20-0.997118%200.0758613%20248.999%20182.842)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22190.038%22%20y2%3D%22-2%22%20transform%3D%22matrix(-0.994214%200.107422%20-0.114418%20-0.993433%20240.718%20184.3)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22121.74%22%20y2%3D%22-2%22%20transform%3D%22matrix(0.451374%20-0.892335%200.903442%200.428711%20249.751%20179.926)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22107.249%22%20y2%3D%22-2%22%20transform%3D%22matrix(0.168447%20-0.985711%200.987392%200.158293%2051.7793%20208.36)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22255.533%22%20y2%3D%22-2%22%20transform%3D%22matrix(-0.863113%200.505012%20-0.529207%20-0.848493%2069.8452%20104.101)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22246.832%22%20y2%3D%22-2%22%20transform%3D%22matrix(0.991127%20-0.132919%200.141517%200.989936%2069.0923%20104.101)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22232.446%22%20y2%3D%22-2%22%20transform%3D%22matrix(0.884073%200.467348%20-0.490924%200.871202%20312.229%2074.2087)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22194.318%22%20y2%3D%22-2%22%20transform%3D%22matrix(0.74764%20-0.664105%200.687552%200.726135%2022.4224%20535.717)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22104.729%22%20y2%3D%22-2%22%20transform%3D%22matrix(-0.150938%200.988543%20-0.989897%20-0.141791%20167.702%20406.67)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22260.881%22%20y2%3D%22-2%22%20transform%3D%22matrix(0.626131%200.779718%20-0.798723%200.6017%20167.702%20406.67)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22202.366%22%20y2%3D%22-2%22%20transform%3D%22matrix(0.896451%20-0.443142%200.466178%200.884691%20167.702%20406.67)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22339.06%22%20y2%3D%22-2%22%20transform%3D%22matrix(0.987942%200.154822%20-0.164766%200.986333%20-110.813%20328.658)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22293.647%22%20y2%3D%22-2%22%20transform%3D%22matrix(-0.0615224%200.998106%20-0.998332%20-0.0577283%20349.113%20316.993)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22315.79%22%20y2%3D%22-2%22%20transform%3D%22matrix(-0.946322%20-0.323225%200.34212%20-0.939656%20350.619%20312.618)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22305.38%22%20y2%3D%22-2%22%20transform%3D%22matrix(0.709903%200.704299%20-0.726601%200.68706%2051.0269%20212.734)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22142.64%22%20y2%3D%22-2%22%20transform%3D%22matrix(-0.812693%200.582692%20-0.60724%20-0.794519%20267.817%20427.084)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22135.235%22%20y2%3D%22-2%22%20transform%3D%22matrix(0.595584%20-0.803293%200.820946%200.571006%20268.57%20425.626)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22192.238%22%20y2%3D%22-2%22%20transform%3D%22matrix(0.328919%200.944358%20-0.950545%200.310585%20267.817%20425.626)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22131.43%22%20y2%3D%22-2%22%20transform%3D%22matrix(-0.985103%200.171966%20-0.182942%20-0.983124%20151.895%20513.115)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22315.263%22%20y2%3D%22-2%22%20transform%3D%22matrix(0.971781%200.235886%20-0.250499%200.968117%2022.4224%20535.717)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22242.97%22%20y2%3D%22-2%22%20transform%3D%22matrix(-0.139415%20-0.990234%200.99139%20-0.13094%20347.608%20312.618)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22204.693%22%20y2%3D%22-2%22%20transform%3D%22matrix(0.882581%200.47016%20-0.493792%200.86958%20150.389%20510.928)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22292.635%22%20y2%3D%22-2%22%20transform%3D%22matrix(0.887444%20-0.460916%200.484359%200.874869%2048.7686%20206.901)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22160.367%22%20y2%3D%22-2%22%20transform%3D%22matrix(-0.62898%20-0.777421%200.796549%20-0.604574%20349.866%20308.973)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22191.496%22%20y2%3D%22-2%22%20transform%3D%22matrix(-0.790103%200.612974%20-0.637296%20-0.770619%2048.0156%20211.276)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22239.269%22%20y2%3D%22-2%22%20transform%3D%22matrix(0.987851%200.155403%20-0.165383%200.986229%20349.866%20317.722)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22355.192%22%20y2%3D%22-2%22%20transform%3D%22matrix(0.714191%20-0.69995%200.722396%200.691479%20331.047%20610.083)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22215.67%22%20y2%3D%22-2%22%20transform%3D%22matrix(0.774837%20-0.632161%200.656229%200.754562%20352.125%20319.18)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22186.153%22%20y2%3D%22-2%22%20transform%3D%22matrix(0.372019%200.928225%20-0.936027%200.35193%20515.47%20180.655)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%222.09589%22%20y2%3D%22-2%22%20transform%3D%22matrix(-0.718308%20-0.695725%200.718308%20-0.695725%20519.233%20184.3)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22243.479%22%20y2%3D%22-2%22%20transform%3D%22matrix(0.516301%200.856407%20-0.870435%200.492283%20-103.286%20327.2)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22312.338%22%20y2%3D%22-2%22%20transform%3D%22matrix(0.971242%20-0.238095%200.252827%200.967512%20334.059%20610.083)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22184.413%22%20y2%3D%22-2%22%20transform%3D%22matrix(0.277566%200.960707%20-0.965176%200.2616%20586.228%20358.55)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22358.293%22%20y2%3D%22-2%22%20transform%3D%22matrix(-0.792046%20-0.610462%200.634811%20-0.772667%20635.909%20534.259)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22262.17%22%20y2%3D%22-2%22%20transform%3D%22matrix(0.838393%20-0.545066%200.569605%200.821918%20330.295%20613.729)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22116.104%22%20y2%3D%22-2%22%20transform%3D%22matrix(-0.298235%200.954493%20-0.959625%20-0.281283%20584.723%20360.009)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22183.423%22%20y2%3D%22-2%22%20transform%3D%22matrix(-0.841292%200.54058%20-0.565098%20-0.825024%2019.4111%20538.633)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22501.4%22%20y2%3D%22-2%22%20transform%3D%22matrix(-0.983343%200.181761%20-0.193317%20-0.981136%20331.047%20610.083)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22321.707%22%20y2%3D%22-2%22%20transform%3D%22matrix(-0.313539%200.949575%20-0.955223%20-0.295886%20636.662%20534.988)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22310.407%22%20y2%3D%22-2%22%20transform%3D%22matrix(0.659606%200.751612%20-0.772025%200.635592%20331.047%20607.167)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22156.549%22%20y2%3D%22-2%22%20transform%3D%22matrix(-0.750103%200.661322%20-0.684833%20-0.7287%20632.898%20534.259)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22183.515%22%20y2%3D%22-2%22%20transform%3D%22matrix(0.988538%200.150969%20-0.160679%200.987007%20334.059%20610.083)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22270.861%22%20y2%3D%22-2%22%20transform%3D%22matrix(-0.675315%20-0.737529%200.758567%20-0.651595%2048.0156%20204.714)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%2293.3345%22%20y2%3D%22-2%22%20transform%3D%22matrix(0.0161301%200.99987%20-0.999885%200.015132%2050.2739%20210.547)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22292.27%22%20y2%3D%22-2%22%20transform%3D%22matrix(-0.9993%20-0.0374183%200.0398828%20-0.999204%20343.844%20309.702)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22155.666%22%20y2%3D%22-2%22%20transform%3D%22matrix(-0.986472%200.163927%20-0.174422%20-0.984671%2050.2739%20303.14)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22191.482%22%20y2%3D%22-2%22%20transform%3D%22matrix(0.919889%200.392179%20-0.413737%200.910397%2048.0156%20306.056)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22102.147%22%20y2%3D%22-2%22%20transform%3D%22matrix(-0.125277%200.992122%20-0.993057%20-0.117635%20514.717%20182.842)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22282.43%22%20y2%3D%22-2%22%20transform%3D%22matrix(-0.67164%20-0.740877%200.761772%20-0.647846%20501.92%20283.455)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22108.799%22%20y2%3D%22-2%22%20transform%3D%22matrix(-0.754137%20-0.656717%200.68033%20-0.732906%20583.97%20354.905)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22156.887%22%20y2%3D%22-2%22%20transform%3D%22matrix(0.969194%20-0.246299%200.261468%200.965212%20349.866%20322.096)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22132.524%22%20y2%3D%22-2%22%20transform%3D%22matrix(0.249923%20-0.968266%200.971913%200.23534%2023.1753%20534.988)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22167.517%22%20y2%3D%22-2%22%20transform%3D%22matrix(-0.993072%200.117511%20-0.125146%20-0.992138%20222.652%20381.881)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22452.878%22%20y2%3D%22-2%22%20transform%3D%22matrix(0.988971%200.148109%20-0.157644%200.987496%20-139.417%204.94604)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22230.886%22%20y2%3D%22-2%22%20transform%3D%22matrix(0.903088%200.429455%20-0.452138%200.891948%20-139.417%204.94604)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22254.06%22%20y2%3D%22-2%22%20transform%3D%22matrix(0.962929%20-0.269754%200.286133%200.95819%20-189.852%20470.1)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22244.606%22%20y2%3D%22-2%22%20transform%3D%22matrix(0.858587%20-0.512668%200.536955%200.843611%20638.92%20535.717)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22177.291%22%20y2%3D%22-2%22%20transform%3D%22matrix(0.878886%200.477033%20-0.500795%200.865566%20856.463%20412.502)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22373.638%22%20y2%3D%22-2%22%20transform%3D%22matrix(0.995229%20-0.0975651%200.103934%200.994584%20638.92%20534.988)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22361.595%22%20y2%3D%22-2%22%20transform%3D%22matrix(0.866002%200.500041%20-0.524171%200.851613%20635.909%20534.259)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22226.98%22%20y2%3D%22-2%22%20transform%3D%22matrix(-0.278573%200.960415%20-0.964916%20-0.262558%201012.28%20497.076)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22449.131%22%20y2%3D%22-2%22%20transform%3D%22matrix(-0.779341%200.6266%20-0.650751%20-0.759291%20885.82%20559.048)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22139.479%22%20y2%3D%22-2%22%20transform%3D%22matrix(-0.895873%200.44431%20-0.467374%20-0.88406%201010.78%20497.076)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22249.499%22%20y2%3D%22-2%22%20transform%3D%22matrix(0.995618%200.09351%20-0.0996188%200.995026%20637.415%20535.717)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22168.349%22%20y2%3D%22-2%22%20transform%3D%22matrix(0.375592%200.926785%20-0.934726%200.355368%20885.82%20559.048)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22195.368%22%20y2%3D%22-2%22%20transform%3D%22matrix(0.0847651%200.996401%20-0.996831%200.0795539%20519.233%20637.788)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22384.854%22%20y2%3D%22-2%22%20transform%3D%22matrix(0.932974%200.359943%20-0.380344%200.924845%201012.28%20498.534)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22429.435%22%20y2%3D%22-2%22%20transform%3D%22matrix(0.983361%20-0.181661%200.193211%200.981157%20949.051%20715.071)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22491.748%22%20y2%3D%22-2%22%20transform%3D%22matrix(-0.987336%20-0.158642%200.168817%20-0.985647%201371.34%20637.059)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22192.723%22%20y2%3D%22-2%22%20transform%3D%22matrix(0.695238%20-0.718779%200.740566%200.671983%201371.34%20637.059)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22493.05%22%20y2%3D%22-2%22%20transform%3D%22matrix(0.999996%20-0.00295743%200.00315253%200.999995%201012.28%20498.534)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%2295.3396%22%20y2%3D%22-2%22%20transform%3D%22matrix(-0.339503%20-0.940605%200.947175%20-0.320717%201371.34%20637.059)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22330.542%22%20y2%3D%22-2%22%20transform%3D%22matrix(0.988351%200.152194%20-0.161979%200.986794%201012.28%20497.076)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22171.636%22%20y2%3D%22-2%22%20transform%3D%22matrix(-0.956082%200.2931%20-0.310622%20-0.950534%201505.33%20497.076)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22541.865%22%20y2%3D%22-2%22%20transform%3D%22matrix(-0.802942%200.596058%20-0.620532%20-0.784181%201338.97%20547.382)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3Cline%20y1%3D%22-2%22%20x2%3D%22261.395%22%20y2%3D%22-2%22%20transform%3D%22matrix(-0.397401%20-0.917645%200.926461%20-0.376391%20903.886%20870.365)%22%20stroke%3D%22%23F0F5FB%22%20stroke-width%3D%224%22%2F%3E%0A%3C%2Fsvg%3E");
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+.vertical_logo{
+    width: 10.0625rem;
+    height: 6.25rem;
+}
+.horizontal_logo{
+    width: 16.875rem;
+    height: 2rem;
+}
+
+/****** Навигационная панель и футер ******/
+.nav_bar_Logo{
+    height: 5rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+/****** Авторизация ******/
+.authorization_panel{
+    background: var(--base-white);
+    gap: 1.5rem;
+    padding: 1.5rem;
+    max-width: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.input_panel{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    width: 100%;
+}
+.input_auth_page{
+    align-items: center;
+    padding: 8px 16px;
+    display: flex;
+    gap: 8px;
+    background: #FFFFFF;
+    border: 1px solid #D5E3F0;
+    border-radius: 8px;
+    box-shadow: none;
+    width: 100%;
+    line-height: 24px;
+}
+.input_auth_page:focus,.input_auth_page:visited{
+    box-shadow: 0px 0px 4px 1px rgba(0, 102, 175, 0.6);
+    outline: none;
+}
+.input_auth_page:hover:not(:focus){
+    box-shadow: 0px 0px 4px 0px rgba(61, 91, 124, 0.20);
+}
+.input_auth_page::-moz-placeholder {
+    color: var(--base-midnight-4);
+}
+.icons_input_insert {
+    text-align: center;
+    position: relative;
+    margin-right: -32px;
+    z-index: 1;
+    float: left;
+}
+.icons_input_insert + .input_icons {
+    padding-left: 40px;
+}
+.input_auth_page::-webkit-input-placeholder {
+    color: var(--base-midnight-4);
+}
+
+/****** Основное окно ******/
+.content_body{
+    max-width: 50rem;
+}
+.new_check{
+    margin-top:1rem;
+    border: 2px dashed var(--base-midnight-4);
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    background: none;
+}
+.icon-circle{
+    min-width: 40px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+.payment_cart{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    background: var(--base-white);
+}
+.payment_cart_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--base-midnight-5);
+    padding-bottom: 1rem;
+}
+.payment_cart_body{
+    display: flex;
+    row-gap: 1.25rem;
+    column-gap: 2rem;
+    flex-wrap: wrap;
+    flex-direction: unset;
+    align-items: baseline;
+}
+.payment_cart_footer{
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.5px;
+    align-items: center;
+}
+.payment_cart_elem_min_width_main{
+    min-width: 22.5rem;
+}
+.payment_cart_body_collapse{
+    display: flex;
+    row-gap: 1.25rem;
+    column-gap: 2rem;
+    flex-wrap: wrap;
+    flex-direction: unset;
+    align-items: baseline;
+}
+
+
+/****** Modals ******/
+.modals_Payment{
+    border-radius: 10px;
+    background-color: var(--base-white);
+    border: none;
+}
+.modals_Payment_body{
+    margin: 1.5rem;
+    padding: 0;
+    row-gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.modals_Payment_footer{
+    margin: 1.5rem;
+    padding-top: 1.5rem;
+    gap: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid var(--base-midnight-5);
+    justify-content: space-between;
+    align-items: center;
+}
+.modals_Select{
+    padding: 8px 30px 8px 16px;
+    gap: 8px;
+    background: #FFFFFF;
+    color: #1B334D;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    border: 1px solid #D5E3F0;
+    border-radius: 8px;
+    -webkit-appearance: none;
+    -o-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.modals_Select:not([multiple]) {
+    background: url("select-arrow.svg") no-repeat right center;
+}
+.modals_Select_Option{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1B334D;
+    padding: 0px 16px;
+    border: 1px solid #D5E3F0;
+    max-width: 100%;
+}
+.modals_Select:focus-visible{
+    outline: none;
+    box-shadow: 0px 0px 4px 1px rgba(0, 102, 175, 0.6);
+}
+.group_check{
+    padding-left:0.12rem;
+}
+.group_check_input{
+    display: none;
+}
+.group_check_label:before{
+    content: " ";
+    color:  var(--base-primary);
+    display: inline-block;
+    margin-right: 0.75rem;
+    position: relative;
+    text-align: center;
+    text-indent: 0px;
+    font-size: 10px;
+    width: 1.25rem;
+    height: 1.25rem;
+    background: #F8F9FB;
+    border: 1px solid #D5E3F0;
+    border-radius: 4px;
+    border-image: initial;
+    vertical-align: middle;
+}
+.group_check_input:checked + .group_check_label:before {
+    content: url("data:image/svg+xml,%0A%3Csvg%20width%3D%2214%22%20height%3D%2211%22%20viewBox%3D%220%200%2014%2011%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M2%204L6%208L12%202%22%20stroke%3D%22%232699D4%22%20stroke-width%3D%223%22%20stroke-linecap%3D%22round%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+}
+
+/****** Окно с чеком ******/
+.content_body.content_body_check{
+    max-width: 37.5rem;
+}
+.payment_cart.payment_cart_check{
+    padding: 1.5rem 2rem 2rem 2rem;
+}
+.payment_cart_header.payment_cart_header_check{
+    border-bottom: none;
+    padding-bottom: 0;
+}
+.payment_cart_elem_min_width{
+    min-width: 16rem;
+}
+.payment_cart_body_check{
+    display: flex;
+    row-gap: 1.5rem;
+    column-gap: 1.5rem;
+    flex-wrap: wrap;
+    flex-direction: unset;
+    align-items: baseline;
+}
+.payment_cart_footer_check{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--base-midnight-4);
+    gap: 1.5rem;
+}
+
+/****** Способы оплаты ******/
+.content_body.content_body_payment_method{
+    max-width: 27.375rem;
+}
+.payment_cart.payment_cart_method{
+    padding: 1.5rem 2rem;
+}
+.payment_cart_header.payment_cart_header_method{
+    border: none;
+    padding-bottom: 0;
+}
+.payment_cart_body.payment_cart_body_method{
+    display: flex;
+    row-gap: 1.5rem;
+    column-gap: 0rem;
+    flex-direction: column;
+    align-items: baseline;
+}
+.button_payments_card{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    align-items: center;
+    gap: 0.75rem;
+    border: 1px solid var(--base-midnight-5);
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    background: none;
+}
+.payment_cart_footer_method{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 1rem;
+    column-gap: 1.5rem;
+    border-top: 1px solid var(--base-midnight-4);
+}
+.code_body_qr{
+    width: 15rem;
+    height: 15rem;
+}
+.code_body{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.code_body_bar{
+    width: 14.00006rem;
+    height: 6.24994rem;
+}
+
+/****** Анимация стрелок ******/
+@keyframes rotare_back {
+    from {
+        transform: rotate(180deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(180deg);
+    }
+}
+/****** Элементы разметки и доп стили ******/
+.height-100{
+    height: 100vh;
+}
+
+.display-flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.display-flex-row{
+    display: flex;
+    flex-direction: row;
+}
+.flex-basis-auto{
+    flex-basis: auto;
+}
+.gap-32-px{
+    gap: 2rem;
+}
+.margin-bottom-32-px{
+    margin-bottom: 2rem;
+}
+a{
+    text-decoration: none;
+}
+.icon-circle.icon-circle-secondary{
+    background-color: var(--base-midnight-6);
+    color: var(--base-midnight-4);
+}
+.icon-circle.icon-circle-primary{
+    background-color: var(--pastel-blue-2);
+    color: var(--base-primary);
+}
+

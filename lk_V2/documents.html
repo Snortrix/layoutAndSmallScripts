@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://kit.fontawesome.com/7a57c86913.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../Rosnou-v6.3/demo-files/demo.css">
+    <link rel="stylesheet" href="../Rosnou-v6.3/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="portal-ui.css">
+  <link rel="stylesheet" href="lk_styleshit.css">
+</head>
+<style>
+  @font-face { font-family: "PT Root";
+    src: local("../fonts/PT Root UI_Regular"),
+    url("../fonts/PT Root UI_Regular.woff2") format("woff2"),
+    url("../fonts/PT Root UI_Regular.woff") format("woff");
+    font-style: normal; font-weight: 400; font-display: swap; }
+
+  @font-face { font-family: "PT Root";
+    src: local("../fonts/PT Root UI_Medium"),
+    url("../fonts/PT Root UI_Medium.woff2") format("woff2"),
+    url("../fonts/PT Root UI_Medium.woff") format("woff");
+    font-style: normal; font-weight: 500; font-display: swap; }
+
+  @font-face { font-family: "PT Root";
+    src: local("../fonts/PT Root UI_Bold"),
+    url("../fonts/PT Root UI_Bold.woff2") format("woff2"),
+    url("../fonts/PT Root UI_Bold.woff") format("woff");
+    font-style: normal; font-weight: 700; font-display: swap; }
+  body{
+    background: #F8F9FB;
+  }
+</style>
+<body>
+<div class="documents_card_grid mb-4 ms-4">
+    <div class="documents_page">
+        <div class="header_documents">
+            <img class="image_documents" src="3.jpg">
+            <div class="rectangle_sum_pages">
+                <span class="portal-ui text text-color-secondary">+3</span>
+            </div>
+        </div>
+        <div class="documents_body">
+            <div class="d-flex flex-column  documents_body_flex">
+                <div class="documents_body_header_buttons">
+                    <h6 class="text-color-midnight-2">Аттестат о среднем полном (общем) образовании</h6>
+                    <button class="tertiary_button" type="button" id="dropDownNotesDocuments2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="icon-menu-dots-24 text-color-midnight-4"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdownMenu" aria-labelledby="dropDownNotesDocuments2">
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-tick-24 text-color-midnight-4 margin-right-12"></span>Подтвердить</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-back-24 text-color-midnight-4 margin-right-12"></span>На доработку</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-cross-24 text-color-midnight-4 margin-right-12"></span>Отклонить</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-pensil-24 text-color-midnight-4 margin-right-12"></span>Редактировать</li>
+                    </ul>
+                </div>
+                <p class="m-0 portal-ui subtitle-tex text-color-secondary documents_body_elem"><span class="text-color-primary font-weight-500">12456486146</span> - 2019 г.</p>
+            </div>
+            <div class="documents_body_badges">
+                <div class="badge cyan_badge">Оригинал ЕПГУ</div>
+                <div class="badge midnight_badge">С отличием</div>
+            </div>
+        </div>
+    </div>
+    <div class="documents_page">
+        <div class="header_documents">
+            <img class="image_documents" src="1.jpg">
+            <div class="rectangle_sum_pages">
+                <span class="portal-ui text text-color-secondary">+3</span>
+            </div>
+        </div>
+        <div class="documents_body">
+            <div class="d-flex flex-column  documents_body_flex">
+                <div class="documents_body_header_buttons">
+                    <h6 class="text-color-midnight-2">Аттестат о среднем полном образовании</h6>
+                    <button class="tertiary_button" type="button" id="dropDownNotesDocuments" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="icon-menu-dots-24 text-color-midnight-4"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdownMenu" aria-labelledby="dropDownNotesDocuments">
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-tick-24 text-color-midnight-4 margin-right-12"></span>Подтвердить</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-back-24 text-color-midnight-4 margin-right-12"></span>На доработку</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-cross-24 text-color-midnight-4 margin-right-12"></span>Отклонить</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-pensil-24 text-color-midnight-4 margin-right-12"></span>Редактировать</li>
+                    </ul>
+                </div>
+                <p class="m-0 portal-ui subtitle-tex text-color-secondary documents_body_elem"><span class="text-color-primary font-weight-500">12456486146</span> - 2019 г.</p>
+            </div>
+            <div class="documents_body_badges">
+                <div class="badge cyan_badge">Оригинал ЕПГУ</div>
+                <div class="badge yellow">С отличием</div>
+            </div>
+        </div>
+    </div>
+    <div class="documents_page">
+        <div class="header_documents">
+            <img class="image_documents" src="1.jpg">
+            <div class="rectangle_sum_pages">
+                <span class="portal-ui text text-color-secondary">+3</span>
+            </div>
+        </div>
+        <div class="documents_body">
+            <div class="d-flex flex-column  documents_body_flex">
+                <div class="documents_body_header_buttons">
+                    <h6 class="text-color-midnight-2">Диплом о высшем образовании (магистр)</h6>
+                    <button class="tertiary_button" type="button" id="dropDownNotesDocuments" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="icon-menu-dots-24 text-color-midnight-4"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdownMenu" aria-labelledby="dropDownNotesDocuments">
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-tick-24 text-color-midnight-4 margin-right-12"></span>Подтвердить</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-back-24 text-color-midnight-4 margin-right-12"></span>На доработку</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-cross-24 text-color-midnight-4 margin-right-12"></span>Отклонить</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-pensil-24 text-color-midnight-4 margin-right-12"></span>Редактировать</li>
+                    </ul>
+                </div>
+                <p class="m-0 portal-ui subtitle-tex text-color-secondary documents_body_elem"><span class="text-color-primary font-weight-500">12456486146</span> - 2019 г.</p>
+            </div>
+            <div class="documents_body_badges">
+                <div class="badge midnight_badge">Копия</div>
+            </div>
+        </div>
+    </div>
+    <div class="documents_page">
+        <div class="header_documents">
+            <img class="image_documents" src="1.jpg">
+            <div class="rectangle_sum_pages">
+                <span class="portal-ui text text-color-secondary">+3</span>
+            </div>
+        </div>
+        <div class="documents_body">
+            <div class="d-flex flex-column  documents_body_flex">
+                <div class="documents_body_header_buttons">
+                    <h6 class="text-color-midnight-2">Аттестат о среднем полном (общем) образовании</h6>
+                    <button class="tertiary_button" type="button" id="dropDownNotesDocuments" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="icon-menu-dots-24 text-color-midnight-4"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdownMenu" aria-labelledby="dropDownNotesDocuments">
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-tick-24 text-color-midnight-4 margin-right-12"></span>Подтвердить</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-back-24 text-color-midnight-4 margin-right-12"></span>На доработку</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-cross-24 text-color-midnight-4 margin-right-12"></span>Отклонить</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-pensil-24 text-color-midnight-4 margin-right-12"></span>Редактировать</li>
+                    </ul>
+                </div>
+                <p class="m-0 portal-ui subtitle-tex text-color-secondary documents_body_elem"><span class="text-color-primary font-weight-500">12456486146</span> - 2019 г.</p>
+            </div>
+            <div class="documents_body_badges">
+                <div class="badge midnight_badge">Копия</div>
+            </div>
+        </div>
+    </div>
+    <div class="documents_page">
+        <div class="header_documents">
+            <img class="image_documents" src="1.jpg">
+            <div class="rectangle_sum_pages">
+                <span class="portal-ui text text-color-secondary">+3</span>
+            </div>
+        </div>
+        <div class="documents_body">
+            <div class="d-flex flex-column  documents_body_flex">
+                <div class="documents_body_header_buttons">
+                    <h6 class="text-color-midnight-2">Диплом о высшем образовании (специалист)</h6>
+                    <button class="tertiary_button" type="button" id="dropDownNotesDocuments" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="icon-menu-dots-24 text-color-midnight-4"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdownMenu" aria-labelledby="dropDownNotesDocuments">
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-tick-24 text-color-midnight-4 margin-right-12"></span>Подтвердить</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-back-24 text-color-midnight-4 margin-right-12"></span>На доработку</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-cross-24 text-color-midnight-4 margin-right-12"></span>Отклонить</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-pensil-24 text-color-midnight-4 margin-right-12"></span>Редактировать</li>
+                    </ul>
+                </div>
+                <p class="m-0 portal-ui subtitle-tex text-color-secondary documents_body_elem"><span class="text-color-primary font-weight-500">12456486146</span> - 2019 г.</p>
+            </div>
+            <div class="documents_body_badges">
+                <div class="badge midnight_badge">Копия</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="documents_card_grid mb-4 ms-4">
+    <div class="documents_page ">
+        <div class="header_documents">
+            <img class="image_documents" src="2.jpg">
+            <div class="rectangle_sum_pages">
+                <span class="portal-ui text text-color-secondary">+3</span>
+            </div>
+        </div>
+        <div class="documents_body">
+            <div class="d-flex flex-column  documents_body_elem documents_body_flex ">
+                <div class="documents_body_header_buttons">
+                    <h6 class="text-color-midnight-2">Паспорт Гражданина РФ</h6>
+                    <button class="tertiary_button" type="button" id="dropDownNotesDocuments3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="icon-menu-dots-24 text-color-midnight-4"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdownMenu" aria-labelledby="dropDownNotesDocuments3">
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-tick-24 text-color-midnight-4 margin-right-12"></span>Подтвердить</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-back-24 text-color-midnight-4 margin-right-12"></span>На доработку</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-cross-24 text-color-midnight-4 margin-right-12"></span>Отклонить</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-pensil-24 text-color-midnight-4 margin-right-12"></span>Редактировать</li>
+                    </ul>
+                </div>
+                <p class="m-0 portal-ui subtitle-tex text-color-primary documents_body_elem font-weight-500">4555 325 634</p>
+            </div>
+            <div class="documents_body_badges documents_body_elem">
+                <div class="badge cyan_badge">Подтверждено - ЕПГУ</div>
+            </div>
+        </div>
+    </div>
+    <div class="documents_page ">
+        <div class="header_documents">
+            <img class="image_documents" src="2.jpg">
+            <div class="rectangle_sum_pages">
+                <span class="portal-ui text text-color-secondary">+3</span>
+            </div>
+        </div>
+        <div class="documents_body">
+            <div class="d-flex flex-column  documents_body_elem documents_body_flex ">
+                <div class="documents_body_header_buttons">
+                    <h6 class="text-color-midnight-2">Вид на жительство</h6>
+                    <button class="tertiary_button" type="button" id="dropDownNotesDocuments3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="icon-menu-dots-24 text-color-midnight-4"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdownMenu" aria-labelledby="dropDownNotesDocuments3">
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-tick-24 text-color-midnight-4 margin-right-12"></span>Подтвердить</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-back-24 text-color-midnight-4 margin-right-12"></span>На доработку</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-cross-24 text-color-midnight-4 margin-right-12"></span>Отклонить</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-pensil-24 text-color-midnight-4 margin-right-12"></span>Редактировать</li>
+                    </ul>
+                </div>
+                <p class="m-0 portal-ui subtitle-tex text-color-primary documents_body_elem font-weight-500">4555 325 634</p>
+            </div>
+            <div class="documents_body_badges documents_body_elem">
+                <div class="badge midnight_badge">На проверке МВД</div>
+            </div>
+        </div>
+    </div>
+    <div class="documents_page ">
+        <div class="header_documents">
+            <img class="image_documents" src="2.jpg">
+            <div class="rectangle_sum_pages">
+                <span class="portal-ui text text-color-secondary">+3</span>
+            </div>
+        </div>
+        <div class="documents_body">
+            <div class="d-flex flex-column  documents_body_elem documents_body_flex ">
+                <div class="documents_body_header_buttons">
+                    <h6 class="text-color-midnight-2">Паспорт иностранного гражданинао</h6>
+                    <button class="tertiary_button" type="button" id="dropDownNotesDocuments3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="icon-menu-dots-24 text-color-midnight-4"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdownMenu" aria-labelledby="dropDownNotesDocuments3">
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-tick-24 text-color-midnight-4 margin-right-12"></span>Подтвердить</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-back-24 text-color-midnight-4 margin-right-12"></span>На доработку</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-cross-24 text-color-midnight-4 margin-right-12"></span>Отклонить</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-pensil-24 text-color-midnight-4 margin-right-12"></span>Редактировать</li>
+                    </ul>
+                </div>
+                <p class="m-0 portal-ui subtitle-tex text-color-primary documents_body_elem font-weight-500">4555 325 634</p>
+            </div>
+            <div class="documents_body_badges documents_body_elem">
+                <div class="badge midnight_badge">На проверке МВД</div>
+            </div>
+        </div>
+    </div>
+    <div class="documents_page">
+        <div class="header_documents">
+            <img class="image_documents" src="2.jpg">
+            <div class="rectangle_sum_pages">
+                <span class="portal-ui text text-color-secondary">+3</span>
+            </div>
+        </div>
+        <div class="documents_body">
+            <div class="d-flex flex-column  documents_body_elem documents_body_flex ">
+                <div class="documents_body_header_buttons">
+                    <h6 class="text-color-midnight-2">Удостоверение личности иностранного гражданина</h6>
+                    <button class="tertiary_button" type="button" id="dropDownNotesDocuments5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="icon-menu-dots-24 text-color-midnight-4"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdownMenu" aria-labelledby="dropDownNotesDocuments5">
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-tick-24 text-color-midnight-4 margin-right-12"></span>Подтвердить</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-back-24 text-color-midnight-4 margin-right-12"></span>На доработку</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-cross-24 text-color-midnight-4 margin-right-12"></span>Отклонить</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-pensil-24 text-color-midnight-4 margin-right-12"></span>Редактировать</li>
+                    </ul>
+                </div>
+                <p class="m-0 portal-ui subtitle-tex text-color-primary documents_body_elem font-weight-500">4555 325 634</p>
+            </div>
+            <div class="documents_body_badges documents_body_elem">
+                <div class="badge midnight_badge">На проверке МВД</div>
+            </div>
+        </div>
+    </div>
+    <div class="documents_page ">
+        <div class="header_documents">
+            <img class="image_documents" src="2.jpg">
+            <div class="rectangle_sum_pages">
+                <span class="portal-ui text text-color-secondary">+3</span>
+            </div>
+        </div>
+        <div class="documents_body">
+            <div class="d-flex flex-column  documents_body_elem documents_body_flex ">
+                <div class="documents_body_header_buttons">
+                    <h6 class="text-color-midnight-2">Загранпаспорт РФ</h6>
+                    <button class="tertiary_button" type="button" id="dropDownNotesDocuments3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="icon-menu-dots-24 text-color-midnight-4"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdownMenu" aria-labelledby="dropDownNotesDocuments3">
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-tick-24 text-color-midnight-4 margin-right-12"></span>Подтвердить</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-back-24 text-color-midnight-4 margin-right-12"></span>На доработку</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-cross-24 text-color-midnight-4 margin-right-12"></span>Отклонить</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-pensil-24 text-color-midnight-4 margin-right-12"></span>Редактировать</li>
+                    </ul>
+                </div>
+                <p class="m-0 portal-ui subtitle-tex text-color-primary documents_body_elem font-weight-500">4555 325 634</p>
+            </div>
+            <div class="documents_body_badges documents_body_elem">
+                <div class="badge cyan_badge">Подтверждено - МВД</div>
+            </div>
+        </div>
+    </div>
+    <div class="documents_page">
+        <div class="header_documents">
+            <img class="image_documents" src="2.jpg">
+            <div class="rectangle_sum_pages">
+                <span class="portal-ui text text-color-secondary">+3</span>
+            </div>
+        </div>
+        <div class="documents_body">
+            <div class="d-flex flex-column  documents_body_elem documents_body_flex ">
+                <div class="documents_body_header_buttons">
+                    <h6 class="text-color-midnight-2">Иное удостоверение личности</h6>
+                    <button class="tertiary_button" type="button" id="dropDownNotesDocuments5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="icon-menu-dots-24 text-color-midnight-4"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdownMenu" aria-labelledby="dropDownNotesDocuments5">
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-tick-24 text-color-midnight-4 margin-right-12"></span>Подтвердить</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-back-24 text-color-midnight-4 margin-right-12"></span>На доработку</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-cross-24 text-color-midnight-4 margin-right-12"></span>Отклонить</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-pensil-24 text-color-midnight-4 margin-right-12"></span>Редактировать</li>
+                    </ul>
+                </div>
+                <p class="m-0 portal-ui subtitle-tex text-color-primary documents_body_elem font-weight-500">4555 325 634</p>
+            </div>
+            <div class="documents_body_badges documents_body_elem">
+                <div class="badge midnight_badge">На проверке</div>
+            </div>
+        </div>
+    </div>
+    <div class="documents_page">
+        <div class="header_documents">
+            <img class="image_documents" src="2.jpg">
+            <div class="rectangle_sum_pages">
+                <span class="portal-ui text text-color-secondary">+3</span>
+            </div>
+        </div>
+        <div class="documents_body">
+            <div class="d-flex flex-column  documents_body_elem documents_body_flex ">
+                <div class="documents_body_header_buttons">
+                    <h6 class="text-color-midnight-2">Удостоверение личности гражданина Казахстана</h6>
+                    <button class="tertiary_button" type="button" id="dropDownNotesDocuments5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="icon-menu-dots-24 text-color-midnight-4"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdownMenu" aria-labelledby="dropDownNotesDocuments5">
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-tick-24 text-color-midnight-4 margin-right-12"></span>Подтвердить</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-back-24 text-color-midnight-4 margin-right-12"></span>На доработку</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-cross-24 text-color-midnight-4 margin-right-12"></span>Отклонить</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-pensil-24 text-color-midnight-4 margin-right-12"></span>Редактировать</li>
+                    </ul>
+                </div>
+                <p class="m-0 portal-ui subtitle-tex text-color-primary documents_body_elem font-weight-500">4555 325 634</p>
+            </div>
+            <div class="documents_body_badges documents_body_elem">
+                <div class="badge midnight_badge">На проверке</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="documents_card_grid mb-4 ms-4">
+    <div class="documents_page">
+        <div class="header_documents">
+            <img class="image_documents" src="3.jpg">
+            <div class="rectangle_sum_pages">
+                <span class="portal-ui text text-color-secondary">+3</span>
+            </div>
+        </div>
+        <div class="documents_body">
+            <div class="d-flex flex-column  documents_body_flex">
+                <div class="documents_body_header_buttons">
+                    <h6 class="text-color-midnight-2">Право на поступление без экзамена</h6>
+                    <button class="tertiary_button" type="button" id="dropDownNotesDocuments3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="icon-menu-dots-24 text-color-midnight-4"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdownMenu" aria-labelledby="dropDownNotesDocuments3">
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-tick-24 text-color-midnight-4 margin-right-12"></span>Подтвердить</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-back-24 text-color-midnight-4 margin-right-12"></span>На доработку</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-cross-24 text-color-midnight-4 margin-right-12"></span>Отклонить</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-pensil-24 text-color-midnight-4 margin-right-12"></span>Редактировать</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="documents_body_badges documents_body_elem">
+                <div class="badge cyan_badge">Подтверждено</div>
+            </div>
+        </div>
+    </div>
+    <div class="documents_page">
+        <div class="header_documents">
+            <img class="image_documents" src="3.jpg">
+            <div class="rectangle_sum_pages">
+                <span class="portal-ui text text-color-secondary">+3</span>
+            </div>
+        </div>
+        <div class="documents_body">
+            <div class="d-flex flex-column  documents_body_flex">
+                <div class="documents_body_header_buttons">
+                    <h6 class="text-color-midnight-2">Право на поступление по олимпиаде</h6>
+                    <button class="tertiary_button" type="button" id="dropDownNotesDocuments3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="icon-menu-dots-24 text-color-midnight-4"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdownMenu" aria-labelledby="dropDownNotesDocuments3">
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-tick-24 text-color-midnight-4 margin-right-12"></span>Подтвердить</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-back-24 text-color-midnight-4 margin-right-12"></span>На доработку</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-cross-24 text-color-midnight-4 margin-right-12"></span>Отклонить</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-pensil-24 text-color-midnight-4 margin-right-12"></span>Редактировать</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="documents_body_badges documents_body_elem">
+                <div class="badge cyan_badge">Подтверждено</div>
+            </div>
+        </div>
+    </div>
+    <div class="documents_page">
+        <div class="header_documents">
+            <img class="image_documents" src="3.jpg">
+            <div class="rectangle_sum_pages">
+                <span class="portal-ui text text-color-secondary">+3</span>
+            </div>
+        </div>
+        <div class="documents_body">
+            <div class="d-flex flex-column  documents_body_flex">
+                <div class="documents_body_header_buttons">
+                    <h6 class="text-color-midnight-2">Право на сдачу внутренних ВИ</h6>
+                    <button class="tertiary_button" type="button" id="dropDownNotesDocuments3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="icon-menu-dots-24 text-color-midnight-4"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdownMenu" aria-labelledby="dropDownNotesDocuments3">
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-tick-24 text-color-midnight-4 margin-right-12"></span>Подтвердить</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-back-24 text-color-midnight-4 margin-right-12"></span>На доработку</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-cross-24 text-color-midnight-4 margin-right-12"></span>Отклонить</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-pensil-24 text-color-midnight-4 margin-right-12"></span>Редактировать</li>
+                    </ul>
+                </div>
+                <p class="m-0 portal-ui subtitle-tex text-color-secondary documents_body_elem">Инвалиды вследствие военной травмы или заболевания, полученных в период прохождения военной службы</p>
+            </div>
+            <div class="documents_body_badges documents_body_elem">
+                <div class="badge midnight_badge">На проверке</div>
+            </div>
+        </div>
+    </div>
+    <div class="documents_page">
+        <div class="header_documents">
+            <img class="image_documents" src="3.jpg">
+            <div class="rectangle_sum_pages">
+                <span class="portal-ui text text-color-secondary">+3</span>
+            </div>
+        </div>
+        <div class="documents_body">
+            <div class="d-flex flex-column  documents_body_flex">
+                <div class="documents_body_header_buttons">
+                    <h6 class="text-color-midnight-2">Право на сдачу внутренних ВИ</h6>
+                    <button class="tertiary_button" type="button" id="dropDownNotesDocuments3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="icon-menu-dots-24 text-color-midnight-4"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdownMenu" aria-labelledby="dropDownNotesDocuments3">
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-tick-24 text-color-midnight-4 margin-right-12"></span>Подтвердить</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-back-24 text-color-midnight-4 margin-right-12"></span>На доработку</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-cross-24 text-color-midnight-4 margin-right-12"></span>Отклонить</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-pensil-24 text-color-midnight-4 margin-right-12"></span>Редактировать</li>
+                    </ul>
+                </div>
+                <p class="m-0 portal-ui subtitle-tex text-color-secondary documents_body_elem ">Иностранное гражданство</p>
+            </div>
+            <div class="documents_body_badges documents_body_elem">
+                <div class="badge midnight_badge">На проверке</div>
+            </div>
+        </div>
+    </div>
+    <div class="documents_page">
+        <div class="header_documents">
+            <img class="image_documents" src="3.jpg">
+            <div class="rectangle_sum_pages">
+                <span class="portal-ui text text-color-secondary">+3</span>
+            </div>
+        </div>
+        <div class="documents_body">
+            <div class="d-flex flex-column  documents_body_flex">
+                <div class="documents_body_header_buttons">
+                    <h6 class="text-color-midnight-2">Право на поступление по специальной квоте</h6>
+                    <button class="tertiary_button" type="button" id="dropDownNotesDocuments3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="icon-menu-dots-24 text-color-midnight-4"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdownMenu" aria-labelledby="dropDownNotesDocuments3">
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-tick-24 text-color-midnight-4 margin-right-12"></span>Подтвердить</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-back-24 text-color-midnight-4 margin-right-12"></span>На доработку</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-cross-24 text-color-midnight-4 margin-right-12"></span>Отклонить</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-pensil-24 text-color-midnight-4 margin-right-12"></span>Редактировать</li>
+                    </ul>
+                </div>
+                <p class="m-0 portal-ui subtitle-tex text-color-secondary documents_body_elem">Иностранное гражданство</p>
+            </div>
+            <div class="documents_body_badges documents_body_elem">
+                <div class="badge midnight_badge">На проверке</div>
+            </div>
+        </div>
+    </div>
+    <div class="documents_page">
+        <div class="header_documents">
+            <img class="image_documents" src="3.jpg">
+            <div class="rectangle_sum_pages">
+                <span class="portal-ui text text-color-secondary">+3</span>
+            </div>
+        </div>
+        <div class="documents_body">
+            <div class="d-flex flex-column  documents_body_flex">
+                <div class="documents_body_header_buttons">
+                    <h6 class="text-color-midnight-2">Право на поступление по целевой квоте</h6>
+                    <button class="tertiary_button" type="button" id="dropDownNotesDocuments3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="icon-menu-dots-24 text-color-midnight-4"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdownMenu" aria-labelledby="dropDownNotesDocuments3">
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-tick-24 text-color-midnight-4 margin-right-12"></span>Подтвердить</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-back-24 text-color-midnight-4 margin-right-12"></span>На доработку</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-cross-24 text-color-midnight-4 margin-right-12"></span>Отклонить</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-pensil-24 text-color-midnight-4 margin-right-12"></span>Редактировать</li>
+                    </ul>
+                </div>
+                <p class="m-0 portal-ui subtitle-tex text-color-secondary documents_body_elem">АО "Авиакор-Авиационный Завод"</p>
+            </div>
+            <div class="documents_body_badges documents_body_elem">
+                <div class="badge midnight_badge">На проверке</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="documents_card_grid mb-4 ms-4">
+    <div class="documents_page">
+        <div class="header_documents">
+            <img class="image_documents" src="2.jpg">
+            <div class="rectangle_sum_pages">
+                <span class="portal-ui text text-color-secondary">+3</span>
+            </div>
+        </div>
+        <div class="documents_body">
+            <div class="d-flex flex-column  documents_body_elem documents_body_flex ">
+                <div class="documents_body_header_buttons">
+                    <h6 class="text-color-midnight-2">Олимпиада</h6>
+                    <button class="tertiary_button" type="button" id="dropDownNotesDocuments3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="icon-menu-dots-24 text-color-midnight-4"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdownMenu" aria-labelledby="dropDownNotesDocuments3">
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-tick-24 text-color-midnight-4 margin-right-12"></span>Подтвердить</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-back-24 text-color-midnight-4 margin-right-12"></span>На доработку</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-cross-24 text-color-midnight-4 margin-right-12"></span>Отклонить</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-pensil-24 text-color-midnight-4 margin-right-12"></span>Редактировать</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="documents_body_badges documents_body_elem">
+                <div class="badge midnight_badge">На проверке</div>
+            </div>
+        </div>
+    </div>
+    <div class="documents_page">
+        <div class="header_documents">
+            <img class="image_documents" src="2.jpg">
+            <div class="rectangle_sum_pages">
+                <span class="portal-ui text text-color-secondary">+3</span>
+            </div>
+        </div>
+        <div class="documents_body">
+            <div class="d-flex flex-column  documents_body_elem documents_body_flex ">
+                <div class="documents_body_header_buttons">
+                    <h6 class="text-color-midnight-2">Значок ГТО</h6>
+                    <button class="tertiary_button" type="button" id="dropDownNotesDocuments3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="icon-menu-dots-24 text-color-midnight-4"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdownMenu" aria-labelledby="dropDownNotesDocuments3">
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-tick-24 text-color-midnight-4 margin-right-12"></span>Подтвердить</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-back-24 text-color-midnight-4 margin-right-12"></span>На доработку</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-cross-24 text-color-midnight-4 margin-right-12"></span>Отклонить</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-pensil-24 text-color-midnight-4 margin-right-12"></span>Редактировать</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="documents_body_badges documents_body_elem">
+                <div class="badge midnight_badge">На проверке</div>
+            </div>
+        </div>
+    </div>
+    <div class="documents_page">
+        <div class="header_documents">
+            <img class="image_documents" src="2.jpg">
+            <div class="rectangle_sum_pages">
+                <span class="portal-ui text text-color-secondary">+3</span>
+            </div>
+        </div>
+        <div class="documents_body">
+            <div class="d-flex flex-column  documents_body_elem documents_body_flex ">
+                <div class="documents_body_header_buttons">
+                    <h6 class="text-color-midnight-2">Чемпион мира</h6>
+                    <button class="tertiary_button" type="button" id="dropDownNotesDocuments3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="icon-menu-dots-24 text-color-midnight-4"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdownMenu" aria-labelledby="dropDownNotesDocuments3">
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-tick-24 text-color-midnight-4 margin-right-12"></span>Подтвердить</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-back-24 text-color-midnight-4 margin-right-12"></span>На доработку</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-cross-24 text-color-midnight-4 margin-right-12"></span>Отклонить</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-pensil-24 text-color-midnight-4 margin-right-12"></span>Редактировать</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="documents_body_badges documents_body_elem">
+                <div class="badge midnight_badge">На проверке</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="documents_card_grid mb-4 ms-4">
+    <div class="documents_page">
+        <div class="header_documents">
+            <img class="image_documents" src="2.jpg">
+            <div class="rectangle_sum_pages">
+                <span class="portal-ui text text-color-secondary">+3</span>
+            </div>
+        </div>
+        <div class="documents_body">
+            <div class="d-flex flex-column  documents_body_elem documents_body_flex ">
+                <div class="documents_body_header_buttons">
+                    <h6 class="text-color-midnight-2">Паспорт Гражданина РФ</h6>
+                    <button class="tertiary_button" type="button" id="dropDownNotesDocuments3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="icon-menu-dots-24 text-color-midnight-4"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdownMenu" aria-labelledby="dropDownNotesDocuments3">
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-tick-24 text-color-midnight-4 margin-right-12"></span>Подтвердить</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-back-24 text-color-midnight-4 margin-right-12"></span>На доработку</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-cross-24 text-color-midnight-4 margin-right-12"></span>Отклонить</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-pensil-24 text-color-midnight-4 margin-right-12"></span>Редактировать</li>
+                    </ul>
+                </div>
+                <p class="m-0 portal-ui subtitle-tex text-color-primary documents_body_elem font-weight-500">4555 325 634</p>
+            </div>
+            <div class="documents_body_badges documents_body_elem">
+                <div class="badge cyan_badge">Подтверждено - ЕПГУ</div>
+            </div>
+        </div>
+    </div>
+    <div class="documents_page">
+        <div class="header_documents">
+            <img class="image_documents" src="2.jpg">
+            <div class="rectangle_sum_pages">
+                <span class="portal-ui text text-color-secondary">+3</span>
+            </div>
+        </div>
+        <div class="documents_body">
+            <div class="d-flex flex-column  documents_body_elem documents_body_flex ">
+                <div class="documents_body_header_buttons">
+                    <h6 class="text-color-midnight-2">Удостоверение личности иностранного гражданина</h6>
+                    <button class="tertiary_button" type="button" id="dropDownNotesDocuments5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="icon-menu-dots-24 text-color-midnight-4"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdownMenu" aria-labelledby="dropDownNotesDocuments5">
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-tick-24 text-color-midnight-4 margin-right-12"></span>Подтвердить</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-back-24 text-color-midnight-4 margin-right-12"></span>На доработку</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-cross-24 text-color-midnight-4 margin-right-12"></span>Отклонить</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-pensil-24 text-color-midnight-4 margin-right-12"></span>Редактировать</li>
+                    </ul>
+                </div>
+                <p class="m-0 portal-ui subtitle-tex text-color-primary documents_body_elem font-weight-500">4555 325 634</p>
+            </div>
+            <div class="documents_body_badges documents_body_elem">
+                <div class="badge midnight_badge">На проверке МВД</div>
+            </div>
+        </div>
+    </div>
+    <div class="documents_page">
+        <div class="header_documents">
+            <img class="image_documents" src="1.jpg">
+            <div class="rectangle_sum_pages">
+                <span class="portal-ui text text-color-secondary">+3</span>
+            </div>
+        </div>
+        <div class="documents_body">
+            <div class="d-flex flex-column  documents_body_flex">
+                <div class="documents_body_header_buttons">
+                    <h6 class="text-color-midnight-2">Аттестат о среднем полном (общем) образовании</h6>
+                    <button class="tertiary_button" type="button" id="dropDownNotesDocuments" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="icon-menu-dots-24 text-color-midnight-4"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdownMenu" aria-labelledby="dropDownNotesDocuments">
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-tick-24 text-color-midnight-4 margin-right-12"></span>Подтвердить</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-back-24 text-color-midnight-4 margin-right-12"></span>На доработку</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-cross-24 text-color-midnight-4 margin-right-12"></span>Отклонить</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-pensil-24 text-color-midnight-4 margin-right-12"></span>Редактировать</li>
+                    </ul>
+                </div>
+                <p class="m-0 portal-ui subtitle-tex text-color-secondary documents_body_elem"><span class="text-color-primary font-weight-500">12456486146</span> - 2019 г.</p>
+            </div>
+            <div class="documents_body_badges">
+                <div class="badge cyan_badge">Оригинал ЕПГУ</div>
+                <div class="badge midnight_badge">С отличием</div>
+            </div>
+        </div>
+    </div>
+    <div class="documents_page">
+        <div class="header_documents">
+            <img class="image_documents" src="3.jpg">
+            <div class="rectangle_sum_pages">
+                <span class="portal-ui text text-color-secondary">+3</span>
+            </div>
+        </div>
+        <div class="documents_body">
+            <div class="d-flex flex-column  documents_body_flex">
+                <div class="documents_body_header_buttons">
+                    <h6 class="text-color-midnight-2">Право на сдачу внутренних ВИ</h6>
+                    <button class="tertiary_button" type="button" id="dropDownNotesDocuments3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="icon-menu-dots-24 text-color-midnight-4"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdownMenu" aria-labelledby="dropDownNotesDocuments3">
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-tick-24 text-color-midnight-4 margin-right-12"></span>Подтвердить</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-back-24 text-color-midnight-4 margin-right-12"></span>На доработку</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-cross-24 text-color-midnight-4 margin-right-12"></span>Отклонить</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-pensil-24 text-color-midnight-4 margin-right-12"></span>Редактировать</li>
+                    </ul>
+                </div>
+                <p class="m-0 portal-ui subtitle-tex text-color-secondary documents_body_elem ">Инвалидность (I и II групп, дети инвалиды, инвалиды с детства)</p>
+            </div>
+            <div class="documents_body_badges documents_body_elem">
+                <div class="badge cyan_badge">Подтверждено - ЕПГУ</div>
+            </div>
+        </div>
+    </div>
+    <div class="documents_page">
+        <div class="header_documents">
+            <img class="image_documents" src="3.jpg">
+            <div class="rectangle_sum_pages">
+                <span class="portal-ui text text-color-secondary">+3</span>
+            </div>
+        </div>
+        <div class="documents_body">
+            <div class="d-flex flex-column  documents_body_flex">
+                <div class="documents_body_header_buttons">
+                    <h6 class="text-color-midnight-2">Право на сдачу внутренних ВИ</h6>
+                    <button class="tertiary_button" type="button" id="dropDownNotesDocuments3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="icon-menu-dots-24 text-color-midnight-4"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdownMenu" aria-labelledby="dropDownNotesDocuments3">
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-tick-24 text-color-midnight-4 margin-right-12"></span>Подтвердить</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-back-24 text-color-midnight-4 margin-right-12"></span>На доработку</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-cross-24 text-color-midnight-4 margin-right-12"></span>Отклонить</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-pensil-24 text-color-midnight-4 margin-right-12"></span>Редактировать</li>
+                    </ul>
+                </div>
+                <p class="m-0 portal-ui subtitle-tex text-color-secondary documents_body_elem ">Иностранное гражданство</p>
+            </div>
+            <div class="documents_body_badges documents_body_elem">
+                <div class="badge cyan_badge">Подтверждено</div>
+            </div>
+        </div>
+    </div>
+    <div class="documents_page">
+        <div class="header_documents">
+            <img class="image_documents" src="2.jpg">
+            <div class="rectangle_sum_pages">
+                <span class="portal-ui text text-color-secondary">+3</span>
+            </div>
+        </div>
+        <div class="documents_body">
+            <div class="d-flex flex-column  documents_body_elem documents_body_flex ">
+                <div class="documents_body_header_buttons">
+                    <h6 class="text-color-midnight-2">Олимпиада</h6>
+                    <button class="tertiary_button" type="button" id="dropDownNotesDocuments3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="icon-menu-dots-24 text-color-midnight-4"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdownMenu" aria-labelledby="dropDownNotesDocuments3">
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-tick-24 text-color-midnight-4 margin-right-12"></span>Подтвердить</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-back-24 text-color-midnight-4 margin-right-12"></span>На доработку</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-cross-24 text-color-midnight-4 margin-right-12"></span>Отклонить</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-pensil-24 text-color-midnight-4 margin-right-12"></span>Редактировать</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="documents_body_badges documents_body_elem">
+                <div class="badge midnight_badge">На проверке</div>
+            </div>
+        </div>
+    </div>
+    <div class="documents_page">
+        <div class="header_documents">
+            <img class="image_documents" src="2.jpg">
+            <div class="rectangle_sum_pages">
+                <span class="portal-ui text text-color-secondary">+3</span>
+            </div>
+        </div>
+        <div class="documents_body">
+            <div class="d-flex flex-column  documents_body_elem documents_body_flex ">
+                <div class="documents_body_header_buttons">
+                    <h6 class="text-color-midnight-2">Значок ГТО</h6>
+                    <button class="tertiary_button" type="button" id="dropDownNotesDocuments3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="icon-menu-dots-24 text-color-midnight-4"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdownMenu" aria-labelledby="dropDownNotesDocuments3">
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-tick-24 text-color-midnight-4 margin-right-12"></span>Подтвердить</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-back-24 text-color-midnight-4 margin-right-12"></span>На доработку</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-cross-24 text-color-midnight-4 margin-right-12"></span>Отклонить</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-pensil-24 text-color-midnight-4 margin-right-12"></span>Редактировать</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="documents_body_badges documents_body_elem">
+                <div class="badge midnight_badge">На проверке</div>
+            </div>
+        </div>
+    </div>
+    <div class="documents_page">
+        <div class="header_documents">
+            <img class="image_documents" src="3.jpg">
+            <div class="rectangle_sum_pages">
+                <span class="portal-ui text text-color-secondary">+3</span>
+            </div>
+        </div>
+        <div class="documents_body">
+            <div class="d-flex flex-column  documents_body_flex">
+                <div class="documents_body_header_buttons">
+                    <h6 class="text-color-midnight-2">Аттестат о среднем полном образовании</h6>
+                    <button class="tertiary_button" type="button" id="dropDownNotesDocuments2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="icon-menu-dots-24 text-color-midnight-4"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdownMenu" aria-labelledby="dropDownNotesDocuments2">
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-tick-24 text-color-midnight-4 margin-right-12"></span>Подтвердить</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-back-24 text-color-midnight-4 margin-right-12"></span>На доработку</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-cross-24 text-color-midnight-4 margin-right-12"></span>Отклонить</li>
+                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-pensil-24 text-color-midnight-4 margin-right-12"></span>Редактировать</li>
+                    </ul>
+                </div>
+                <p class="m-0 portal-ui subtitle-tex text-color-secondary documents_body_elem"><span class="text-color-primary font-weight-500">12456486146</span> - 2019 г.</p>
+            </div>
+            <div class="documents_body_badges">
+                <div class="badge cyan_badge">Оригинал ЕПГУ</div>
+                <div class="badge midnight_badge">С отличием</div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

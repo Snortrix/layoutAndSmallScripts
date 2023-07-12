@@ -1,0 +1,150 @@
+@font-face {
+    font-family: 'Rosnou';
+    src:  url('fonts/Rosnou.eot?z8p6iv');
+    src:  url('fonts/Rosnou.eot?z8p6iv#iefix') format('embedded-opentype'),
+      url('fonts/Rosnou.ttf?z8p6iv') format('truetype'),
+      url('fonts/Rosnou.woff?z8p6iv') format('woff'),
+      url('fonts/Rosnou.svg?z8p6iv#Rosnou') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+
+* {
+    font-family: "PT Root" !important;
+}
+
+body {
+    background: #F8F9FB;
+}
+
+.text-color-midnight-2 {
+    color: var(--base-midnight-2);
+}
+
+.text-color-black {
+    color: black !important;
+}
+
+/* Dashboard */
+.dsh-container {
+    padding-top: 48px;
+    padding-left: 24px;
+    padding-right: 24px;
+    justify-content: center;
+    position: relative;
+}
+
+.dsh-items {
+    margin-top: 24px; 
+
+    display: flex; 
+    flex-flow: row wrap;
+    align-items: flex-start;  
+    gap: 24px; 
+}
+
+.dsh-item {
+    border-radius: 10px; 
+    padding: 24px; 
+    
+    display: flex;
+    flex-grow: 1; 
+    flex-basis: 49%; 
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.dsh-item-header {
+    display: flex; 
+    justify-content: space-between; 
+    gap: 24px;
+}
+
+
+.dsh-item-body {
+    margin-top: 16px;
+}
+
+.dsh-item-own-text {
+    font-size: 16px; 
+    font-weight: 500;
+}
+
+.dsh-item-list > li {
+    color: var(--base-secondary); 
+    font-size: 16px; 
+    line-height: 24px; 
+    font-weight: 400; 
+
+    padding-left: 14px; 
+    margin-top: 16px;
+}
+
+/* Глифы не работают, поэтому использую svg */
+.dsh-item-list > li::marker {
+    content: url(/marker/Vector.svg);
+    color: var(--base-primary);
+}
+
+.dsh-item-footer {
+    display: flex; 
+    justify-content: end; 
+    flex-grow: 1;
+
+    margin-top: 16px;
+}
+
+.dsh-alert-danger {
+    padding: 20px;
+    background-color: var(--pastel-coral);
+    color: var(--additional-coral);
+    border-radius: 8px;
+}
+
+.dsh-alert-text {
+    margin-left: 16px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--base-secondary);
+
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.dsh-btn{
+    color: #FFFFFF;
+    background: var(--base-primary);
+    padding: 4px 16px;
+    border-radius: 8px;
+    border: var(--base-primary);
+
+    height: 40px;
+    width: 180px;
+}
+.dsh-btn:hover{
+    background: var(--primary-dark);
+    border: var(--primary-dark);
+}
+.dsh-btn:focus{
+    box-shadow: 0px 0px 4px 2px rgba(38, 153, 212, 0.6);
+}
+.dsh-btn:focus:not(:active){
+    box-shadow: none;
+    outline: none;
+    filter: none;
+}
+.dsh-btn:focus:not(:active):hover{
+    box-shadow: none;
+    outline: none;
+    filter: none;
+    background: var(--primary-dark);
+    border: var(--primary-dark);
+}
+.dsh-btn:focus-visible{
+    background: var(--base-primary);
+    box-shadow: none;
+    outline: none;
+}

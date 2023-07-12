@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/7a57c86913.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../Rosnou-v6.3/demo-files/demo.css">
+    <link rel="stylesheet" href="../Rosnou-v6.3/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="portal-ui.css">
+    <link rel="stylesheet" href="lk_styleshit.css">
+    <link rel="stylesheet" href="flags-alt.css">
+</head>
+<style>
+    @font-face { font-family: "PT Root";
+        src: local("../fonts/PT Root UI_Regular"),
+        url("../fonts/PT Root UI_Regular.woff2") format("woff2"),
+        url("../fonts/PT Root UI_Regular.woff") format("woff");
+        font-style: normal; font-weight: 400; font-display: swap; }
+
+    @font-face { font-family: "PT Root";
+        src: local("../fonts/PT Root UI_Medium"),
+        url("../fonts/PT Root UI_Medium.woff2") format("woff2"),
+        url("../fonts/PT Root UI_Medium.woff") format("woff");
+        font-style: normal; font-weight: 500; font-display: swap; }
+
+    @font-face { font-family: "PT Root";
+        src: local("../fonts/PT Root UI_Bold"),
+        url("../fonts/PT Root UI_Bold.woff2") format("woff2"),
+        url("../fonts/PT Root UI_Bold.woff") format("woff");
+        font-style: normal; font-weight: 700; font-display: swap; }
+    body{
+        background: #F8F9FB;
+    }
+
+
+</style>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<div class="modal fade modals_INS" id="ModalINS" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content modals_INS">
+            <div class="modal-body">
+                <div class="display-flex-column gap-24" style="padding: 8px">
+                    <div class="d-flex flex-row justify-content-between align-items-start portal-ui">
+                        <h4 class="text-color-secondary">Изменить ИНС</h4>
+                        <button class="tertiary_button" data-dismiss="modal" aria-label="Close"><span class="icon-cross-24 text-color-midnight-4"></span></button>
+                    </div>
+                    <div class="display-flex-column gap-8">
+                        <p class="m-0 portal-ui text-capitals text-color-midnight-2">Выберите ИНС</p>
+                        <select class="Modals_INS_Select">
+                            <option class="Modals_INS_Select_Option">190808 78911</option>
+                            <option>190808 78911</option>
+                        </select>
+                        <textarea class="form-control input_modals_page" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div class="d-flex flex-row  w-100 gap-24 portal-ui">
+                        <button class="secondary_button text w-100" data-dismiss="modal" aria-label="Close">Закрыть</button>
+                        <button class="primary_button text w-100" style="padding: 8px 16px">Сохранить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="container-fluid">
+        <div class="d-flex flex-row justify-content-between" style="padding:24px 24px 12px 9px">
+            <div class="d-flex flex-row align-start gap-16">
+                <h2 class="text-color-midnight-2">Анкета абитуриента</h2>
+                <span class="badge cyan_badge_dark">На доработке</span>
+            </div>
+            <div class="display-flex-column gap-16">
+                <div class="d-flex flex-row gap-16 justify-content-end portal-ui">
+                    <button class="secondary_button"><span class=" icon-cross-16 text-color-midnight-4" style="margin-right: 10px"></span>Отозвать документы</button>
+                    <button class="primary_button text text-color-white"><span class="icon-pensil-16 text-color-white" style="margin-right: 10px"></span>Редактировать анкету</button>
+                </div>
+                <div class="d-flex flex-row gap-16 justify-content-end portal-ui">
+                    <div class="d-flex">
+                        <button class="secondary_button secondary_button_split_left"><span class=" icon-back-16 text-color-midnight-4" style="margin-right: 10px"></span>На доработку</button>
+                        <button class="secondary_button secondary_button_split_right" id="dropDownNotesDocuments55" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="icon-caret-down-16 text-color-midnight-2"></span></button>
+                        <ul class="dropdown-menu dropdownMenu" aria-labelledby="dropDownNotesDocuments55">
+                            <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-pensil-24 text-color-midnight-4 margin-right-12"></span>Редактировать</li>
+                            <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-cross-24 text-color-midnight-4 margin-right-12"></span>Отклонить</li>
+                        </ul>
+                    </div>
+                    <button class="primary_button text text-color-white"><span class="icon-tick-16 text-color-white" style="margin-right: 10px"></span>Одобрить</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-auto p-0">
+                <div class="information_panel">
+                    <div class="header_information">
+                        <div class="img_float">
+                            <img class="image_header" src="1.jpg">
+                        </div>
+                        <div class="d-inline-flex flex-column gap-4 align-items-center">
+                            <h6 class="text-color-secondary">Нерезенко Любовь Александровна</h6>
+                            <p class="m-0 portal-ui text text-color-midnight-4 d-flex align-items-center snils-number">157-897-108 28<span class="fi fi-ru flags_border_margin fi-alt"></span></p>
+                            <p class="m-0 portal-ui text text-color-midnight-4">888-888-888 88</p>
+                        </div>
+                        <div class="information_badge">
+                            <span class="badge midnight_badge">Нет СНИЛС</span>
+                            <span class="badge midnight_badge">Иностранец</span>
+                            <span class="badge midnight_badge" data-toggle="modal" data-target="#ModalINS" style="cursor: pointer">Нет ИНС <span class="icon-pensil-16" style="padding-left: 8px"></span></span>
+                            <span class="badge midnight_badge">Нужно общежитие</span>
+                            <button class="tertiary_button portal-ui text text-color-secondary"><span class="icon-plus-16 text-color-midnight-4"></span>Добавить особенность</button>
+                        </div>
+                    </div>
+                    <div class="notes_information">
+                        <div class="d-flex justify-content-between align-items-baseline" style="cursor: pointer" data-toggle="collapse" data-target="#notesInformation" aria-controls="notesInformation" aria-expanded="false">
+                            <h6 class="text-color-secondary">Примечания</h6>
+                            <span class="icon-arrow-small-down-24 text-color-secondary icon-menu-dots-24-notes"></span>
+                        </div>
+                        <div class="collapse collapse-notes display-flex-column gap-16" id="notesInformation">
+                            <div class="note_page">
+                                <div class="header_note_page d-flex justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <img class="image_note" src="1.jpg">
+                                        <p class="portal-ui text-small m-0">Владислав Некрасов</p>
+                                    </div>
+                                    <button class="tertiary_button" type="button" id="dropDownNotes" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="icon-menu-dots-24 text-color-midnight-4" style="transform: rotate(90deg)"></span>
+                                    </button>
+                                    <ul class="dropdown-menu dropdownMenu" aria-labelledby="dropDownNotes">
+                                        <li class="dropdown-item portal-ui text" href="#">Редактировать</li>
+                                        <li class="dropdown-item portal-ui text" href="#">Удалить</li>
+                                    </ul>
+                                </div>
+                                <div class="portal-ui text text-color-secondary">В паспорте не указано место регистрации. Отказывается идти в МФЦ и исправлять документ.</div>
+                            </div>
+                            <button class="tertiary_button text-color-secondary portal-ui text-small bolder"><span class="icon-plus-16 text-color-primary"></span>Добавить примечания</button>
+
+                        </div>
+                        </div>
+                    <div class="personal_information">
+                        <div class="d-flex justify-content-between align-items-baseline" style="cursor: pointer" data-toggle="collapse" data-target="#personalInformation" aria-controls="notesInformation" aria-expanded="false">
+                            <h6 class="text-color-secondary">Личные данные</h6>
+                            <span class="icon-arrow-small-down-24 icon-arrow-small-down-24_personal_information text-color-secondary"></span>
+                        </div>
+                        <div class="collapse collapse_personal_information personal_information_collapse" id="personalInformation">
+                            <div class="information_row">
+                                <p class="portal-ui text-capitals text-color-midnight-4 m-0">Почта:</p>
+                                <p class="portal-ui text-small text-color-secondary  margin-left">Ljubov.nerezenko-98@yandex.ru</p>
+                            </div>
+                            <div class="information_row">
+                                <p class="portal-ui text-capitals text-color-midnight-4 m-0">Телефон:</p>
+                                <p class="portal-ui text-small text-color-secondary  margin-left">+7 (905) 716-66-92</p>
+                            </div>
+                            <div class="information_row">
+                                <p class="portal-ui text-capitals text-color-midnight-4 m-0">Дата рождения:</p>
+                                <p class="portal-ui text-small text-color-secondary  margin-left">24.09.1995 (26)</p>
+                            </div>
+                            <div class="information_row">
+                                <p class="portal-ui text-capitals text-color-midnight-4 m-0">Пол:</p>
+                                <p class="portal-ui text-small text-color-secondary  margin-left">Женский</p>
+                            </div>
+                            <div class="information_row">
+                                <p class="portal-ui text-capitals text-color-midnight-4 m-0">Адрес проживания:</p>
+                                <p class="portal-ui text-small text-color-secondary  margin-left">243600, Россия, обл,
+                                    Злынковский р-н, деревня Петровка, ул Мирная, д 12</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="personal_information">
+                        <div class="d-flex justify-content-between align-items-baseline" style="cursor: pointer" data-toggle="collapse" data-target="#personalInformationRepresentatives" aria-controls="notesInformation" aria-expanded="false">
+                            <h6 class="text-color-secondary">Законный представитель</h6>
+                            <span class="icon-arrow-small-down-24 icon-arrow-small-down-24_parent_information text-color-secondary"></span>
+                        </div>
+                        <div class="collapse collapse_parent_information personal_information_collapse" id="personalInformationRepresentatives">
+                            <div class="information_row">
+                                <p class="portal-ui text-capitals text-color-midnight-4 m-0">ФИО:</p>
+                                <p class="portal-ui text-small text-color-secondary  margin-left">Нерезенко Ирина Геннадьевна</p>
+                            </div>
+                            <div class="information_row">
+                                <p class="portal-ui text-capitals text-color-midnight-4 m-0">Почта:</p>
+                                <p class="portal-ui text-small text-color-secondary  margin-left">Ljubov.nerezenko-98@yandex.ru</p>
+                            </div>
+                            <div class="information_row">
+                                <p class="portal-ui text-capitals text-color-midnight-4 m-0">Телефон:</p>
+                                <p class="portal-ui text-small text-color-secondary  margin-left">+7 (905) 716-66-92</p>
+                            </div>
+                            <div class="information_row">
+                                <p class="portal-ui text-capitals text-color-midnight-4 m-0">Пол:</p>
+                                <p class="portal-ui text-small text-color-secondary  margin-left">Женский</p>
+                            </div>
+                            <div class="information_row">
+                                <p class="portal-ui text-capitals text-color-midnight-4 m-0">Адрес проживания:</p>
+                                <p class="portal-ui text-small text-color-secondary  margin-left">243600, Россия, обл,
+                                    Злынковский р-н, деревня Петровка, ул Мирная, д 12</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col p-0">
+                <div class="main_panel">
+                    <div class= "display-flex-column gap-16">
+                        <div class="moderator_notification">
+                            <div class="d-flex flex-row gap-16 align-items-center">
+                                <span class="icon-warning-32 text-color-midnight-4" style="font-size: 48px"></span>
+                                <p class="portal-ui text m-0">Уважаемая Любовь Александровна. Ваше заявление было принято.
+                                    Просим приложить скан-копии паспорта и аттестата в более высоком разрешениии</p>
+                            </div>
+                            <button class="secondary_button portal-ui text text-color-secondary min-width_button">Отправить на проверку</button>
+                        </div>
+                        <p class="portal-ui text progress-title m-0">Пожалуйста, устраните замечания,
+                            указанные в сообщении модератора и отправьте свою анкету на проверку, чтобы продолжить участвовать в конкурсе</p>
+                    </div>
+                    <div class="nav nav-tabs-lk" id="nav-tab" role="tablist">
+                        <a class="nav-item nav-items nav-items-lk active" id="navDocumentsTab" data-toggle="tab" href="#navDocuments" role="tab" aria-controls="nav-home" aria-selected="true">Документы</a>
+                        <a class="nav-item nav-items nav-items-lk" id="navStatementsTab" data-toggle="tab" href="#navStatements" role="tab" aria-controls="nav-profile" aria-selected="false">Заявления</a>
+                        <a class="nav-item nav-items nav-items-lk" id="navLogsTab" data-toggle="tab" href="#navLogs" role="tab" aria-controls="nav-contact" aria-selected="false">История</a>
+                    </div>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="navDocuments" role="tabpanel" aria-labelledby="nav-home-tab">
+                            <div class="display-flex-column gap-4 margin-bottom-24">
+                                <div class="nav_documents_header">
+                                    <div>
+                                        <h4 class="text-color-midnight-2">Конкурсы на поступление</h4>
+                                    </div>
+                                    <div class="d-flex flex-row gap-16">
+                                        <button class="tertiary_button text-color-secondary portal-ui text"><span class="icon-sort-down-24 text-color-midnight-4"></span>Изменить приоритеты</button>
+                                        <button class="secondary_button portal-ui text text-color-secondary">Редактировать конкурсы</button>
+                                    </div>
+                                </div>
+                                <p class="portal-ui text text-color-midnight-3 m-0">Конкурсы расположены в порядке соответствующем выставленным приоритетам</p>
+                            </div>
+                            <div class="nav_direction margin-bottom-12">
+                                <h5 class="text-color-midnight-2">Бюджет</h5>
+                                <button class="tertiary_button text-color-secondary portal-ui text"><span class="icon-download-24 text-color-midnight-4"></span>Скачать заявления</button>
+                            </div>
+                            <div class="direction_card margin-bottom-24">
+                                <div class="direction_card_header">
+                                    <h6 class="text-color-midnight-2">02.03.03 Математическое обеспечение и администрирование информационных систем</h6>
+                                    <div class="direction_exam portal-ui text-small text-small text-color-secondary ">
+                                        <div class="exam_cart">
+                                            <p class="m-0">ИНО<span class="text-color-midnight-3">(ЕГЭ)</span></p>
+                                            <p class="m-0">ИСТ<span class="text-color-midnight-3">(ЕГЭ)</span></p>
+                                        </div>
+                                        <div class="exam_cart">
+                                            <p class="m-0">РУС<span class="text-color-midnight-3">(ЕГЭ)</span></p>
+                                            <p class="m-0">ИНД<span class="text-color-midnight-3">(ЕГЭ)</span></p>
+                                        </div>
+                                    </div>
+                                    <h6 style="color: #23B4A2">300 баллов</h6>
+                                </div>
+                                <div class = "direction_card_body">
+                                    <div class="direction_card_body_element">
+                                        <div class="grid_main_columns">
+                                            <div class="grid_columns_information">
+                                                <p class="portal-ui text text bolder m-0 grid-column-1"><span class="icon-Graduation-cap-24 text-color-primary icons_fs_marg"></span>Бюджет</p>
+                                                <p  class="portal-ui text text-color-secondary m-0 grid-column-2">15 (из 10) место в конкурсе</p>
+                                                <button class="grid-column-3 m-0  text-color-midnight-2 margin-right-5 tertiary_button_border_dashed" id="dropDownNotesDocuments48" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Действия<span class="icon-caret-down-16 text-color-midnight-2"></span></button>
+                                                <ul class="dropdown-menu dropdownMenu" aria-labelledby="dropDownNotesDocuments48">
+                                                    <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-tick-24 text-color-midnight-4 margin-right-12"></span>Подтвердить</li>
+                                                    <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-back-24 text-color-midnight-4 margin-right-12"></span>На доработку</li>
+                                                    <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-cross-24 text-color-midnight-4 margin-right-12"></span>Отклонить</li>
+                                                    <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-pensil-24 text-color-midnight-4 margin-right-12"></span>Редактировать</li>
+                                                </ul>
+                                            </div>
+                                            <span class="badge blue_badge grid-column-4">Подача оригинала</span>
+                                        </div>
+                                        <div class="d-flex flex-row align-items-start">
+                                            <span class="icon_lines_comment"></span>
+                                            <div class="reviewerComment">
+                                                <span class="icon-comments-24 icons_fs_marg text-color-midnight-4"></span>
+                                                <p class="m-0 portal-ui text text-color-secondary">Для зачисления пожалуйста принесите оригинал справки
+                                                    Для зачисления пожалуйста принесите оригинал справки</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="direction_card_body_element">
+                                        <div class="grid_main_columns">
+                                            <div class="grid_columns_information">
+                                                <p class="portal-ui text text bolder m-0 grid-column-1"><span class="icon-Graduation-cap-24 text-color-primary icons_fs_marg"></span>Совмещенная квота</p>
+                                                <p class="portal-ui text text-color-secondary m-0 grid-column-2">3 (из 4) место в конкурсе</p>
+                                                <button class="grid-column-3 m-0  text-color-midnight-2 margin-right-5 tertiary_button_border_dashed" id="dropDownNotesDocuments48" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Действия<span class="icon-caret-down-16 text-color-midnight-2"></span></button>
+                                                <ul class="dropdown-menu dropdownMenu" aria-labelledby="dropDownNotesDocuments48">
+                                                    <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-tick-24 text-color-midnight-4 margin-right-12"></span>Подтвердить</li>
+                                                    <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-back-24 text-color-midnight-4 margin-right-12"></span>На доработку</li>
+                                                    <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-cross-24 text-color-midnight-4 margin-right-12"></span>Отклонить</li>
+                                                    <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-pensil-24 text-color-midnight-4 margin-right-12"></span>Редактировать</li>
+                                                </ul>
+                                            </div>
+                                            <span class="badge blue_badge grid-column-4">Подача оригинала</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="direction_card margin-bottom-24">
+                                <div class="direction_card_header" >
+                                    <h6 class="text-color-midnight-2">02.03.03 Математическое обеспечение и администрирование информационных систем</h6>
+                                    <div class="direction_exam portal-ui text-small text-small text-color-secondary ">
+                                        <div class="exam_cart">
+                                            <p class="m-0">ИНО<span class="text-color-midnight-3">(ЕГЭ)</span></p>
+                                            <p class="m-0">ИСТ<span class="text-color-midnight-3">(ЕГЭ)</span></p>
+                                        </div>
+                                        <div class="exam_cart">
+                                            <p class="m-0">РУС<span class="text-color-midnight-3">(ЕГЭ)</span></p>
+                                            <p class="m-0">ИНД<span class="text-color-midnight-3">(ЕГЭ)</span></p>
+                                        </div>
+                                    </div>
+                                    <h6 style="color: #23B4A2">300 баллов</h6>
+                                </div>
+                                <div class = "direction_card_body">
+                                    <div class="direction_card_body_element">
+                                        <div class="grid_main_columns">
+                                            <div class="grid_columns_information">
+                                                <p class="portal-ui text text bolder m-0 grid-column-1"><span class="icon-Graduation-cap-24 text-color-primary icons_fs_marg"></span>Совмещенная квота</p>
+                                                <p class="portal-ui text text-color-secondary m-0 grid-column-2">3 (из 4) место в конкурсе</p>
+                                                <button class="grid-column-3 m-0  text-color-midnight-2 margin-right-5 tertiary_button_border_dashed" id="dropDownNotesDocuments48" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Действия<span class="icon-caret-down-16 text-color-midnight-2"></span></button>
+                                                <ul class="dropdown-menu dropdownMenu" aria-labelledby="dropDownNotesDocuments48">
+                                                    <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-tick-24 text-color-midnight-4 margin-right-12"></span>Подтвердить</li>
+                                                    <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-back-24 text-color-midnight-4 margin-right-12"></span>На доработку</li>
+                                                    <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-cross-24 text-color-midnight-4 margin-right-12"></span>Отклонить</li>
+                                                    <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-pensil-24 text-color-midnight-4 margin-right-12"></span>Редактировать</li>
+                                                </ul>
+                                            </div>
+                                            <span class="badge blue_badge grid-column-4" >Подача оригинала</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="direction_card margin-bottom-24">
+                                <div class="direction_card_header">
+                                    <h6 class="text-color-midnight-2">37.03.01 Психология</h6>
+                                    <div class="direction_exam portal-ui text-small text-small text-color-secondary ">
+                                        <div class="exam_cart">
+                                            <p class="m-0">ИНО<span class="text-color-midnight-3">(ЕГЭ)</span></p>
+                                            <p class="m-0">ИСТ<span class="text-color-midnight-3">(ЕГЭ)</span></p>
+                                        </div>
+                                        <div class="exam_cart">
+                                            <p class="m-0">РУС<span class="text-color-midnight-3">(ЕГЭ)</span></p>
+                                            <p class="m-0">ИНД<span class="text-color-midnight-3">(ЕГЭ)</span></p>
+                                        </div>
+                                    </div>
+                                    <h6 style="color: #23B4A2">210 баллов</h6>
+                                </div>
+                                <div class = "direction_card_body">
+                                    <div class="direction_card_body_element">
+                                        <div class="grid_main_columns">
+                                            <div class="grid_columns_information">
+                                                <p class="portal-ui text text bolder m-0 grid-column-1"><span class="icon-Graduation-cap-24 text-color-primary icons_fs_marg"></span>Бюджет</p>
+                                                <p class="portal-ui text text-color-secondary m-0 grid-column-2">15 (из 10) место в конкурсе</p>
+                                                <button class="grid-column-3 m-0  text-color-midnight-2 margin-right-5 tertiary_button_border_dashed" id="dropDownNotesDocuments48" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Действия<span class="icon-caret-down-16 text-color-midnight-2"></span></button>
+                                                <ul class="dropdown-menu dropdownMenu" aria-labelledby="dropDownNotesDocuments48">
+                                                    <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-tick-24 text-color-midnight-4 margin-right-12"></span>Подтвердить</li>
+                                                    <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-back-24 text-color-midnight-4 margin-right-12"></span>На доработку</li>
+                                                    <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-cross-24 text-color-midnight-4 margin-right-12"></span>Отклонить</li>
+                                                    <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-pensil-24 text-color-midnight-4 margin-right-12"></span>Редактировать</li>
+                                                </ul>
+                                            </div>
+                                            <span class="badge blue_badge grid-column-4">Подача оригинала</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nav_direction margin-bottom-12">
+                                <h5 class="text-color-midnight-2">Платное</h5>
+                                <button class="tertiary_button text-color-secondary portal-ui text"><span class="icon-download-24 text-color-midnight-4"></span>Скачать заявления</button>
+                            </div>
+                            <div class="direction_card margin-bottom-24">
+                                <div class="direction_card_header">
+                                    <h6 class="text-color-midnight-2">37.03.01 Психология</h6>
+                                    <div class="direction_exam portal-ui text-small text-small text-color-secondary">
+                                        <div class="exam_cart">
+                                            <p class="m-0">ИНО<span class="text-color-midnight-3">(ЕГЭ)</span></p>
+                                            <p class="m-0">ИСТ<span class="text-color-midnight-3">(ЕГЭ)</span></p>
+                                        </div>
+                                        <div class="exam_cart">
+                                            <p class="m-0">РУС<span class="text-color-midnight-3">(ЕГЭ)</span></p>
+                                            <p class="m-0">ИНД<span class="text-color-midnight-3">(ЕГЭ)</span></p>
+                                        </div>
+                                    </div>
+                                    <h6 style="color: #23B4A2">210 баллов</h6>
+                                </div>
+                                <div class = "direction_card_body">
+                                    <div class="direction_card_body_element">
+                                        <div class="grid_main_columns">
+                                            <div class="grid_columns_information">
+                                                <p class="portal-ui text text bolder m-0 grid-column-1"><span class="icon-Graduation-cap-24 text-color-primary icons_fs_marg"></span>Бюджет</p>
+                                                <p class="portal-ui text text-color-secondary m-0 grid-column-2">15 (из 10) место в конкурсе</p>
+                                                <button class="grid-column-3 m-0  text-color-midnight-2 margin-right-5 tertiary_button_border_dashed" id="dropDownNotesDocuments48" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Действия<span class="icon-caret-down-16 text-color-midnight-2"></span></button>
+                                                <ul class="dropdown-menu dropdownMenu" aria-labelledby="dropDownNotesDocuments48">
+                                                    <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-tick-24 text-color-midnight-4 margin-right-12"></span>Подтвердить</li>
+                                                    <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-back-24 text-color-midnight-4 margin-right-12"></span>На доработку</li>
+                                                    <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-cross-24 text-color-midnight-4 margin-right-12"></span>Отклонить</li>
+                                                    <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-pensil-24 text-color-midnight-4 margin-right-12"></span>Редактировать</li>
+                                                </ul>
+                                            </div>
+                                            <span class="badge blue_badge grid-column-4">Подача оригинала</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nav_direction margin-bottom-16 margin-top-12">
+                                <h4 class="text-color-midnight-2">Документы</h4>
+                            </div>
+                            <div class="documents_card_grid margin-bottom-24">
+                                <div class="documents_page">
+                                    <div class="header_documents">
+                                        <img class="image_documents" src="2.jpg">
+                                        <div class="rectangle_sum_pages">
+                                            <span class="portal-ui text text-color-secondary">+3</span>
+                                        </div>
+                                    </div>
+                                    <div class="documents_body">
+                                        <div class="d-flex flex-column  documents_body_elem documents_body_flex ">
+                                            <div class="documents_body_header_buttons">
+                                                <h6 class="text-color-midnight-2">Паспорт Гражданина РФ</h6>
+                                                <button class="tertiary_button" type="button" id="dropDownNotesDocuments3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <span class="icon-menu-dots-24 text-color-midnight-4"></span>
+                                                </button>
+                                                <ul class="dropdown-menu dropdownMenu" aria-labelledby="dropDownNotesDocuments3">
+                                                    <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-tick-24 text-color-midnight-4 margin-right-12"></span>Подтвердить</li>
+                                                    <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-back-24 text-color-midnight-4 margin-right-12"></span>На доработку</li>
+                                                    <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-cross-24 text-color-midnight-4 margin-right-12"></span>Отклонить</li>
+                                                    <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-pensil-24 text-color-midnight-4 margin-right-12"></span>Редактировать</li>
+                                                </ul>
+                                            </div>
+                                            <p class="m-0 portal-ui subtitle-tex text-color-primary documents_body_elem font-weight-500">4555 325 634</p>
+                                        </div>
+                                        <div class="documents_body_badges documents_body_elem">
+                                            <div class="badge cyan_badge">Подтверждено - ЕПГУ</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="documents_page">
+                                    <div class="header_documents">
+                                        <img class="image_documents" src="2.jpg">
+                                        <div class="rectangle_sum_pages">
+                                            <span class="portal-ui text text-color-secondary">+3</span>
+                                        </div>
+                                    </div>
+                                    <div class="documents_body">
+                                        <div class="d-flex flex-column  documents_body_elem documents_body_flex ">
+                                            <div class="documents_body_header_buttons">
+                                                <h6 class="text-color-midnight-2">Удостоверение личности иностранного гражданина</h6>
+                                                <button class="tertiary_button" type="button" id="dropDownNotesDocuments5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <span class="icon-menu-dots-24 text-color-midnight-4"></span>
+                                                </button>
+                                                <ul class="dropdown-menu dropdownMenu" aria-labelledby="dropDownNotesDocuments5">
+                                                    <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-tick-24 text-color-midnight-4 margin-right-12"></span>Подтвердить</li>
+                                                    <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-back-24 text-color-midnight-4 margin-right-12"></span>На доработку</li>
+                                                    <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-cross-24 text-color-midnight-4 margin-right-12"></span>Отклонить</li>
+                                                    <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-pensil-24 text-color-midnight-4 margin-right-12"></span>Редактировать</li>
+                                                </ul>
+                                            </div>
+                                            <p class="m-0 portal-ui subtitle-tex text-color-primary documents_body_elem font-weight-500">4555 325 634</p>
+                                        </div>
+                                        <div class="documents_body_badges documents_body_elem">
+                                            <div class="badge midnight_badge">На проверке МВД</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="documents_page">
+                                    <div class="header_documents">
+                                        <img class="image_documents" src="1.jpg">
+                                        <div class="rectangle_sum_pages">
+                                            <span class="portal-ui text text-color-secondary">+3</span>
+                                        </div>
+                                    </div>
+                                    <div class="documents_body">
+                                        <div class="d-flex flex-column  documents_body_flex">
+                                            <div class="documents_body_header_buttons">
+                                                <h6 class="text-color-midnight-2">Аттестат о среднем полном (общем) образовании&nbsp;<span class="fi fi-ru flags_border_margin_document_card"></span></h6>
+                                                <button class="tertiary_button" type="button" id="dropDownNotesDocuments" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <span class="icon-menu-dots-24 text-color-midnight-4"></span>
+                                                </button>
+                                                <ul class="dropdown-menu dropdownMenu" aria-labelledby="dropDownNotesDocuments">
+                                                    <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-tick-24 text-color-midnight-4 margin-right-12"></span>Подтвердить</li>
+                                                    <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-back-24 text-color-midnight-4 margin-right-12"></span>На доработку</li>
+                                                    <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-cross-24 text-color-midnight-4 margin-right-12"></span>Отклонить</li>
+                                                    <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-pensil-24 text-color-midnight-4 margin-right-12"></span>Редактировать</li>
+                                                </ul>
+                                            </div>
+                                            <p class="m-0 portal-ui subtitle-tex text-color-secondary documents_body_elem"><span class="text-color-primary font-weight-500">12456486146</span> - 2019 г.</p>
+                                        </div>
+                                        <div class="documents_body_badges">
+                                            <div class="badge cyan_badge">Оригинал ЕПГУ</div>
+                                            <div class="badge midnight_badge">С отличием</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="documents_page">
+                                    <div class="header_documents">
+                                        <img class="image_documents" src="3.jpg">
+                                        <div class="rectangle_sum_pages">
+                                            <span class="portal-ui text text-color-secondary">+3</span>
+                                        </div>
+                                    </div>
+                                    <div class="documents_body">
+                                        <div class="d-flex flex-column  documents_body_flex">
+                                            <div class="documents_body_header_buttons">
+                                                <h6 class="text-color-midnight-2">Право на сдачу внутренних ВИ</h6>
+                                                <button class="tertiary_button" type="button" id="dropDownNotesDocuments3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <span class="icon-menu-dots-24 text-color-midnight-4"></span>
+                                                </button>
+                                                <ul class="dropdown-menu dropdownMenu" aria-labelledby="dropDownNotesDocuments3">
+                                                    <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-tick-24 text-color-midnight-4 margin-right-12"></span>Подтвердить</li>
+                                                    <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-back-24 text-color-midnight-4 margin-right-12"></span>На доработку</li>
+                                                    <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-cross-24 text-color-midnight-4 margin-right-12"></span>Отклонить</li>
+                                                    <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-pensil-24 text-color-midnight-4 margin-right-12"></span>Редактировать</li>
+                                                </ul>
+                                            </div>
+                                            <p class="m-0 portal-ui subtitle-tex text-color-secondary documents_body_elem ">Инвалидность (I и II групп, дети инвалиды, инвалиды с детства)</p>
+                                        </div>
+                                        <div class="documents_body_badges documents_body_elem">
+                                            <div class="badge cyan_badge">Подтверждено - ЕПГУ</div>
+                                            <div class="badge cyan_badge">Подтверждено - ЕПГУ</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="documents_page">
+                                    <div class="header_documents">
+                                        <img class="image_documents" src="3.jpg">
+                                        <div class="rectangle_sum_pages">
+                                            <span class="portal-ui text text-color-secondary">+3</span>
+                                        </div>
+                                    </div>
+                                    <div class="documents_body">
+                                        <div class="d-flex flex-column  documents_body_flex">
+                                            <div class="documents_body_header_buttons">
+                                                <h6 class="text-color-midnight-2">Право на сдачу внутренних ВИ</h6>
+                                                <button class="tertiary_button" type="button" id="dropDownNotesDocuments3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <span class="icon-menu-dots-24 text-color-midnight-4"></span>
+                                                </button>
+                                                <ul class="dropdown-menu dropdownMenu" aria-labelledby="dropDownNotesDocuments3">
+                                                    <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-tick-24 text-color-midnight-4 margin-right-12"></span>Подтвердить</li>
+                                                    <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-back-24 text-color-midnight-4 margin-right-12"></span>На доработку</li>
+                                                    <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-cross-24 text-color-midnight-4 margin-right-12"></span>Отклонить</li>
+                                                    <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-pensil-24 text-color-midnight-4 margin-right-12"></span>Редактировать</li>
+                                                </ul>
+                                            </div>
+                                            <p class="m-0 portal-ui subtitle-tex text-color-secondary documents_body_elem ">Иностранное гражданство</p>
+                                        </div>
+                                        <div class="documents_body_badges documents_body_elem">
+                                            <div class="badge cyan_badge">Подтверждено</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="documents_page">
+                                    <div class="header_documents">
+                                        <img class="image_documents" src="2.jpg">
+                                        <div class="rectangle_sum_pages">
+                                            <span class="portal-ui text text-color-secondary">+3</span>
+                                        </div>
+                                    </div>
+                                    <div class="documents_body">
+                                        <div class="d-flex flex-column  documents_body_elem documents_body_flex ">
+                                            <div class="documents_body_header_buttons">
+                                                <h6 class="text-color-midnight-2">Олимпиада</h6>
+                                                <button class="tertiary_button" type="button" id="dropDownNotesDocuments3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <span class="icon-menu-dots-24 text-color-midnight-4"></span>
+                                                </button>
+                                                <ul class="dropdown-menu dropdownMenu" aria-labelledby="dropDownNotesDocuments3">
+                                                    <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-tick-24 text-color-midnight-4 margin-right-12"></span>Подтвердить</li>
+                                                    <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-back-24 text-color-midnight-4 margin-right-12"></span>На доработку</li>
+                                                    <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-cross-24 text-color-midnight-4 margin-right-12"></span>Отклонить</li>
+                                                    <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-pensil-24 text-color-midnight-4 margin-right-12"></span>Редактировать</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="documents_body_badges documents_body_elem">
+                                            <div class="badge midnight_badge">На проверке</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="documents_page">
+                                    <div class="header_documents">
+                                        <img class="image_documents" src="2.jpg">
+                                        <div class="rectangle_sum_pages">
+                                            <span class="portal-ui text text-color-secondary">+3</span>
+                                        </div>
+                                    </div>
+                                    <div class="documents_body">
+                                        <div class="d-flex flex-column  documents_body_elem documents_body_flex ">
+                                            <div class="documents_body_header_buttons">
+                                                <h6 class="text-color-midnight-2">Значок ГТО</h6>
+                                                <button class="tertiary_button" type="button" id="dropDownNotesDocuments3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <span class="icon-menu-dots-24 text-color-midnight-4"></span>
+                                                </button>
+                                                <ul class="dropdown-menu dropdownMenu" aria-labelledby="dropDownNotesDocuments3">
+                                                    <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-tick-24 text-color-midnight-4 margin-right-12"></span>Подтвердить</li>
+                                                    <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-back-24 text-color-midnight-4 margin-right-12"></span>На доработку</li>
+                                                    <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-cross-24 text-color-midnight-4 margin-right-12"></span>Отклонить</li>
+                                                    <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-pensil-24 text-color-midnight-4 margin-right-12"></span>Редактировать</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="documents_body_badges documents_body_elem">
+                                            <div class="badge midnight_badge">На проверке</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="documents_page">
+                                    <div class="header_documents">
+                                        <img class="image_documents" src="3.jpg">
+                                        <div class="rectangle_sum_pages">
+                                            <span class="portal-ui text text-color-secondary">+3</span>
+                                        </div>
+                                    </div>
+                                    <div class="documents_body">
+                                        <div class="d-flex flex-column  documents_body_flex">
+                                            <div class="documents_body_header_buttons">
+                                                <h6 class="text-color-midnight-2">Аттестат о среднем полном образовании</h6>
+                                                <button class="tertiary_button" type="button" id="dropDownNotesDocuments2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <span class="icon-menu-dots-24 text-color-midnight-4"></span>
+                                                </button>
+                                                <ul class="dropdown-menu dropdownMenu" aria-labelledby="dropDownNotesDocuments2">
+                                                    <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-tick-24 text-color-midnight-4 margin-right-12"></span>Подтвердить</li>
+                                                    <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-back-24 text-color-midnight-4 margin-right-12"></span>На доработку</li>
+                                                    <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-cross-24 text-color-midnight-4 margin-right-12"></span>Отклонить</li>
+                                                    <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-pensil-24 text-color-midnight-4 margin-right-12"></span>Редактировать</li>
+                                                </ul>
+                                            </div>
+                                            <p class="m-0 portal-ui subtitle-tex text-color-secondary documents_body_elem"><span class="text-color-primary font-weight-500">12456486146</span> - 2019 г.</p>
+                                        </div>
+                                        <div class="documents_body_badges">
+                                            <div class="badge cyan_badge">Оригинал ЕПГУ</div>
+                                            <div class="badge midnight_badge">С отличием</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nav_direction margin-bottom-16 margin-top-12">
+                                <h4 class="text-color-midnight-2 ">Вступительные испытания</h4>
+                                <button class="tertiary_button text-color-secondary portal-ui text"><span class="icon-download-24 text-color-midnight-4"></span>Скачать экзаменационный лист</button>
+                            </div>
+                            <div class="entrance_tests">
+                                <table class="table_test w-100">
+                                    <thead>
+                                    <th>Предмет</th>
+                                    <th>Тип</th>
+                                    <th class="table_date_min_width">Сдано (сдать до)</th>
+                                    <th>Балл</th>
+                                    <th></th>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Информатика и ИКТ</td>
+                                        <td>Внутреннее</td>
+                                        <td>
+                                            <p class="d-flex align-items-center m-0 table_date_min_width"><span class="icon-calendar-24 text-color-midnight-4 margin-right-8"></span>до 28.08.2023</p>
+                                        </td>
+                                        <td>
+                                            <p class="d-flex align-items-center m-0"><span class="icon-tick-24 text-color-midnight-4 margin-right-8"></span>80</p>
+                                        </td>
+                                        <td>
+                                            <div>
+                                                <button class="secondary_button">Начать<span class="kol-vo_MediaScreen"> тестирование</span></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Обществозание</td>
+                                        <td>Внутреннее</td>
+                                        <td>
+                                            <p class="d-flex align-items-center m-0"><span class="icon-calendar-24 text-color-midnight-4 margin-right-8"></span>до 28.08.2023</p>
+                                        </td>
+                                        <td>
+                                            <p class="d-flex align-items-center m-0"><span class="icon-clock-24 text-color-midnight-4 margin-right-8"></span>нет</p>
+                                        </td>
+                                        <td>
+                                            <div>
+                                                <button class="tertiary_button portal-ui text font-weight-500 text-color-secondary">Расписание<span class="kol-vo_MediaScreen"> экзаменов</span><span class="icon-expand-24 text-color-primary" style="transform: scale(-1,1)"></span></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Физика</td>
+                                        <td>Внутреннее</td>
+                                        <td>
+                                            <p class="d-flex align-items-center m-0 table_date_min_width"><span class="icon-calendar-24 text-color-midnight-4 margin-right-8"></span>до 28.08.2023</p>
+                                        </td>
+                                        <td>
+                                            <p class="d-flex align-items-center m-0"><span class="icon-clock-24 text-color-midnight-4 margin-right-8"></span>Нет</p>
+                                        </td>
+                                        <td>
+                                            <div>
+                                                <button class="secondary_button">Начать<span class="kol-vo_MediaScreen"> тестирование</span></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Математика</td>
+                                        <td>ЦЭ</td>
+                                        <td>
+                                            <p class="d-flex align-items-center m-0 table_date_min_width"><span class="icon-calendar-24 text-color-midnight-4 margin-right-8"></span> 11.06.2023</p>
+                                        </td>
+                                        <td>
+                                            <p class="d-flex align-items-center m-0"><span class="icon-clock-24 text-color-midnight-4 margin-right-8"></span>80</p>
+                                        </td>
+                                        <td>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Русский язык</td>
+                                        <td>ЦЭ</td>
+                                        <td>
+                                            <p class="d-flex align-items-center m-0 table_date_min_width"><span class="icon-calendar-24 text-color-midnight-4 margin-right-8"></span>14.06.2023</p>
+                                        </td>
+                                        <td>
+                                            <p class="d-flex align-items-center m-0"><span class="icon-calendar-24 text-color-midnight-4 margin-right-8"></span>100</p>
+                                        </td>
+                                        <td>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="navStatements" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            <div class="d-flex flex-wrap" style="gap:30px">
+                                <div class="col apllication_card">
+                                    <h6 class="text-color-secondary">Согласие на обработку Персональных Данных</h6>
+                                    <div class="apllication_card_body">
+                                        <span class="icon-file-32 text-color-midnight-4"></span>
+                                        <p class="m-0 portal-ui text text-color-secondary">Согласие на обработку ПД</p>
+                                    </div>
+                                </div>
+                                <div class="col apllication_card">
+                                    <h6 class="text-color-secondary">Согласие на передачу ПД на Госуслуги (ЕСИА)</h6>
+                                    <div class="apllication_card_body">
+                                        <span class="icon-file-32 text-color-midnight-4"></span>
+                                        <p class="m-0 portal-ui text text-color-secondary">Согласие на передачу ПД</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade " id="navLogs" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

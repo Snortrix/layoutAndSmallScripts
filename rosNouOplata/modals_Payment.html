@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../Rosnou-v6.3/demo-files/demo.css">
+    <link rel="stylesheet" href="../Rosnou-v6.3/style.css">
+    <link rel="stylesheet" href="bootstrap_portal_ui_two/bootstrap.css">
+    <script src="bootstrap_portal_ui_two/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="portal_ui_two.css">
+    <link rel="stylesheet" href="paymentRosNOU.css">
+
+</head>
+<body>
+<div class="container-fluid p-0 portal_ui_two">
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Модалка оплаты
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" style="max-width: 33.75rem;">
+            <div class="modal-content modals_Payment">
+                <div class="modal-body modals_Payment_body">
+                    <div class="display-flex-row justify-content-between">
+                        <h4 class="m-0 text-color-secondary">Предмет оплаты:</h4>
+                        <button class="tertiary-button tertiary-button-small" data-bs-dismiss="modal" aria-label="Close"><span class="icon-cross-24 text-color-midnight-4"></span></button>
+                    </div>
+                    <div class="display-flex-column gap-2">
+                        <p class="m-0 text-capitals text-color-midnight-2">ДОговор:</p>
+                        <select class="modals_Select">
+                            <option class="modals_Select_Option">Оплата обучения</option>
+                            <option class="modals_Select_Option">Оплата обучения</option>
+                        </select>
+                    </div>
+                    <div class="display-flex-column gap-2">
+                        <p class="m-0 text-capitals text-color-midnight-2">ДОговор:</p>
+                        <select class="modals_Select">
+                            <option class="modals_Select_Option">02.03.03 Математическое обеспечение и администрирование информационных систем</option>
+                            <option class="modals_Select_Option">190808 78911</option>
+                        </select>
+                    </div>
+                    <div class="display-flex-column gap-2">
+                        <p class="m-0 text-capitals text-color-midnight-2">Период оплаты:</p>
+                        <select class="modals_Select">
+                            <option class="modals_Select_Option">5 семестр (сен. 2023 - янв. 2024)</option>
+                            <option class="modals_Select_Option">4 семестр (сен. 2023 - янв. 2024)</option>
+                        </select>
+                    </div>
+                    <div class="display-flex-column gap-2">
+                        <p class="m-0 text-capitals text-color-midnight-2">Общая сумма</p>
+                        <input class="input_auth_page">
+                    </div>
+                    <div class="group_check">
+                        <input class="group_check_input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="group_check_label d-flex text-color-secondary text align-items-center" for="flexCheckDefault">Плательщик иное лицо</label>
+                    </div>
+                    <div class="display-flex-column gap-2">
+                        <p class="m-0 text-capitals text-color-midnight-2">ФИО Плательщика</p>
+                        <input class="input_auth_page">
+                    </div>
+                    <div class="display-flex-column gap-2">
+                        <p class="m-0 text-capitals text-color-midnight-2">E-mail:</p>
+                        <input class="input_auth_page">
+                    </div>
+                </div>
+                <div class="modal-footer modals_Payment_footer">
+                    <button class="tertiary-button" data-bs-dismiss="modal"><span class="icon-arrow-angle-left-24 text-color-midnight-4"></span>Назад</button>
+                    <div class="display-flex-row gap-3">
+                        <button class="secondary-button"><span class="icon-save-16 text-color-midnight-5"></span>Сохранить</button>
+                        <button class="primary-button"><span class="icon-ruble-16 text-color-white"></span>Оплатить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

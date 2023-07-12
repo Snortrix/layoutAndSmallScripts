@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/7a57c86913.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../Rosnou-v6.3/demo-files/demo.css">
+    <link rel="stylesheet" href="../Rosnou-v6.3/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="portal-ui.css">
+    <link rel="stylesheet" href="lk_styleshit.css">
+</head>
+<style>
+    @font-face { font-family: "PT Root";
+        src: local("../fonts/PT Root UI_Regular"),
+        url("../fonts/PT Root UI_Regular.woff2") format("woff2"),
+        url("../fonts/PT Root UI_Regular.woff") format("woff");
+        font-style: normal; font-weight: 400; font-display: swap; }
+
+    @font-face { font-family: "PT Root";
+        src: local("../fonts/PT Root UI_Medium"),
+        url("../fonts/PT Root UI_Medium.woff2") format("woff2"),
+        url("../fonts/PT Root UI_Medium.woff") format("woff");
+        font-style: normal; font-weight: 500; font-display: swap; }
+
+    @font-face { font-family: "PT Root";
+        src: local("../fonts/PT Root UI_Bold"),
+        url("../fonts/PT Root UI_Bold.woff2") format("woff2"),
+        url("../fonts/PT Root UI_Bold.woff") format("woff");
+        font-style: normal; font-weight: 700; font-display: swap; }
+</style>
+<body>
+<div class="modal fade modals_INS" id="ModalINS" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content modals_INS">
+            <div class="modal-body">
+                <div class="display-flex-column gap-24" style="padding: 8px">
+                    <div class="d-flex flex-row justify-content-between align-items-start portal-ui">
+                        <h4 class="text-color-secondary">Изменить ИНС</h4>
+                        <button class="tertiary_button" data-dismiss="modal" aria-label="Close"><span class="icon-cross-24 text-color-midnight-4"></span></button>
+                    </div>
+                    <div class="display-flex-column gap-8">
+                        <p class="m-0 portal-ui text font-weight-700 text-color-midnight-2">Выберите ИНС</p>
+                        <select class="Modals_INS_Select">
+                            <option class="Modals_INS_Select_Option">190808 78911</option>
+                            <option>190808 78911</option>
+                        </select>
+                    </div>
+                    <div class="d-flex flex-row  w-100 gap-24 portal-ui">
+                        <button class="secondary_button text w-100">Закрыть</button>
+                        <button class="primary_button text w-100" style="padding: 8px 16px">Сохранить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-auto">
+            <div class="information_panel">
+                <div class="header_information">
+                    <div class="img_float">
+                        <img class="image_header" src="1.jpg">
+                    </div>
+                    <div class="d-inline-flex flex-column gap-4">
+                        <h6 class="text-color-secondary">Нерезенко Любовь Александровна</h6>
+                        <div class="d-inline-flex flex-row justify-content-center">
+                            <p class="m-0 portal-ui text text-color-midnight-4">157-897-108 28<span class="fi fi-ru flags-border-margin"></span></p>
+                        </div>
+                    </div>
+                    <div class="information_badge">
+                        <span class="badge midnight_badge">Нет СНИЛС</span>
+                        <span class="badge midnight_badge">Иностранец</span>
+                        <span class="badge midnight_badge" data-toggle="modal" data-target="#ModalINS" style="cursor: pointer">Нет ИНС <span class="icon-pensil-16" style="padding-left: 8px"></span></span>
+                        <span class="badge midnight_badge">Нужно общежитие</span>
+                        <button class="tertiary_button portal-ui text text-color-secondary"><span class="icon-plus-16 text-color-midnight-4"></span>Добавить особенность</button>
+                    </div>
+                </div>
+                <div class="notes_information">
+                    <div class="d-flex justify-content-between align-items-baseline" style="cursor: pointer" data-toggle="collapse" data-target="#notesInformation" aria-controls="notesInformation" aria-expanded="false">
+                        <h6 class="text-color-secondary">Примечания</h6>
+                        <span class="icon-arrow-small-down-24 text-color-secondary"></span>
+                    </div>
+                    <div class="collapse display-flex-column gap-16" id="notesInformation">
+                        <div class="note_page">
+                            <div class="header_note_page d-flex justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <img class="image_note" src="1.jpg">
+                                    <p class="portal-ui text-small m-0">Владислав Некрасов</p>
+                                </div>
+                                <button class="tertiary_button" type="button" id="dropDownNotes" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="icon-menu-dots-24 text-color-midnight-4" style="transform: rotate(90deg)"></span>
+                                </button>
+                                <ul class="dropdown-menu dropdownMenu" aria-labelledby="dropDownNotes">
+                                    <li class="dropdown-item portal-ui text" href="#">Редактировать</li>
+                                    <li class="dropdown-item portal-ui text" href="#">Удалить</li>
+                                </ul>
+                            </div>
+                            <div class="portal-ui text text-color-secondary">В паспорте не указано место регистрации. Отказывается идти в МФЦ и исправлять документ.</div>
+                        </div>
+                        <button class="tertiary_button text-color-secondary portal-ui text-small bolder"><span class="icon-plus-16 text-color-primary"></span>Добавить примечания</button>
+
+                    </div>
+                </div>
+                <div class="personal_information">
+                    <div class="d-flex justify-content-between align-items-baseline" style="cursor: pointer" data-toggle="collapse" data-target="#personalInformation" aria-controls="notesInformation" aria-expanded="false">
+                        <h6 class="text-color-secondary">Личные данные</h6>
+                        <span class="icon-arrow-small-down-24 text-color-secondary"></span>
+                    </div>
+                    <div class="collapse personal_information_collapse" id="personalInformation">
+                        <div class="information_row">
+                            <p class="portal-ui text-capitals text-color-midnight-4 m-0">Почта:</p>
+                            <p class="portal-ui text-small text-color-secondary  margin-left">Ljubov.nerezenko-98@yandex.ru</p>
+                        </div>
+                        <div class="information_row">
+                            <p class="portal-ui text-capitals text-color-midnight-4 m-0">Телефон:</p>
+                            <p class="portal-ui text-small text-color-secondary  margin-left">+7 (905) 716-66-92</p>
+                        </div>
+                        <div class="information_row">
+                            <p class="portal-ui text-capitals text-color-midnight-4 m-0">Дата рождения:</p>
+                            <p class="portal-ui text-small text-color-secondary  margin-left">24.09.1995 (26)</p>
+                        </div>
+                        <div class="information_row">
+                            <p class="portal-ui text-capitals text-color-midnight-4 m-0">Пол:</p>
+                            <p class="portal-ui text-small text-color-secondary  margin-left">Женский</p>
+                        </div>
+                        <div class="information_row">
+                            <p class="portal-ui text-capitals text-color-midnight-4 m-0">Адрес проживания:</p>
+                            <p class="portal-ui text-small text-color-secondary  margin-left">243600, Россия, обл,
+                                Злынковский р-н, деревня Петровка, ул Мирная, д 12</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="personal_information">
+                    <div class="d-flex justify-content-between align-items-baseline" style="cursor: pointer" data-toggle="collapse" data-target="#personalInformationRepresentatives" aria-controls="notesInformation" aria-expanded="false">
+                        <h6 class="text-color-secondary">Законный представитель</h6>
+                        <span class="icon-arrow-small-down-24 text-color-secondary"></span>
+                    </div>
+                    <div class="collapse personal_information_collapse" id="personalInformationRepresentatives">
+                        <div class="information_row">
+                            <p class="portal-ui text-capitals text-color-midnight-4 m-0">ФИО:</p>
+                            <p class="portal-ui text-small text-color-secondary  margin-left">Нерезенко Ирина Геннадьевна</p>
+                        </div>
+                        <div class="information_row">
+                            <p class="portal-ui text-capitals text-color-midnight-4 m-0">Почта:</p>
+                            <p class="portal-ui text-small text-color-secondary  margin-left">Ljubov.nerezenko-98@yandex.ru</p>
+                        </div>
+                        <div class="information_row">
+                            <p class="portal-ui text-capitals text-color-midnight-4 m-0">Телефон:</p>
+                            <p class="portal-ui text-small text-color-secondary  margin-left">+7 (905) 716-66-92</p>
+                        </div>
+                        <div class="information_row">
+                            <p class="portal-ui text-capitals text-color-midnight-4 m-0">Дата рождения:</p>
+                            <p class="portal-ui text-small text-color-secondary  margin-left">24.09.1975 (46)</p>
+                        </div>
+                        <div class="information_row">
+                            <p class="portal-ui text-capitals text-color-midnight-4 m-0">Пол:</p>
+                            <p class="portal-ui text-small text-color-secondary  margin-left">Женский</p>
+                        </div>
+                        <div class="information_row">
+                            <p class="portal-ui text-capitals text-color-midnight-4 m-0">Адрес проживания:</p>
+                            <p class="portal-ui text-small text-color-secondary  margin-left">243600, Россия, обл,
+                                Злынковский р-н, деревня Петровка, ул Мирная, д 12</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="background-color: white" class="col m-4">
+            <div class="m-4">
+                <div class="note_page">
+                    <div class="header_note_page d-flex justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <img class="image_note" src="1.jpg">
+                            <p class="portal-ui text-small m-0">Владислав Некрасов</p>
+                        </div>
+                        <button class="tertiary_button" type="button" id="dropDownNotesDemo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="icon-menu-dots-24 text-color-midnight-4" style="font-size: 16px;transform: rotate(90deg)"></span>
+                        </button>
+                        <ul class="dropdown-menu dropdownMenu" aria-labelledby="dropDownNotesDemo">
+                            <li class="dropdown-item portal-ui text" href="#">Редактировать</li>
+                            <li class="dropdown-item portal-ui text" href="#">Удалить</li>
+                        </ul>
+                    </div>
+                    <div class="portal-ui text text-color-secondary">В паспорте не указано место регистрации. Отказывается идти в МФЦ и исправлять документ.</div>
+                </div>
+            </div>
+            <div class="m-4">
+                <div class="instead_photo_applicant">НЛ</div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

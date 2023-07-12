@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../Rosnou-v6.0/demo-files/demo.css">
+    <link rel="stylesheet" href="../Rosnou-v6.0/style.css">
+    <link rel="stylesheet" href="../lk%20V2/portal-ui.css">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<style>
+    @font-face { font-family: "PT Root";
+      src: local("../fonts/PT Root UI_Regular"),
+      url("../fonts/PT Root UI_Regular.woff2") format("woff2"),
+      url("../fonts/PT Root UI_Regular.woff") format("woff");
+      font-style: normal; font-weight: 400; font-display: swap; }
+  
+    @font-face { font-family: "PT Root";
+      src: local("../fonts/PT Root UI_Medium"),
+      url("../fonts/PT Root UI_Medium.woff2") format("woff2"),
+      url("../fonts/PT Root UI_Medium.woff") format("woff");
+      font-style: normal; font-weight: 500; font-display: swap; }
+  
+    @font-face { font-family: "PT Root";
+      src: local("../fonts/PT Root UI_Bold"),
+      url("../fonts/PT Root UI_Bold.woff2") format("woff2"),
+      url("../fonts/PT Root UI_Bold.woff") format("woff");
+      font-style: normal; font-weight: 700; font-display: swap; }
+    body{
+      background: #F8F9FB;
+    }
+</style>
+<body>
+    <div class="dsh-container">
+        <h3 class="text-color-midnight-2">Абитуриенту</h3>
+
+        <div class="dsh-items">
+            <div class="bg-white dsh-item h-auto">
+                <div class="dsh-item-header">
+                    <h4 class="text-color-midnight-2">Анкета абитуриента</h4>
+                </div>
+
+                <div class="dsh-item-body">
+                    <p class="dsh-item-own-text">Для заполнения анкеты вам понадобятся следующие документы:</p>
+    
+                    <ul class="dsh-item-list">
+                        <li> Паспорт (лицевая страница и страница c пропиской; стр. 19 со сведениями о предыдущем паспорте, если по нему был сдан ЕГЭ).</li>
+                        <li> Документ об образовании (вкладыш, приложение с оценками полностью)</li>
+                        <li> СНИЛС (при наличии)</li>
+                        <li> Документы, подтверждающие льготу </li>
+                        <li> Договор о целевом обучении (при поступлении на целевое).</li>
+                    </ul>
+                </div>
+
+
+                <div class="dsh-item-footer">
+                    <button class="dsh-btn align-self-end">Перейти</button>
+                </div>
+            </div>
+
+            <div class="bg-white dsh-item h-auto">
+                <div class="dsh-item-header">
+                    <h4 class="text-color-midnight-2">Личный кабинет абитуриента</h4>
+                    <button class="dsh-btn">Перейти</button>
+                </div>
+
+                <div class="dsh-item-body">
+                    <div class="dsh-alert-danger">
+                        <span class="icon-warning-32"></span> <span class="dsh-alert-text align-middle" style="height: 32px;">Новое сообщение!</span>
+                    </div>
+                </div>
+
+                <div class="dsh-item-footer">
+                    <div style="background-color: var(--base-bg_color); height: 115px; width: 100%;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

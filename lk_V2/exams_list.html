@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="lk_styleshit.css">
+</head>
+<style>
+    @font-face { font-family: "PT Root";
+        src: local("../fonts/PT Root UI_Regular"),
+        url("../fonts/PT Root UI_Regular.woff2") format("woff2"),
+        url("../fonts/PT Root UI_Regular.woff") format("woff");
+        font-style: normal; font-weight: 400; font-display: swap; }
+
+    @font-face { font-family: "PT Root";
+        src: local("../fonts/PT Root UI_Medium"),
+        url("../fonts/PT Root UI_Medium.woff2") format("woff2"),
+        url("../fonts/PT Root UI_Medium.woff") format("woff");
+        font-style: normal; font-weight: 500; font-display: swap; }
+
+    @font-face { font-family: "PT Root";
+        src: local("../fonts/PT Root UI_Bold"),
+        url("../fonts/PT Root UI_Bold.woff2") format("woff2"),
+        url("../fonts/PT Root UI_Bold.woff") format("woff");
+        font-style: normal; font-weight: 700; font-display: swap; }
+    body{
+        width: 210mm;
+        max-width: 210mm;
+        min-width: 210mm;
+        font-family: "Times New Roman";
+        margin: 7.4mm;
+        overflow-x: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .table_line{
+        border-bottom: 1px solid black;
+        flex-grow: 1;
+    }
+</style>
+<body>
+<div id="documents_print_list_exam" class="list_exams">
+    <div class="d-flex flex-row gap-16px-mm justify-content-center">
+        <div class="Rosnou_Logo_List_exams"></div>
+        <p class="m-0 text-border-left font-family-rosnou text-center">Автономная некоммерческая организация высшего образования «Российский новый университет» (АНО ВО «РосНОУ»)</p>
+    </div>
+    <div class="d-flex flex-row gap-16px-mm justify-content-center fs-19px">
+        <p class="m-0" style="font-size: 14pt;font-weight: 700">ЭКЗАМЕНАЦИОННЫЙ ЛИСТ № _________________</p>
+    </div>
+    <div class="d-flex flex-row gap-48px-mm">
+        <div class="photo_frame">Фото<br>М.П.</div>
+        <div class="display-flex-column w-100 gap-24px-mm justify-content-center">
+            <div class="d-flex flex-row gap-4px-mm">
+                <p class="m-0">Идентификационный номер абитуриента:</p>
+                <p class="m-0 table_line d-flex justify-content-center">000-000-000 00</p>
+            </div>
+            <div class="d-flex flex-row gap-4px-mm">
+                <p class="m-0">ФИО:</p>
+                <p class="m-0 table_line d-flex justify-content-center">Тухтамишхожи-зода Мухаммад Иброхим Акмал угли</p>
+            </div>
+            <div class="d-flex fex-row gap-32px-mm">
+                <div class="d-flex flex-row gap-4px-mm w-50">
+                    <p class="m-0">Дата выдачи</p>
+                    <p class="m-0 table_line d-flex justify-content-center" style="min-width: max-content">26 июля 2023 г.</p>
+                </div>
+                <div class="d-flex flex-row gap-4px-mm w-50">
+                    <p class="m-0">Подпись абитуриента</p>
+                    <p class="m-0 table_line d-flex justify-content-center"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex fex-row gap-32px-mm margin--16px">
+        <div class="d-flex flex-row gap-8px-mm">
+            <p class="m-0">Секретарь Приемной комиссии</p>
+            <div class="display-flex-column" style="width: 47mm;margin-top: 6mm">
+                <p class="m-0 table_line d-flex justify-content-center"></p>
+                <p class="m-0 text-center"><em>(подпись)</em></p>
+            </div>
+        </div>
+        <div class="d-flex flex-row gap-4px-mm" style="flex-grow: 1">
+            <div class="display-flex-column w-100" style="margin-top: 6mm">
+                <p class="m-0 table_line d-flex justify-content-center"></p>
+                <p class="m-0 text-center"><em>(фамилия и инициалы)</em></p>
+            </div>
+        </div>
+    </div>
+    <div class="display-flex-column gap-16px-mm w-100">
+        <p class="m-0 text-center" style="font-size: 14pt;font-weight: 700">Результаты вступительных испытаний</p>
+        <table class="table_exams_list">
+            <thead>
+            <tr>
+                <th>№</th>
+                <th>Наименование предмета</th>
+                <th>Характер вступительных испытаний</th>
+                <th>Дата вступительного
+                    испытания</th>
+                <th>Оценка, отметка (кол-во баллов)</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>Комплексный экзамен по направлению подготовки 38.04.01. Экономика</td>
+                <td>Тестирование</td>
+                <td>18.05.23</td>
+                <td>81</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Математика</td>
+                <td>Тестирование</td>
+                <td>18.05.23</td>
+                <td>81</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Информатика</td>
+                <td>Тестирование</td>
+                <td>18.05.23</td>
+                <td>81</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Физика</td>
+                <td>Тестирование</td>
+                <td>18.05.23</td>
+                <td>81</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Английский язык</td>
+                <td>Тестирование</td>
+                <td>18.05.23</td>
+                <td>81</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="d-flex fex-row gap-16px-mm">
+        <div class="d-flex flex-row gap-8px-mm">
+            <p class="m-0">Секретарь Приемной комиссии</p>
+            <div class="display-flex-column" style="width: 47mm;margin-top: 6mm">
+                <p class="m-0 table_line d-flex justify-content-center"></p>
+                <p class="m-0 text-center"><em>(подпись)</em></p>
+            </div>
+        </div>
+        <div class="d-flex flex-row gap-4px-mm" style="flex-grow: 1">
+            <div class="display-flex-column w-100" style="margin-top: 6mm">
+                <p class="m-0  d-flex justify-content-center"></p>
+                <p class="m-0 text-center"><em>МП</em></p>
+            </div>
+            <div class="display-flex-column w-100" style="margin-top: 6mm">
+                <p class="m-0 table_line d-flex justify-content-center"></p>
+                <p class="m-0 text-center"><em>(фамилия и инициалы)</em></p>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex fex-row gap-24px-mm">
+        <p class="m-0" style="min-width: max-content;">С правилами проведения вступительного испытания ознакомлен(а)</p>
+        <div class="d-flex flex-row gap-4px-mm">
+            <div class="display-flex-column" style="margin-top: 6mm">
+                <p class="m-0 table_line d-flex justify-content-center"></p>
+                <p class="m-0 text-center"><em>(подпись абитуриента)</em></p>
+            </div>
+        </div>
+    </div>
+    <div class="display-flex-column gap-8px-mm">
+        <p class="m-0">Примечания:<br>
+            1. Экзаменационный лист вместе с документом, удостоверяющим личность, служит пропуском на вступительное испытание.<br>
+            2. По окончании вступительных испытаний экзаменационный лист должен быть возвращен в приемную комиссию.</p>
+    </div>
+</div>
+</body>
+</html>

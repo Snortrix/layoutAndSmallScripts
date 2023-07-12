@@ -1,0 +1,548 @@
+.fi.fi-alt:hover::after {
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    top: -5px;
+    left: 135%;
+    position: absolute;
+    z-index: 1;
+}
+
+
+.fi.fi-af.fi-alt-en:hover::after { content: 'Afghanistan'; }
+.fi.fi-af.fi-alt:hover::after { content: 'Афганистан'; }
+.fi.fi-ax.fi-alt-en:hover::after { content: 'Aland Islands'; }
+.fi.fi-ax.fi-alt:hover::after { content: 'Аландские острова'; }
+.fi.fi-al.fi-alt-en:hover::after { content: 'Albania'; }
+.fi.fi-al.fi-alt:hover::after { content: 'Албания'; }
+.fi.fi-dz.fi-alt-en:hover::after { content: 'Algeria'; }
+.fi.fi-dz.fi-alt:hover::after { content: 'Алжир'; }
+.fi.fi-as.fi-alt-en:hover::after { content: 'American Samoa'; }
+.fi.fi-as.fi-alt:hover::after { content: 'Американское Самоа'; }
+.fi.fi-ad.fi-alt-en:hover::after { content: 'Andorra'; }
+.fi.fi-ad.fi-alt:hover::after { content: 'Андорра'; }
+.fi.fi-ao.fi-alt-en:hover::after { content: 'Angola'; }
+.fi.fi-ao.fi-alt:hover::after { content: 'Ангола'; }
+.fi.fi-ai.fi-alt-en:hover::after { content: 'Anguilla'; }
+.fi.fi-ai.fi-alt:hover::after { content: 'Ангилья'; }
+.fi.fi-aq.fi-alt-en:hover::after { content: 'Antarctica'; }
+.fi.fi-aq.fi-alt:hover::after { content: 'Антарктида'; }
+.fi.fi-ag.fi-alt-en:hover::after { content: 'Antigua and Barbuda'; }
+.fi.fi-ag.fi-alt:hover::after { content: 'Антигуа и Барбуда'; }
+.fi.fi-ar.fi-alt-en:hover::after { content: 'Argentina'; }
+.fi.fi-ar.fi-alt:hover::after { content: 'Аргентина'; }
+.fi.fi-am.fi-alt-en:hover::after { content: 'Armenia'; }
+.fi.fi-am.fi-alt:hover::after { content: 'Армения'; }
+.fi.fi-aw.fi-alt-en:hover::after { content: 'Aruba'; }
+.fi.fi-aw.fi-alt:hover::after { content: 'Аруба'; }
+.fi.fi-au.fi-alt-en:hover::after { content: 'Australia'; }
+.fi.fi-au.fi-alt:hover::after { content: 'Австралия'; }
+.fi.fi-at.fi-alt-en:hover::after { content: 'Austria'; }
+.fi.fi-at.fi-alt:hover::after { content: 'Австрия'; }
+.fi.fi-az.fi-alt-en:hover::after { content: 'Azerbaijan'; }
+.fi.fi-az.fi-alt:hover::after { content: 'Азербайджан'; }
+.fi.fi-bs.fi-alt-en:hover::after { content: 'Bahamas'; }
+.fi.fi-bs.fi-alt:hover::after { content: 'Багамы'; }
+.fi.fi-bh.fi-alt-en:hover::after { content: 'Bahrain'; }
+.fi.fi-bh.fi-alt:hover::after { content: 'Бахрейн'; }
+.fi.fi-bd.fi-alt-en:hover::after { content: 'Bangladesh'; }
+.fi.fi-bd.fi-alt:hover::after { content: 'Бангладеш'; }
+.fi.fi-bb.fi-alt-en:hover::after { content: 'Barbados'; }
+.fi.fi-bb.fi-alt:hover::after { content: 'Барбадос'; }
+.fi.fi-by.fi-alt-en:hover::after { content: 'Belarus'; }
+.fi.fi-by.fi-alt:hover::after { content: 'Беларусь'; }
+.fi.fi-be.fi-alt-en:hover::after { content: 'Belgium'; }
+.fi.fi-be.fi-alt:hover::after { content: 'Бельгия'; }
+.fi.fi-bz.fi-alt-en:hover::after { content: 'Belize'; }
+.fi.fi-bz.fi-alt:hover::after { content: 'Белиз'; }
+.fi.fi-bj.fi-alt-en:hover::after { content: 'Benin'; }
+.fi.fi-bj.fi-alt:hover::after { content: 'Бенин'; }
+.fi.fi-bm.fi-alt-en:hover::after { content: 'Bermuda'; }
+.fi.fi-bm.fi-alt:hover::after { content: 'Бермудские острова'; }
+.fi.fi-bt.fi-alt-en:hover::after { content: 'Bhutan'; }
+.fi.fi-bt.fi-alt:hover::after { content: 'Бутан'; }
+.fi.fi-bo.fi-alt-en:hover::after { content: 'Bolivia'; }
+.fi.fi-bo.fi-alt:hover::after { content: 'Боливия'; }
+.fi.fi-bq.fi-alt-en:hover::after { content: 'Bonaire, Sint Eustatius and Saba'; }
+.fi.fi-bq.fi-alt:hover::after { content: 'Бонайре, Синт-Эстатиус и Саба'; }
+.fi.fi-ba.fi-alt-en:hover::after { content: 'Bosnia and Herzegovina'; }
+.fi.fi-ba.fi-alt:hover::after { content: 'Босния и Герцеговина'; }
+.fi.fi-bw.fi-alt-en:hover::after { content: 'Botswana'; }
+.fi.fi-bw.fi-alt:hover::after { content: 'Ботсвана'; }
+.fi.fi-bv.fi-alt-en:hover::after { content: 'Bouvet Island'; }
+.fi.fi-bv.fi-alt:hover::after { content: 'Остров Буве'; }
+.fi.fi-br.fi-alt-en:hover::after { content: 'Brazil'; }
+.fi.fi-br.fi-alt:hover::after { content: 'Бразилия'; }
+.fi.fi-io.fi-alt-en:hover::after { content: 'British Indian Ocean Territory'; }
+.fi.fi-io.fi-alt:hover::after { content: 'Британская территория в Индийском океане'; }
+.fi.fi-bn.fi-alt-en:hover::after { content: 'Brunei Darussalam'; }
+.fi.fi-bn.fi-alt:hover::after { content: 'Бруней-Даруссалам'; }
+.fi.fi-bg.fi-alt-en:hover::after { content: 'Bulgaria'; }
+.fi.fi-bg.fi-alt:hover::after { content: 'Болгария'; }
+.fi.fi-bf.fi-alt-en:hover::after { content: 'Burkina Faso'; }
+.fi.fi-bf.fi-alt:hover::after { content: 'Буркина-Фасо'; }
+.fi.fi-bi.fi-alt-en:hover::after { content: 'Burundi'; }
+.fi.fi-bi.fi-alt:hover::after { content: 'Бурунди'; }
+.fi.fi-cv.fi-alt-en:hover::after { content: 'Cabo Verde'; }
+.fi.fi-cv.fi-alt:hover::after { content: 'Кабо-Верде'; }
+.fi.fi-kh.fi-alt-en:hover::after { content: 'Cambodia'; }
+.fi.fi-kh.fi-alt:hover::after { content: 'Камбоджа'; }
+.fi.fi-cm.fi-alt-en:hover::after { content: 'Cameroon'; }
+.fi.fi-cm.fi-alt:hover::after { content: 'Камерун'; }
+.fi.fi-ca.fi-alt-en:hover::after { content: 'Canada'; }
+.fi.fi-ca.fi-alt:hover::after { content: 'Канада'; }
+.fi.fi-ky.fi-alt-en:hover::after { content: 'Cayman Islands'; }
+.fi.fi-ky.fi-alt:hover::after { content: 'Каймановы острова'; }
+.fi.fi-cf.fi-alt-en:hover::after { content: 'Central African Republic'; }
+.fi.fi-cf.fi-alt:hover::after { content: 'Центральноафриканская Республика'; }
+.fi.fi-td.fi-alt-en:hover::after { content: 'Chad'; }
+.fi.fi-td.fi-alt:hover::after { content: 'Чад'; }
+.fi.fi-cl.fi-alt-en:hover::after { content: 'Chile'; }
+.fi.fi-cl.fi-alt:hover::after { content: 'Чили'; }
+.fi.fi-cn.fi-alt-en:hover::after { content: 'China'; }
+.fi.fi-cn.fi-alt:hover::after { content: 'Китай'; }
+.fi.fi-cx.fi-alt-en:hover::after { content: 'Christmas Island'; }
+.fi.fi-cx.fi-alt:hover::after { content: 'Остров Рождества'; }
+.fi.fi-cc.fi-alt-en:hover::after { content: 'Cocos (Keeling) Islands'; }
+.fi.fi-cc.fi-alt:hover::after { content: 'Кокосовые острова (Килинг)'; }
+.fi.fi-co.fi-alt-en:hover::after { content: 'Colombia'; }
+.fi.fi-co.fi-alt:hover::after { content: 'Колумбия'; }
+.fi.fi-km.fi-alt-en:hover::after { content: 'Comoros'; }
+.fi.fi-km.fi-alt:hover::after { content: 'Коморские острова'; }
+.fi.fi-ck.fi-alt-en:hover::after { content: 'Cook Islands'; }
+.fi.fi-ck.fi-alt:hover::after { content: 'Острова Кука'; }
+.fi.fi-cr.fi-alt-en:hover::after { content: 'Costa Rica'; }
+.fi.fi-cr.fi-alt:hover::after { content: 'Коста-Рика'; }
+.fi.fi-hr.fi-alt-en:hover::after { content: 'Croatia'; }
+.fi.fi-hr.fi-alt:hover::after { content: 'Хорватия'; }
+.fi.fi-cu.fi-alt-en:hover::after { content: 'Cuba'; }
+.fi.fi-cu.fi-alt:hover::after { content: 'Куба'; }
+.fi.fi-cw.fi-alt-en:hover::after { content: 'Curaçao'; }
+.fi.fi-cw.fi-alt:hover::after { content: 'Кюрасао'; }
+.fi.fi-cy.fi-alt-en:hover::after { content: 'Cyprus'; }
+.fi.fi-cy.fi-alt:hover::after { content: 'Кипр'; }
+.fi.fi-cz.fi-alt-en:hover::after { content: 'Czech Republic'; }
+.fi.fi-cz.fi-alt:hover::after { content: 'Чешская Республика'; }
+.fi.fi-ci.fi-alt-en:hover::after { content: "Côte d'Ivoire"; }
+.fi.fi-ci.fi-alt:hover::after { content: 'Кот-д’Ивуар'; }
+.fi.fi-cd.fi-alt-en:hover::after { content: 'Democratic Republic of the Congo'; }
+.fi.fi-cd.fi-alt:hover::after { content: 'Демократическая Республика Конго'; }
+.fi.fi-dk.fi-alt-en:hover::after { content: 'Denmark'; }
+.fi.fi-dk.fi-alt:hover::after { content: 'Дания'; }
+.fi.fi-dj.fi-alt-en:hover::after { content: 'Djibouti'; }
+.fi.fi-dj.fi-alt:hover::after { content: 'Джибути'; }
+.fi.fi-dm.fi-alt-en:hover::after { content: 'Dominica'; }
+.fi.fi-dm.fi-alt:hover::after { content: 'Доминика'; }
+.fi.fi-do.fi-alt-en:hover::after { content: 'Dominican Republic'; }
+.fi.fi-do.fi-alt:hover::after { content: 'Доминиканская Республика'; }
+.fi.fi-ec.fi-alt-en:hover::after { content: 'Ecuador'; }
+.fi.fi-ec.fi-alt:hover::after { content: 'Эквадор'; }
+.fi.fi-eg.fi-alt-en:hover::after { content: 'Egypt'; }
+.fi.fi-eg.fi-alt:hover::after { content: 'Египет'; }
+.fi.fi-sv.fi-alt-en:hover::after { content: 'El Salvador'; }
+.fi.fi-sv.fi-alt:hover::after { content: 'Сальвадор'; }
+.fi.fi-gq.fi-alt-en:hover::after { content: 'Equatorial Guinea'; }
+.fi.fi-gq.fi-alt:hover::after { content: 'Экваториальная Гвинея'; }
+.fi.fi-er.fi-alt-en:hover::after { content: 'Eritrea'; }
+.fi.fi-er.fi-alt:hover::after { content: 'Эритрия'; }
+.fi.fi-ee.fi-alt-en:hover::after { content: 'Estonia'; }
+.fi.fi-ee.fi-alt:hover::after { content: 'Эстонтя'; }
+.fi.fi-sz.fi-alt-en:hover::after { content: 'Eswatini'; }
+.fi.fi-sz.fi-alt:hover::after { content: 'Эсватини'; }
+.fi.fi-et.fi-alt-en:hover::after { content: 'Ethiopia'; }
+.fi.fi-et.fi-alt:hover::after { content: 'Эфиопия'; }
+.fi.fi-fk.fi-alt-en:hover::after { content: 'Falkland Islands'; }
+.fi.fi-fk.fi-alt:hover::after { content: 'Фолклендские острова'; }
+.fi.fi-fo.fi-alt-en:hover::after { content: 'Faroe Islands'; }
+.fi.fi-fo.fi-alt:hover::after { content: 'Фарерские острова'; }
+.fi.fi-fm.fi-alt-en:hover::after { content: 'Federated States of Micronesia'; }
+.fi.fi-fm.fi-alt:hover::after { content: 'Федеративные Штаты Микронезии'; }
+.fi.fi-fj.fi-alt-en:hover::after { content: 'Fiji'; }
+.fi.fi-fj.fi-alt:hover::after { content: 'Фиджи'; }
+.fi.fi-fi.fi-alt-en:hover::after { content: 'Finland'; }
+.fi.fi-fi.fi-alt:hover::after { content: 'Финляндия'; }
+.fi.fi-fr.fi-alt-en:hover::after { content: 'France'; }
+.fi.fi-fr.fi-alt:hover::after { content: 'Франция'; }
+.fi.fi-gf.fi-alt-en:hover::after { content: 'French Guiana'; }
+.fi.fi-gf.fi-alt:hover::after { content: 'Французская Гвиана'; }
+.fi.fi-pf.fi-alt-en:hover::after { content: 'French Polynesia'; }
+.fi.fi-pf.fi-alt:hover::after { content: 'Французская Полинезия'; }
+.fi.fi-tf.fi-alt-en:hover::after { content: 'French Southern Territories'; }
+.fi.fi-tf.fi-alt:hover::after { content: 'Французские Южные Территории'; }
+.fi.fi-ga.fi-alt-en:hover::after { content: 'Gabon'; }
+.fi.fi-ga.fi-alt:hover::after { content: 'Габон'; }
+.fi.fi-gm.fi-alt-en:hover::after { content: 'Gambia'; }
+.fi.fi-gm.fi-alt:hover::after { content: 'Гамбия'; }
+.fi.fi-ge.fi-alt-en:hover::after { content: 'Georgia'; }
+.fi.fi-ge.fi-alt:hover::after { content: 'Грузия'; }
+.fi.fi-de.fi-alt-en:hover::after { content: 'Germany'; }
+.fi.fi-de.fi-alt:hover::after { content: 'Германия'; }
+.fi.fi-gh.fi-alt-en:hover::after { content: 'Ghana'; }
+.fi.fi-gh.fi-alt:hover::after { content: 'Гана'; }
+.fi.fi-gi.fi-alt-en:hover::after { content: 'Gibraltar'; }
+.fi.fi-gi.fi-alt:hover::after { content: 'Гибралтар'; }
+.fi.fi-gr.fi-alt-en:hover::after { content: 'Greece'; }
+.fi.fi-gr.fi-alt:hover::after { content: 'Греция'; }
+.fi.fi-gl.fi-alt-en:hover::after { content: 'Greenland'; }
+.fi.fi-gl.fi-alt:hover::after { content: 'Гренландия'; }
+.fi.fi-gd.fi-alt-en:hover::after { content: 'Grenada'; }
+.fi.fi-gd.fi-alt:hover::after { content: 'Гренада'; }
+.fi.fi-gp.fi-alt-en:hover::after { content: 'Guadeloupe'; }
+.fi.fi-gp.fi-alt:hover::after { content: 'Гваделупа'; }
+.fi.fi-gu.fi-alt-en:hover::after { content: 'Guam'; }
+.fi.fi-gu.fi-alt:hover::after { content: 'Гуам'; }
+.fi.fi-gt.fi-alt-en:hover::after { content: 'Guatemala'; }
+.fi.fi-gt.fi-alt:hover::after { content: 'Гватемала'; }
+.fi.fi-gg.fi-alt-en:hover::after { content: 'Guernsey'; }
+.fi.fi-gg.fi-alt:hover::after { content: 'Гернси'; }
+.fi.fi-gn.fi-alt-en:hover::after { content: 'Guinea'; }
+.fi.fi-gn.fi-alt:hover::after { content: 'Гвинея'; }
+.fi.fi-gw.fi-alt-en:hover::after { content: 'Guinea-Bissau'; }
+.fi.fi-gw.fi-alt:hover::after { content: 'Гвинея-Бисау'; }
+.fi.fi-gy.fi-alt-en:hover::after { content: 'Guyana'; }
+.fi.fi-gy.fi-alt:hover::after { content: 'Гайана'; }
+.fi.fi-ht.fi-alt-en:hover::after { content: 'Haiti'; }
+.fi.fi-ht.fi-alt:hover::after { content: 'Гаити'; }
+.fi.fi-hm.fi-alt-en:hover::after { content: 'Heard Island and McDonald Islands'; }
+.fi.fi-hm.fi-alt:hover::after { content: 'Остров Херд и острова Макдональд'; }
+.fi.fi-va.fi-alt-en:hover::after { content: 'Holy See'; }
+.fi.fi-va.fi-alt:hover::after { content: 'Ватикан'; }
+.fi.fi-hn.fi-alt-en:hover::after { content: 'Honduras'; }
+.fi.fi-hn.fi-alt:hover::after { content: 'Гондурас'; }
+.fi.fi-hk.fi-alt-en:hover::after { content: 'Hong Kong'; }
+.fi.fi-hk.fi-alt:hover::after { content: 'Гонконг'; }
+.fi.fi-hu.fi-alt-en:hover::after { content: 'Hungary'; }
+.fi.fi-hu.fi-alt:hover::after { content: 'Венгрия'; }
+.fi.fi-is.fi-alt-en:hover::after { content: 'Iceland'; }
+.fi.fi-is.fi-alt:hover::after { content: 'Исландия'; }
+.fi.fi-in.fi-alt-en:hover::after { content: 'India'; }
+.fi.fi-in.fi-alt:hover::after { content: 'Индия'; }
+.fi.fi-id.fi-alt-en:hover::after { content: 'Indonesia'; }
+.fi.fi-id.fi-alt:hover::after { content: 'Индонезия'; }
+.fi.fi-ir.fi-alt-en:hover::after { content: 'Iran'; }
+.fi.fi-ir.fi-alt:hover::after { content: 'Иран'; }
+.fi.fi-iq.fi-alt-en:hover::after { content: 'Iraq'; }
+.fi.fi-iq.fi-alt:hover::after { content: 'Ирак'; }
+.fi.fi-ie.fi-alt-en:hover::after { content: 'Ireland'; }
+.fi.fi-ie.fi-alt:hover::after { content: 'Ирландия'; }
+.fi.fi-im.fi-alt-en:hover::after { content: 'Isle of Man'; }
+.fi.fi-im.fi-alt:hover::after { content: 'Остров Мэн'; }
+.fi.fi-il.fi-alt-en:hover::after { content: 'Israel'; }
+.fi.fi-il.fi-alt:hover::after { content: 'Израиль'; }
+.fi.fi-it.fi-alt-en:hover::after { content: 'Italy'; }
+.fi.fi-it.fi-alt:hover::after { content: 'Италия'; }
+.fi.fi-jm.fi-alt-en:hover::after { content: 'Jamaica'; }
+.fi.fi-jm.fi-alt:hover::after { content: 'Ямайка'; }
+.fi.fi-jp.fi-alt-en:hover::after { content: 'Japan'; }
+.fi.fi-jp.fi-alt:hover::after { content: 'Япония'; }
+.fi.fi-je.fi-alt-en:hover::after { content: 'Jersey'; }
+.fi.fi-je.fi-alt:hover::after { content: 'Джерси'; }
+.fi.fi-jo.fi-alt-en:hover::after { content: 'Jordan'; }
+.fi.fi-jo.fi-alt:hover::after { content: 'Иордания'; }
+.fi.fi-kz.fi-alt-en:hover::after { content: 'Kazakhstan'; }
+.fi.fi-kz.fi-alt:hover::after { content: 'Казахстан'; }
+.fi.fi-ke.fi-alt-en:hover::after { content: 'Kenya'; }
+.fi.fi-ke.fi-alt:hover::after { content: 'Кения'; }
+.fi.fi-ki.fi-alt-en:hover::after { content: 'Kiribati'; }
+.fi.fi-ki.fi-alt:hover::after { content: 'Кирибати'; }
+.fi.fi-kw.fi-alt-en:hover::after { content: 'Kuwait'; }
+.fi.fi-kw.fi-alt:hover::after { content: 'Кувейт'; }
+.fi.fi-kg.fi-alt-en:hover::after { content: 'Kyrgyzstan'; }
+.fi.fi-kg.fi-alt:hover::after { content: 'Кыргызстан'; }
+.fi.fi-la.fi-alt-en:hover::after { content: 'Laos'; }
+.fi.fi-la.fi-alt:hover::after { content: 'Лаос'; }
+.fi.fi-lv.fi-alt-en:hover::after { content: 'Latvia'; }
+.fi.fi-lv.fi-alt:hover::after { content: 'Латвия'; }
+.fi.fi-lb.fi-alt-en:hover::after { content: 'Lebanon'; }
+.fi.fi-lb.fi-alt:hover::after { content: 'Ливан'; }
+.fi.fi-ls.fi-alt-en:hover::after { content: 'Lesotho'; }
+.fi.fi-ls.fi-alt:hover::after { content: 'Лесото'; }
+.fi.fi-lr.fi-alt-en:hover::after { content: 'Liberia'; }
+.fi.fi-lr.fi-alt:hover::after { content: 'Либерия'; }
+.fi.fi-ly.fi-alt-en:hover::after { content: 'Libya'; }
+.fi.fi-ly.fi-alt:hover::after { content: 'Ливия'; }
+.fi.fi-li.fi-alt-en:hover::after { content: 'Liechtenstein'; }
+.fi.fi-li.fi-alt:hover::after { content: 'Лихтенштейн'; }
+.fi.fi-lt.fi-alt-en:hover::after { content: 'Lithuania'; }
+.fi.fi-lt.fi-alt:hover::after { content: 'Литва'; }
+.fi.fi-lu.fi-alt-en:hover::after { content: 'Luxembourg'; }
+.fi.fi-lu.fi-alt:hover::after { content: 'Люксембург'; }
+.fi.fi-mo.fi-alt-en:hover::after { content: 'Macau'; }
+.fi.fi-mo.fi-alt:hover::after { content: 'Макао'; }
+.fi.fi-mg.fi-alt-en:hover::after { content: 'Madagascar'; }
+.fi.fi-mg.fi-alt:hover::after { content: 'Магадаскар'; }
+.fi.fi-mw.fi-alt-en:hover::after { content: 'Malawi'; }
+.fi.fi-mw.fi-alt:hover::after { content: 'Малави'; }
+.fi.fi-my.fi-alt-en:hover::after { content: 'Malaysia'; }
+.fi.fi-my.fi-alt:hover::after { content: 'Малайзия'; }
+.fi.fi-mv.fi-alt-en:hover::after { content: 'Maldives'; }
+.fi.fi-mv.fi-alt:hover::after { content: 'Мальдивы'; }
+.fi.fi-ml.fi-alt-en:hover::after { content: 'Mali'; }
+.fi.fi-ml.fi-alt:hover::after { content: 'Мали'; }
+.fi.fi-mt.fi-alt-en:hover::after { content: 'Malta'; }
+.fi.fi-mt.fi-alt:hover::after { content: 'Мальта'; }
+.fi.fi-mh.fi-alt-en:hover::after { content: 'Marshall Islands'; }
+.fi.fi-mh.fi-alt:hover::after { content: 'Маршалловы острова'; }
+.fi.fi-mq.fi-alt-en:hover::after { content: 'Martinique'; }
+.fi.fi-mq.fi-alt:hover::after { content: 'Мартиника'; }
+.fi.fi-mr.fi-alt-en:hover::after { content: 'Mauritania'; }
+.fi.fi-mr.fi-alt:hover::after { content: 'Мавритания'; }
+.fi.fi-mu.fi-alt-en:hover::after { content: 'Mauritius'; }
+.fi.fi-mu.fi-alt:hover::after { content: 'Маврикий'; }
+.fi.fi-yt.fi-alt-en:hover::after { content: 'Mayotte'; }
+.fi.fi-yt.fi-alt:hover::after { content: 'Майотта'; }
+.fi.fi-mx.fi-alt-en:hover::after { content: 'Mexico'; }
+.fi.fi-mx.fi-alt:hover::after { content: 'Мексика'; }
+.fi.fi-md.fi-alt-en:hover::after { content: 'Moldova'; }
+.fi.fi-md.fi-alt:hover::after { content: 'Молдова'; }
+.fi.fi-mc.fi-alt-en:hover::after { content: 'Monaco'; }
+.fi.fi-mc.fi-alt:hover::after { content: 'Монако'; }
+.fi.fi-mn.fi-alt-en:hover::after { content: 'Mongolia'; }
+.fi.fi-mn.fi-alt:hover::after { content: 'Монголия'; }
+.fi.fi-me.fi-alt-en:hover::after { content: 'Montenegro'; }
+.fi.fi-me.fi-alt:hover::after { content: 'Черногория'; }
+.fi.fi-ms.fi-alt-en:hover::after { content: 'Montserrat'; }
+.fi.fi-ms.fi-alt:hover::after { content: 'Монтсеррат'; }
+.fi.fi-ma.fi-alt-en:hover::after { content: 'Morocco'; }
+.fi.fi-ma.fi-alt:hover::after { content: 'Марокко'; }
+.fi.fi-mz.fi-alt-en:hover::after { content: 'Mozambique'; }
+.fi.fi-mz.fi-alt:hover::after { content: 'Мозамбик'; }
+.fi.fi-mm.fi-alt-en:hover::after { content: 'Myanmar'; }
+.fi.fi-mm.fi-alt:hover::after { content: 'Мьянма'; }
+.fi.fi-na.fi-alt-en:hover::after { content: 'Namibia'; }
+.fi.fi-na.fi-alt:hover::after { content: 'Намибия'; }
+.fi.fi-nr.fi-alt-en:hover::after { content: 'Nauru'; }
+.fi.fi-nr.fi-alt:hover::after { content: 'Науру'; }
+.fi.fi-np.fi-alt-en:hover::after { content: 'Nepal'; }
+.fi.fi-np.fi-alt:hover::after { content: 'Непал'; }
+.fi.fi-nl.fi-alt-en:hover::after { content: 'Netherlands'; }
+.fi.fi-nl.fi-alt:hover::after { content: 'Нидерланды'; }
+.fi.fi-nc.fi-alt-en:hover::after { content: 'New Caledonia'; }
+.fi.fi-nc.fi-alt:hover::after { content: 'Новая Каледония'; }
+.fi.fi-nz.fi-alt-en:hover::after { content: 'New Zealand'; }
+.fi.fi-nz.fi-alt:hover::after { content: 'Новая Зеландия'; }
+.fi.fi-ni.fi-alt-en:hover::after { content: 'Nicaragua'; }
+.fi.fi-ni.fi-alt:hover::after { content: 'Никарагуа'; }
+.fi.fi-ne.fi-alt-en:hover::after { content: 'Niger'; }
+.fi.fi-ne.fi-alt:hover::after { content: 'Нигер'; }
+.fi.fi-ng.fi-alt-en:hover::after { content: 'Nigeria'; }
+.fi.fi-ng.fi-alt:hover::after { content: 'Нигерия'; }
+.fi.fi-nu.fi-alt-en:hover::after { content: 'Niue'; }
+.fi.fi-nu.fi-alt:hover::after { content: 'Ниуэ'; }
+.fi.fi-nf.fi-alt-en:hover::after { content: 'Norfolk Island'; }
+.fi.fi-nf.fi-alt:hover::after { content: 'Остров Норфолк'; }
+.fi.fi-kp.fi-alt-en:hover::after { content: 'North Korea'; }
+.fi.fi-kp.fi-alt:hover::after { content: 'Северная Корея'; }
+.fi.fi-mk.fi-alt-en:hover::after { content: 'North Macedonia'; }
+.fi.fi-mk.fi-alt:hover::after { content: 'Северная Македония'; }
+.fi.fi-mp.fi-alt-en:hover::after { content: 'Northern Mariana Islands'; }
+.fi.fi-mp.fi-alt:hover::after { content: 'Северные Марианские острова'; }
+.fi.fi-no.fi-alt-en:hover::after { content: 'Norway'; }
+.fi.fi-no.fi-alt:hover::after { content: 'Норвегия'; }
+.fi.fi-om.fi-alt-en:hover::after { content: 'Oman'; }
+.fi.fi-om.fi-alt:hover::after { content: 'Оман'; }
+.fi.fi-pk.fi-alt-en:hover::after { content: 'Pakistan'; }
+.fi.fi-pk.fi-alt:hover::after { content: 'Пакистан'; }
+.fi.fi-pw.fi-alt-en:hover::after { content: 'Palau'; }
+.fi.fi-pw.fi-alt:hover::after { content: 'Палау'; }
+.fi.fi-pa.fi-alt-en:hover::after { content: 'Panama'; }
+.fi.fi-pa.fi-alt:hover::after { content: 'Панама'; }
+.fi.fi-pg.fi-alt-en:hover::after { content: 'Papua New Guinea'; }
+.fi.fi-pg.fi-alt:hover::after { content: 'Папуа — Новая Гвинея'; }
+.fi.fi-py.fi-alt-en:hover::after { content: 'Paraguay'; }
+.fi.fi-py.fi-alt:hover::after { content: 'Парагвай'; }
+.fi.fi-pe.fi-alt-en:hover::after { content: 'Peru'; }
+.fi.fi-pe.fi-alt:hover::after { content: 'Перу'; }
+.fi.fi-ph.fi-alt-en:hover::after { content: 'Philippines'; }
+.fi.fi-ph.fi-alt:hover::after { content: 'Филиппины'; }
+.fi.fi-pn.fi-alt-en:hover::after { content: 'Pitcairn'; }
+.fi.fi-pn.fi-alt:hover::after { content: 'Питкэрн'; }
+.fi.fi-pl.fi-alt-en:hover::after { content: 'Poland'; }
+.fi.fi-pl.fi-alt:hover::after { content: 'Польша'; }
+.fi.fi-pt.fi-alt-en:hover::after { content: 'Portugal'; }
+.fi.fi-pt.fi-alt:hover::after { content: 'Португалия'; }
+.fi.fi-pr.fi-alt-en:hover::after { content: 'Puerto Rico'; }
+.fi.fi-pr.fi-alt:hover::after { content: 'Пуэрто-Рико'; }
+.fi.fi-qa.fi-alt-en:hover::after { content: 'Qatar'; }
+.fi.fi-qa.fi-alt:hover::after { content: 'Катар'; }
+.fi.fi-cg.fi-alt-en:hover::after { content: 'Republic of the Congo'; }
+.fi.fi-cg.fi-alt:hover::after { content: 'Республика Конго'; }
+.fi.fi-ro.fi-alt-en:hover::after { content: 'Romania'; }
+.fi.fi-ro.fi-alt:hover::after { content: 'Румыния'; }
+.fi.fi-ru.fi-alt-en:hover::after { content: 'Russia'; }
+.fi.fi-ru.fi-alt:hover::after { content: 'Россия';}
+.fi.fi-rw.fi-alt-en:hover::after { content: 'Rwanda'; }
+.fi.fi-rw.fi-alt:hover::after { content: 'Руанда'; }
+.fi.fi-re.fi-alt-en:hover::after { content: 'Réunion'; }
+.fi.fi-re.fi-alt:hover::after { content: 'Реюньон'; }
+.fi.fi-bl.fi-alt-en:hover::after { content: 'Saint Barthélemy'; }
+.fi.fi-bl.fi-alt:hover::after { content: 'Сен-Бартельми'; }
+.fi.fi-sh.fi-alt-en:hover::after { content: 'Saint Helena, Ascension and Tristan da Cunha'; }
+.fi.fi-sh.fi-alt:hover::after { content: 'Святая Елена, Остров вознесения, Тристан-да-Кунья'; }
+.fi.fi-kn.fi-alt-en:hover::after { content: 'Saint Kitts and Nevis'; }
+.fi.fi-kn.fi-alt:hover::after { content: 'Сент-Китс и Невис'; }
+.fi.fi-lc.fi-alt-en:hover::after { content: 'Saint Lucia'; }
+.fi.fi-lc.fi-alt:hover::after { content: 'Сент-Люсия'; }
+.fi.fi-mf.fi-alt-en:hover::after { content: 'Saint Martin'; }
+.fi.fi-mf.fi-alt:hover::after { content: 'Сен-Мартен'; }
+.fi.fi-pm.fi-alt-en:hover::after { content: 'Saint Pierre and Miquelon'; }
+.fi.fi-pm.fi-alt:hover::after { content: 'Сен-Пьер и Микелон'; }
+.fi.fi-vc.fi-alt-en:hover::after { content: 'Saint Vincent and the Grenadines'; }
+.fi.fi-vc.fi-alt:hover::after { content: 'Сент-Винсент и Гренадины'; }
+.fi.fi-ws.fi-alt-en:hover::after { content: 'Samoa'; }
+.fi.fi-ws.fi-alt:hover::after { content: 'Самоа'; }
+.fi.fi-sm.fi-alt-en:hover::after { content: 'San Marino'; }
+.fi.fi-sm.fi-alt:hover::after { content: 'Сан-Марино'; }
+.fi.fi-st.fi-alt-en:hover::after { content: 'Sao Tome and Principe'; }
+.fi.fi-st.fi-alt:hover::after { content: 'Сан-Томе и Принсипи'; }
+.fi.fi-sa.fi-alt-en:hover::after { content: 'Saudi Arabia'; }
+.fi.fi-sa.fi-alt:hover::after { content: 'Саудовская Аравия'; }
+.fi.fi-sn.fi-alt-en:hover::after { content: 'Senegal'; }
+.fi.fi-sn.fi-alt:hover::after { content: 'Сенегал'; }
+.fi.fi-rs.fi-alt-en:hover::after { content: 'Serbia'; }
+.fi.fi-rs.fi-alt:hover::after { content: 'Сербия'; }
+.fi.fi-sc.fi-alt-en:hover::after { content: 'Seychelles'; }
+.fi.fi-sc.fi-alt:hover::after { content: 'Сейшельские острова'; }
+.fi.fi-sl.fi-alt-en:hover::after { content: 'Sierra Leone'; }
+.fi.fi-sl.fi-alt:hover::after { content: 'Сьерра-Леоне'; }
+.fi.fi-sg.fi-alt-en:hover::after { content: 'Singapore'; }
+.fi.fi-sg.fi-alt:hover::after { content: 'Сингапур'; }
+.fi.fi-sx.fi-alt-en:hover::after { content: 'Sint Maarten'; }
+.fi.fi-sx.fi-alt:hover::after { content: 'Синт-Мартен'; }
+.fi.fi-sk.fi-alt-en:hover::after { content: 'Slovakia'; }
+.fi.fi-sk.fi-alt:hover::after { content: 'Словакия'; }
+.fi.fi-si.fi-alt-en:hover::after { content: 'Slovenia'; }
+.fi.fi-si.fi-alt:hover::after { content: 'Словения'; }
+.fi.fi-sb.fi-alt-en:hover::after { content: 'Solomon Islands'; }
+.fi.fi-sb.fi-alt:hover::after { content: 'Соломоновы острова'; }
+.fi.fi-so.fi-alt-en:hover::after { content: 'Somalia'; }
+.fi.fi-so.fi-alt:hover::after { content: 'Сомали'; }
+.fi.fi-za.fi-alt-en:hover::after { content: 'South Africa'; }
+.fi.fi-za.fi-alt:hover::after { content: 'Южно-Африканская Республика'; }
+.fi.fi-gs.fi-alt-en:hover::after { content: 'South Georgia and the South Sandwich Islands'; }
+.fi.fi-gs.fi-alt:hover::after { content: 'Южная Георгия и Южные Сандвичевы острова'; }
+.fi.fi-kr.fi-alt-en:hover::after { content: 'South Korea'; }
+.fi.fi-kr.fi-alt:hover::after { content: 'Южная Корея'; }
+.fi.fi-ss.fi-alt-en:hover::after { content: 'South Sudan'; }
+.fi.fi-ss.fi-alt:hover::after { content: 'Южный Судан'; }
+.fi.fi-es.fi-alt-en:hover::after { content: 'Spain'; }
+.fi.fi-es.fi-alt:hover::after { content: 'Испания'; }
+.fi.fi-lk.fi-alt-en:hover::after { content: 'Sri Lanka'; }
+.fi.fi-lk.fi-alt:hover::after { content: 'Шри-Ланка'; }
+.fi.fi-ps.fi-alt-en:hover::after { content: 'State of Palestine'; }
+.fi.fi-ps.fi-alt:hover::after { content: 'Государство Палестина'; }
+.fi.fi-sd.fi-alt-en:hover::after { content: 'Sudan'; }
+.fi.fi-sd.fi-alt:hover::after { content: 'Судан'; }
+.fi.fi-sr.fi-alt-en:hover::after { content: 'Suriname'; }
+.fi.fi-sr.fi-alt:hover::after { content: 'Суринам'; }
+.fi.fi-sj.fi-alt-en:hover::after { content: 'Svalbard and Jan Mayen'; }
+.fi.fi-sj.fi-alt:hover::after { content: 'Шпицберген и Ян-Майен'; }
+.fi.fi-se.fi-alt-en:hover::after { content: 'Sweden'; }
+.fi.fi-se.fi-alt:hover::after { content: 'Швеция'; }
+.fi.fi-ch.fi-alt-en:hover::after { content: 'Switzerland'; }
+.fi.fi-ch.fi-alt:hover::after { content: 'Швейцария'; }
+.fi.fi-sy.fi-alt-en:hover::after { content: 'Syria'; }
+.fi.fi-sy.fi-alt:hover::after { content: 'Сирия'; }
+.fi.fi-tw.fi-alt-en:hover::after { content: 'Taiwan'; }
+.fi.fi-tw.fi-alt:hover::after { content: 'Тайвань'; }
+.fi.fi-tj.fi-alt-en:hover::after { content: 'Tajikistan'; }
+.fi.fi-tj.fi-alt:hover::after { content: 'Таджикистан'; }
+.fi.fi-tz.fi-alt-en:hover::after { content: 'Tanzania'; }
+.fi.fi-tz.fi-alt:hover::after { content: 'Танзания'; }
+.fi.fi-th.fi-alt-en:hover::after { content: 'Thailand'; }
+.fi.fi-th.fi-alt:hover::after { content: 'Таиланд'; }
+.fi.fi-tl.fi-alt-en:hover::after { content: 'Timor-Leste'; }
+.fi.fi-tl.fi-alt:hover::after { content: 'Тимор-Лесте'; }
+.fi.fi-tg.fi-alt-en:hover::after { content: 'Togo'; }
+.fi.fi-tg.fi-alt:hover::after { content: 'Того'; }
+.fi.fi-tk.fi-alt-en:hover::after { content: 'Tokelau'; }
+.fi.fi-tk.fi-alt:hover::after { content: 'Токелау'; }
+.fi.fi-to.fi-alt-en:hover::after { content: 'Tonga'; }
+.fi.fi-to.fi-alt:hover::after { content: 'Тонга'; }
+.fi.fi-tt.fi-alt-en:hover::after { content: 'Trinidad and Tobago'; }
+.fi.fi-tt.fi-alt:hover::after { content: 'Тринидад и Тобаго'; }
+.fi.fi-tn.fi-alt-en:hover::after { content: 'Tunisia'; }
+.fi.fi-tn.fi-alt:hover::after { content: 'Тунис'; }
+.fi.fi-tr.fi-alt-en:hover::after { content: 'Turkey'; }
+.fi.fi-tr.fi-alt:hover::after { content: 'Турция'; }
+.fi.fi-tm.fi-alt-en:hover::after { content: 'Turkmenistan'; }
+.fi.fi-tm.fi-alt:hover::after { content: 'Туркмения'; }
+.fi.fi-tc.fi-alt-en:hover::after { content: 'Turks and Caicos Islands'; }
+.fi.fi-tc.fi-alt:hover::after { content: 'Острова Теркс и Кайкос'; }
+.fi.fi-tv.fi-alt-en:hover::after { content: 'Tuvalu'; }
+.fi.fi-tv.fi-alt:hover::after { content: 'Тувалу'; }
+.fi.fi-ug.fi-alt-en:hover::after { content: 'Uganda'; }
+.fi.fi-ug.fi-alt:hover::after { content: 'Уганда'; }
+.fi.fi-ua.fi-alt-en:hover::after { content: 'Ukraine'; }
+.fi.fi-ua.fi-alt:hover::after { content: 'Украина'; }
+.fi.fi-ae.fi-alt-en:hover::after { content: 'United Arab Emirates'; }
+.fi.fi-ae.fi-alt:hover::after { content: 'Объединенные Арабские Эмираты'; }
+.fi.fi-gb.fi-alt-en:hover::after { content: 'United Kingdom'; }
+.fi.fi-gb.fi-alt:hover::after { content: 'Великобритания'; }
+.fi.fi-um.fi-alt-en:hover::after { content: 'United States Minor Outlying Islands'; }
+.fi.fi-um.fi-alt:hover::after { content: 'Внешние малые острова США'; }
+.fi.fi-us.fi-alt-en:hover::after { content: 'United States of America'; }
+.fi.fi-us.fi-alt:hover::after { content: 'США'; }
+.fi.fi-uy.fi-alt-en:hover::after { content: 'Uruguay'; }
+.fi.fi-uy.fi-alt:hover::after { content: 'Уругвай'; }
+.fi.fi-uz.fi-alt-en:hover::after { content: 'Uzbekistan'; }
+.fi.fi-uz.fi-alt:hover::after { content: 'Узбекистан'; }
+.fi.fi-vu.fi-alt-en:hover::after { content: 'Vanuatu'; }
+.fi.fi-vu.fi-alt:hover::after { content: 'Вануату'; }
+.fi.fi-ve.fi-alt-en:hover::after { content: 'Venezuela'; }
+.fi.fi-ve.fi-alt:hover::after { content: 'Венесуэла'; }
+.fi.fi-vn.fi-alt-en:hover::after { content: 'Vietnam'; }
+.fi.fi-vn.fi-alt:hover::after { content: 'Вьетнам'; }
+.fi.fi-vg.fi-alt-en:hover::after { content: 'Virgin Islands (British)'; }
+.fi.fi-vg.fi-alt:hover::after { content: 'Виргинские острова (Британские)'; }
+.fi.fi-vi.fi-alt-en:hover::after { content: 'Virgin Islands (U.S.)'; }
+.fi.fi-vi.fi-alt:hover::after { content: 'Виргинские острова (США)'; }
+.fi.fi-wf.fi-alt-en:hover::after { content: 'Wallis and Futuna'; }
+.fi.fi-wf.fi-alt:hover::after { content: 'Уоллис и Футуна'; }
+.fi.fi-eh.fi-alt-en:hover::after { content: 'Western Sahara'; }
+.fi.fi-eh.fi-alt:hover::after { content: 'Западная Сахара'; }
+.fi.fi-ye.fi-alt-en:hover::after { content: 'Yemen'; }
+.fi.fi-ye.fi-alt:hover::after { content: 'Йемен'; }
+.fi.fi-zm.fi-alt-en:hover::after { content: 'Zambia'; }
+.fi.fi-zm.fi-alt:hover::after { content: 'Замбия'; }
+.fi.fi-zw.fi-alt-en:hover::after { content: 'Zimbabwe'; }
+.fi.fi-zw.fi-alt:hover::after { content: 'Зимбабве'; }
+.fi.fi-ac.fi-alt-en:hover::after { content: 'Ascension Island'; }
+.fi.fi-ac.fi-alt:hover::after { content: 'Остров Вознесения'; }
+.fi.fi-ic.fi-alt-en:hover::after { content: 'Canary Islands'; }
+.fi.fi-ic.fi-alt:hover::after { content: 'Канарские острова'; }
+.fi.fi-es-ct.fi-alt-en:hover::after { content: 'Catalonia'; }
+.fi.fi-es-ct.fi-alt:hover::after { content: 'Каталония'; }
+.fi.fi-es-pv.fi-alt-en:hover::after { content: 'Basque Country'; }
+.fi.fi-es-pv.fi-alt:hover::after { content: 'Баскская страна'; }
+.fi.fi-cefta.fi-alt-en:hover::after { content: 'Central European Free Trade Agreement'; }
+.fi.fi-cefta.fi-alt:hover::after { content: 'Центральноевропейское соглашение о свободной торговле'; }
+.fi.fi-ea.fi-alt-en:hover::after { content: 'Ceuta & Melilla'; }
+.fi.fi-ea.fi-alt:hover::after { content: 'Сеута и Мелилья'; }
+.fi.fi-cp.fi-alt-en:hover::after { content: 'Clipperton Island'; }
+.fi.fi-cp.fi-alt:hover::after { content: 'Остров Клиппертон'; }
+.fi.fi-dg.fi-alt-en:hover::after { content: 'Diego Garcia'; }
+.fi.fi-dg.fi-alt:hover::after { content: 'Диего-Гарсия'; }
+.fi.fi-gb-eng.fi-alt-en:hover::after { content: 'England'; }
+.fi.fi-gb-eng.fi-alt:hover::after { content: 'Англия'; }
+.fi.fi-eu.fi-alt-en:hover::after { content: 'Europe'; }
+.fi.fi-eu.fi-alt:hover::after { content: 'Европейский союз'; }
+.fi.fi-es-ga.fi-alt-en:hover::after { content: 'Galicia'; }
+.fi.fi-es-ga.fi-alt:hover::after { content: 'Галисия'; }
+.fi.fi-xk.fi-alt-en:hover::after { content: 'Kosovo'; }
+.fi.fi-xk.fi-alt:hover::after { content: 'Косово'; }
+.fi.fi-gb-nir.fi-alt-en:hover::after { content: 'Northern Ireland'; }
+.fi.fi-gb-nir.fi-alt:hover::after { content: 'Северная Ирландия'; }
+.fi.fi-gb-sct.fi-alt-en:hover::after { content: 'Scotland'; }
+.fi.fi-gb-sct.fi-alt:hover::after { content: 'Шотландия'; }
+.fi.fi-ta.fi-alt-en:hover::after { content: 'Tristan da Cunha'; }
+.fi.fi-ta.fi-alt:hover::after { content: 'Тристан-да-Кунья'; }
+.fi.fi-un.fi-alt-en:hover::after { content: 'United Nations'; }
+.fi.fi-un.fi-alt:hover::after { content: 'Организация Объединённых Наций'; }
+.fi.fi-xx.fi-alt-en:hover::after { content: 'Unknown'; }
+.fi.fi-xx.fi-alt:hover::after { content: 'Неизвестный'; }
+.fi.fi-gb-wls.fi-alt-en:hover::after { content: 'Wales'; }
+.fi.fi-gb-wls.fi-alt:hover::after { content: 'Уэльс'; }

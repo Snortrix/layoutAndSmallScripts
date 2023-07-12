@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://kit.fontawesome.com/7a57c86913.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../Rosnou-v6.3/demo-files/demo.css">
+  <link rel="stylesheet" href="../Rosnou-v6.3/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="portal-ui.css">
+  <link rel="stylesheet" href="lk_styleshit.css">
+  <link rel="stylesheet" href="flags-alt.css">
+</head>
+<style>
+  @font-face { font-family: "PT Root";
+    src: local("../fonts/PT Root UI_Regular"),
+    url("../fonts/PT Root UI_Regular.woff2") format("woff2"),
+    url("../fonts/PT Root UI_Regular.woff") format("woff");
+    font-style: normal; font-weight: 400; font-display: swap; }
+
+  @font-face { font-family: "PT Root";
+    src: local("../fonts/PT Root UI_Medium"),
+    url("../fonts/PT Root UI_Medium.woff2") format("woff2"),
+    url("../fonts/PT Root UI_Medium.woff") format("woff");
+    font-style: normal; font-weight: 500; font-display: swap; }
+
+  @font-face { font-family: "PT Root";
+    src: local("../fonts/PT Root UI_Bold"),
+    url("../fonts/PT Root UI_Bold.woff2") format("woff2"),
+    url("../fonts/PT Root UI_Bold.woff") format("woff");
+    font-style: normal; font-weight: 700; font-display: swap; }
+  body{
+    background: #F8F9FB;
+  }
+
+</style>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<button type="button" class="btn btn-primary m-4" data-toggle="modal" data-target="#exampleModal" onclick="resize()">
+  Модалка с паспортом
+</button>
+<div class="modal fade bd-example-modal-xl" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered modals_width_adaptive" role="document" style="max-width: 1200px;width: calc(100vw - 100px)">
+    <div class="modal-content modal-autoheight" style="background-clip: inherit;border: none;border-radius: 10px;">
+      <div class="modal-header modals_Header" style="border-bottom: 1px solid #D5E3F0">
+        <div class="d-flex flex-row justify-content-between align-items-center w-100">
+          <h4 class="text-color-secondary">Заявление на поступление</h4>
+          <button class="tertiary_button" data-dismiss="modal" aria-label="Close"><span class="icon-cross-24 text-color-midnight-4"></span></button>
+        </div>
+      </div>
+      <div  class="h-100" style="border-radius: 10px;border: none;padding-right: 8px!important;background-color: #F8F9FB">
+        <a class="float_buttons print_statements" onclick="print_statements()"><span class="icon-print-24 text-color-midnight-4"></span></a>
+        <div class="p-0 d-flex modal-body-images">
+          <div class="modal-body p-0 d-flex  w-100 justify-content-center" style="padding-top: 32px!important;">
+            <div class="documents_with" style="width: 595px">
+              <div id ="documents_print_statement" class="documents">
+                <div class="rosnou_svg_logo"></div>
+                <div class="d-flex flex-row justify-content-between align-items-center margin-bottom-4-mm">
+                  <div class="d-flex flex-row">
+                    <span style="margin-right: 5px">Идентификатор абитуриента:</span>
+                    <div class="d-flex align-items-baseline"><p class="lines_bottom"></p></div>
+                  </div>
+                  <p class="m-0"><b>Ректору АНО ВО<br>
+                    «Российский новый университет»<br>
+                    В.А. Зернову<br>
+                    от абитуриента:<br>
+                  </b></p>
+                </div>
+                <div>
+                  <div class="d-flex flex-row">
+                    <table class="table_in_row_first">
+                      <tbody class="w-100">
+                      <tr>
+                        <td>Фамилия</td>
+                        <td class="table_line" style="text-align: center">ффффффффф</td>
+                      </tr>
+                      <tr>
+                        <td>Имя</td>
+                        <td class="table_line" style="text-align: center">hfhsbfhsbsfh</td>
+                      </tr>
+                      <tr>
+                        <td>Отчество</td>
+                        <td class="table_line" style="text-align: center">hfsbhsfbfhsbhfssf</td>
+                      </tr>
+                      <tr>
+                        <td>Дата рождения</td>
+                        <td class="table_line" style="text-align: center"></td>
+                      </tr>
+                      <tr>
+                        <td>Место рождения</td>
+                        <td class="table_line"></td>
+                      </tr>
+                      <tr class="display_none_tr">
+                        <td class="table_line" colspan="2"></td>
+                      </tr>
+                      <tr>
+                        <td>СНИЛС</td>
+                        <td class="table_line" style="text-align: center"></td>
+                      </tr>
+                      </tbody>
+                    </table>
+                    <table class="table_in_row_second">
+                      <tbody class="w-100 h-100">
+                      <tr>
+                        <td>Гражданство</td>
+                        <td class="table_line"></td>
+                      </tr>
+                      <tr>
+                        <td>Документ удостоверяющий личность</td>
+                        <td class="table_line"></td>
+                      </tr>
+                      <tr class="display_none_tr">
+                        <td class="table_line"  colspan="2"></td>
+                      </tr>
+                      <tr>
+                        <td>Серия</td>
+                        <td class="table_line" style="text-align: center"></td>
+                        <td>№</td>
+                        <td class="table_line" style="text-align: center"></td>
+                      </tr>
+                      <tr>
+                        <td>Выдан</td>
+                        <td class="table_line"></td>
+                      </tr>
+                      <tr class="display_none_tr">
+                        <td class="table_line" style="display: none"></td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="margin-bottom-4-mm">
+                  <table class="table_full">
+                    <tbody class="w-100">
+                    <tr>
+                      <td>Адрес регистрации </td>
+                      <td class="table_line"></td>
+                    </tr>
+                    <tr>
+                      <td class="table_line" style="display: none"></td>
+                    </tr>
+                    <tr>
+                      <td>Почтовый адрес</td>
+                      <td class="table_line"></td>
+                    </tr>
+                    <tr>
+                      <td class="table_line" style="display: none"></td>
+                    </tr>
+                    <tr>
+                      <td>Электронный адрес </td>
+                      <td class="table_line"></td>
+                      <td>Телефон</td>
+                      <td class="table_line"></td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p class="m-0">Представляю сведения об образовании и документе установленного образца:</p>
+                <div class="margin-bottom-4-mm">
+                  <table class="table_full_no_border">
+                    <tbody class="w-100">
+                    <tr>
+                      <td>Окончил (а) в</td>
+                      <td class="table_line"></td>
+                      <td>году образовательное учреждение:</td>
+                      <td class="table_line"></td>
+                    </tr>
+                    <tr class="display_none_tr">
+                      <td class="table_line"></td>
+                    </tr>
+                    <tr>
+                      <td>Документ об образовании:</td>
+                      <td class="table_line"></td>
+                      <td>серия</td>
+                      <td class="table_line"></td>
+                      <td>№</td>
+                      <td class="table_line"></td>
+                    </tr>
+                    <tr>
+                      <td>дата выдачи</td>
+                      <td class="table_line"></td>
+                      <td>регион получения </td>
+                      <td class="table_line"></td>
+                    </tr>
+                    <tr>
+                      <td>Уникальная информация о документе установленного образца </td>
+                      <td class="table_line"></td>
+                    </tr>
+                    <tr>
+                      <td>Изучаемый иностранный язык </td>
+                      <td class="table_line"></td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="d-flex flex-row justify-content-center">
+                  <p class="m-0" style="font-size: 12pt"><b>ЗАЯВЛЕНИЕ О ПРИЕМЕ НА ОБУЧЕНИЕ</b></p>
+                </div>
+                <div>
+                  <p class="m-0">Прошу допустить меня к участию в конкурсе для поступления в <span style="color: pink">(филиал)</span> АНО ВО
+                    «Российский новый университет» по  образовательным программам высшего образования – программам
+                    бакалавриата, программам специалитета, на места в рамках контрольных цифр приема и/или на
+                    места по договорам об оказании платных образовательных услуг, по следующим направлениям
+                    подготовки (специальностям):</p>
+                  <p class="m-0"><em>(В таблице необходимо указать приоритеты зачисления, обозначая их порядковыми номерами,
+                    при этом учитывая, что приоритетность зачисления уменьшается с возрастанием порядкового номера)</em></p>
+                </div>
+                <div class="margin-bottom-4-mm">
+                  <table class="table_full_with_border">
+                    <thead class="w-100">
+                    <tr>
+                      <th>
+                        <b>№ п.п.</b>
+                      </th>
+                      <th>
+                        <b>Направление подготовки (специальность)</b>
+                      </th>
+                      <th>
+                        <b>Форма обучения</b>
+                      </th>
+                      <th>
+                        <b>Основание</b>
+                      </th>
+                      <th>
+                        <b>Приоритет</b>
+                      </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td style="color: pink">Очная<br>
+                        Очно-заочная<br>
+                        Заочная
+                      </td>
+                      <td style="color: pink">Целевой прием<br>
+                        Особая квота<br>
+                        Отдельная квота<br>
+                        Основные места<br>
+                        По договору
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr class="table_height">
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr class="table_height">
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    </tbody>
+                  </table>
+                  <p class="m-0" style="color: pink; text-align: center">*В случае наличия одинаковых приоритетов в таблице, ячейки в
+                    последнем столбце объединяются</p>
+                </div>
+                <div class="margin-bottom-4-mm">
+                  <p class="m-0">Прошу засчитать в качестве результатов вступительных испытаний следующие результаты ЕГЭ:</p>
+                  <table class="table_full_with_border">
+                    <thead>
+                    <tr>
+                      <th>
+                        Наименование предмета
+                      </th>
+                      <th>
+                        Кол-во баллов
+                      </th>
+                      <th>
+                        Год сдачи ЕГЭ
+                      </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td style="text-align: left;padding-left: 10mm">Русский язык</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: left;padding-left: 10mm">Математика (профильная)</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: left;padding-left: 10mm">Информатика и ИКТ</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: left;padding-left: 10mm">Физика</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: left;padding-left: 10mm">История</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: left;padding-left: 10mm">Обществознание</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: left;padding-left: 10mm">Литература</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: left;padding-left: 10mm">Биология</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: left;padding: 0mm 10mm; ">
+                        <div class="d-flex flex-column">
+                          <p class="m-0" style="border-bottom: 1px solid black;padding-bottom: 5mm">Иностранный язык</p>
+                          <p class="m-0" style="text-align: center">(указать иностранный язык)</p>
+                        </div>
+                      </td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="margin-bottom-4-mm">
+                  <p class="m-0">Прошу допустить к вступительным испытаниям, проводимым Университетом самостоятельно,
+                    так как отношусь к категории поступающих, которые могут сдавать общеобразовательные вступительные испытания:</p>
+                  <ul class="m-0">
+                    <li>
+                      <div class="d-flex flex-column">
+                        <p class="m-0">Инвалиды (в том числе дети-инвалиды)</p>
+                        <p class="m-0" style="color: pink">(подтверждающий документ, вид, номер, дата выдачи, орган выдавший документ, действует до)</p>
+                      </div>
+                    </li>
+                    <li>Иностранные граждане</li>
+                    <li>Лица, поступающие на базе высшего образования</li>
+                  </ul>
+                </div>
+                <p class="margin-bottom-4-mm">Прошу допустить к вступительным испытаниям, проводимым
+                  Университетом самостоятельно, так как отношусь к категории поступающих, которые могут сдавать
+                  общеобразовательные вступительные испытания по тем предметам, по
+                  которым не сдавал ЕГЭ в текущем календарном году и получил документ о среднем общем образовании
+                  в иностранной организации.</p>
+                <p class="margin-bottom-4-mm">Прошу допустить к вступительным испытаниям, проводимым Университетом
+                  самостоятельно, так как окончил в 2023 году образовательную организацию, относящуюся к перечню
+                  образовательных организаций. Утвержденных приказом Министерства просвещения Российской Федерации
+                  № 245 от 7 апреля 2023 года.</p>
+                <p class="margin-bottom-4-mm">Прошу допустить к вступительным испытаниям, проводимым Университетом
+                  самостоятельно, так как отношусь к категории лиц, имеющих право поступать по особенностям приема на
+                  обучение по программам бакалавриата, программам специалитета, программам
+                  магистратуры, утвержденных приказом Министерства науки и высшего образования Российской Федерации
+                  № 231 от 1 марта 2023 г.</p>
+                <div class="d-flex flex-column margin-bottom-4-mm" >
+                  <p class="m-0">Буду сдавать следующие общеобразовательные вступительные испытания:</p>
+                  <ul class="m-0">
+                    <li>Русский язык</li>
+                    <li>Математика</li>
+                    <li>Информатика и ИКТ</li>
+                    <li>Физика</li>
+                    <li>История</li>
+                    <li>Обществознание</li>
+                    <li>Литература</li>
+                    <li>Биология</li>
+                    <li>Иностранный язык</li>
+                  </ul>
+                </div>
+                <div class="d-flex flex-column margin-bottom-4-mm">
+                  <p class="m-0">Прошу допустить к вступительным испытаниям, проводимым Университетом самостоятельно,
+                    как поступающему на базе среднего профессионального образования, для которых родственность
+                    образовательных программ бакалавриата/специалитета установлена.
+                  </p>
+                  <p class="m-0">Буду сдавать следующие вступительные испытания:</p>
+                  <ul class="m-0">
+                    <li>Русский язык</li>
+                    <li>Математика на базе СПО</li>
+                    <li>Информатика на базе СПО</li>
+                    <li>Электроэнергетика на базе СПО</li>
+                    <li>Экономика на базе СПО</li>
+                    <li>Основы экономики и предпринимательской деятельности на базе СПО</li>
+                    <li>Логистика на базе СПО</li>
+                    <li>Социальная работа на базе СПО</li>
+                    <li>Основы психологии и педагогики на базе СПО</li>
+                    <li>Правоведение на базе СПО</li>
+                    <li>История государства и права на базе СПО</li>
+                    <li>Реклама на базе СПО</li>
+                    <li>История рекламы на базе СПО</li>
+                    <li>Современное издательское дело на базе СПО</li>
+                    <li>История издательского дела на базе СПО</li>
+                    <li>Туризм на базе СПО</li>
+                    <li>История туристской индустрии на базе СПО</li>
+                    <li>Гостиничное дело на базе СПО</li>
+                    <li>История гостиничного дела на базе СПО</li>
+                    <li>Биология на базе СПО</li>
+                    <li>Финансово-экономическая основа государственного и муниципального управления на базе СПО</li>
+                    <li>Основы экономики и управления на базе СПО</li>
+                  </ul>
+                </div>
+                <div class="d-flex flex-column margin-bottom-4-mm">
+                  <p class="m-0">Буду сдавать следующие вступительные испытания профессиональной направленности:</p>
+                  <ul class="m-0">
+                    <li>Физическая культура</li>
+                    <li>Безопасность жизнедеятельности в инклюзивной среде</li>
+                  </ul>
+                </div>
+                <div class="margin-bottom-4-mm">
+                  <p class="m-0">Прошу засчитать результаты проводимого в Республике Беларусь централизованного
+                    тестирования и централизованного экзамена в качестве результатов общеобразовательных
+                    вступительных испытаний*:</p>
+                  <table class="table_full_with_border">
+                    <thead>
+                    <tr>
+                      <th>
+                        Наименование предмета
+                      </th>
+                      <th>
+                        Кол-во баллов
+                      </th>
+                      <th>
+                        Год сдачи
+                      </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td style="text-align: left;padding-left: 10mm">Русский язык</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: left;padding-left: 10mm">Математика</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: left;padding-left: 10mm">Физика</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: left;padding-left: 10mm">История</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: left;padding-left: 10mm">Обществознание</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: left;padding-left: 10mm">Биология</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: left;padding: 0mm 10mm; ">
+                        <div class="d-flex flex-column">
+                          <p class="m-0" style="border-bottom: 1px solid black;padding-bottom: 5mm">Иностранный язык</p>
+                          <p class="m-0" style="text-align: center">(указать иностранный язык)</p>
+                        </div>
+                      </td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    </tbody>
+                  </table>
+                  <p class="m-0"><em>* результаты централизованного тестирования действительны 2 года и засчитываются в качестве результатов
+                    общеобразовательных вступительных испытаний если поступающий не сдавал ЕГЭ в году, в котором получен сертификат</em></p>
+                </div>
+                <div class="margin-bottom-4-mm">
+                  <p class="m-0">При проведении вступительного испытания прошу создать специальные
+                    условия в связи с ограниченными возможностями здоровья:</p>
+                  <ul class="m-0">
+                    <li>
+                      <div class="d-flex flex-column">
+                        <p class="m-0">Ограничение по слуху</p>
+                        <p class="m-0" style="color: pink">(подтверждающий документ, вид, номер, дата выдачи, орган выдавший документ, действует до)</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="d-flex flex-column">
+                        <p class="m-0">Ограничение по зрению</p>
+                        <p class="m-0" style="color: pink">(подтверждающий документ, вид, номер, дата выдачи, орган выдавший документ, действует до)</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="d-flex flex-column">
+                        <p class="m-0">Нарушение двигательных функций</p>
+                        <p class="m-0" style="color: pink">(подтверждающий документ, вид, номер, дата выдачи, орган выдавший документ, действует до)</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="d-flex flex-column">
+                        <p class="m-0">Нарушение речи</p>
+                        <p class="m-0" style="color: pink">(подтверждающий документ, вид, номер, дата выдачи, орган выдавший документ, действует до)</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <p class="margin-bottom-4-mm">Прошу предоставить общежитие на период обучения</p>
+                <div class="d-flex flex-column" class="margin-bottom-4-mm">
+                  <p class="m-0">Имею особые права:</p>
+                  <ul class="m-0">
+                    <li>Поступление без вступительных испытаний</li>
+                    <li>Право быть приравненным к лицам, набравшим 100 баллов по ЕГЭ или по результатам вступительного испытания</li>
+                  </ul>
+                </div>
+                <div class="d-flex flex-column margin-bottom-4-mm">
+                  <p class="m-0">Прошу учесть следующие индивидуальные достижения, подтверждённые соответствующими:</p>
+                  <ul class="m-0">
+                    <li>наличие статуса чемпиона, призера Олимпийских игр, Паралимпийских игр, Сурдлимпийских игр,
+                      чемпиона мира, чемпиона Европы, лица, занявшего первое место на первенстве мира, первенстве Европы по видам спорта,
+                      включенным в программы Олимпийских игр, Паралимпийских игр, Сурдлимпийских игр</li>
+                    <li>наличие статуса чемпиона мира, чемпиона Европы, победителя первенства мира, первенства Европы по видам спорта,
+                      не включенным в программы Олимпийских игр, Паралимпийских игр, Сурдлимпийских игр</li>
+                    <li>наличие золотого, серебряного или бронзового знака отличия Всероссийского физкультурно-спортивного
+                      комплекса «Готов к труду и обороне» (ГТО)</li>
+                    <li>аттестат о среднем общем образовании с отличием, аттестат о среднем (полном) общем
+                      образовании с отличием*</li>
+                    <li>аттестат о среднем (полном) общем образовании для награжденных золотой/ серебряной медалью*</li>
+                    <li>диплом о среднем профессиональном образовании с отличием*</li>
+                    <li>диплом о начальном профессиональном образовании с отличием*</li>
+                    <li>диплом о начальном профессиональном образовании для награжденных золотой/серебряной медалью*</li>
+                    <li>участие и (или) результаты участия в олимпиадах школьников в олимпиадах школьников (не используемые для
+                      получения особых прав и (или) особого преимущества при поступлении на обучение по конкретным условиям поступления)
+                      и иных интеллектуальных и (или) творческих конкурсах, физкультурных и спортивных мероприятиях(необходимо приложить
+                      электронную версию диплома, распечатанную с сайта РСОШ)</li>
+                    <li>наличие статуса победителя (призера) национального и (или) международного чемпионата по профессиональному
+                      мастерству среди инвалидов и лиц с ограниченными возможностями здоровья «Абилимпикс»</li>
+                    <li>наличие статуса победителя Всероссийского конкурса «Большая перемена»</li>
+                    <li>наличие статуса призера Всероссийского конкурса «Большая перемена»</li>
+                  </ul>
+                  <p class="m-0"><em>* учитываются документы об образовании, выданные образовательными учреждениями РФ,
+                    при представлении нескольких документов об образовании (и) или документов об образовании и квалификации
+                    баллы не суммируются</em></p>
+                  <p class="m-0"><em>**начисление баллов осуществляется однократно</em></p>
+                </div>
+                <p class="margin-bottom-4-mm">Имею преимущественное право при зачислении при условии успешного
+                  прохождения вступительных испытаний и при прочих равных условиях:
+                  <span style="color: pink">(преимущественное право)</span></p>
+                <div class="d-flex flex-column margin-bottom-4-mm">
+                  <p class="m-0">Имею право на прием в пределах отдельной квоты</p>
+                  <p class="m-0">Отношусь к категории лиц:</p>
+                  <ul class="m-0">
+                    <li>Герой России;</li>
+                    <li>Награжденный тремя орденами мужества;</li>
+                    <li>Сын или дочь лица, принимавшего участие в специальной военной операции, или военнослужащего, сотрудника,
+                      направленного в другое государство погибшего или получившего увечье (ранение, травму, контузию)
+                      или заболевание при исполнении обязанностей военной службы (служебных обязанностей) в ходе специальной
+                      военной операции (боевых действий на территориях иностранных государств);</li>
+                    <li>сын или дочь лица, принимавшего участие в специальной военной операции, или военнослужащего, сотрудника,
+                      направленного в другое государство, удостоенного звания Героя Российской Федерации или награжденного
+                      тремя орденами Мужества;</li>
+                    <li>сын или дочь лица, принимавшего участие в специальной военной операции, или военнослужащего,
+                      сотрудника, направленного в другое государство (за исключением погибших или получивших увечье, или заболевание)</li>
+                  </ul>
+                  <p class="m-0">К заявлению прилагаю документ, подтверждающий право на прием в пределах специальной квоты:
+                    <span style="color: pink">(документ, его может и не быть на момент печати заявления)</span></p>
+                </div>
+                <div class="d-flex flex-column margin-bottom-4-mm">
+                  <p class="m-0">Имею право на прием в пределах квоты приема лиц, имеющих особое право (особая квота)</p>
+                  <p class="m-0">Отношусь к категории лиц:</p>
+                  <ul class="m-0">
+                    <li>Дети-инвалиды;</li>
+                    <li>Инвалиды I и II групп;</li>
+                    <li>Инвалиды с детства;</li>
+                    <li>Дети-сироты и дети, оставшиеся без попечения родителей, лица из числа детей-сирот и детей,
+                      оставшихся без попечения родителей</li>
+                    <li>Инвалиды в следствии военной травмы или заболевания, полученных в период прохождения военной службы</li>
+                    <li>Ветераны боевых действий
+                      <em>(из числа лиц, указанных в подпунктах 1-4 пункта 1 статьи 3 Федерального закона от 12.01.1995
+                        №5-ФЗ «О ветеранах»)</em></li>
+                  </ul>
+                  <p class="m-0">Документ подтверждающий право поступления по особой квоте:
+                    <span style="color: pink">(вид документа, номер, дата выдачи, орган, срок окончания действия)</span></p>
+                </div>
+                <div class="d-flex flex-column margin-bottom-4-mm">
+                  <p class="m-0">Претендую на место в пределах целевой квоты. К заявлению прилагаю копию договора о целевом обучении.</p>
+                  <p class="m-0">Реквизиты договора:
+                    <span style="color: pink">(договор, заказчик, дата, номер)</span></p>
+                </div>
+                <div class="d-flex flex-column margin-bottom-4-mm">
+                  <p style="margin-bottom: 5mm">Способ возврата поданных документов в случае непоступления на обучение</p>
+                  <div class="table_line_row"></div>
+                </div>
+                <div class="margin-bottom-4-mm">
+                  <p class="m-0">Прошу засчитать в качестве результатов вступительных испытаний следующие результаты ЕГЭ:</p>
+                  <table class="table_full_with_border">
+                    <thead>
+                    <tr>
+                      <th style="text-align: left">
+                        <b>Ознакомлен(а):</b>
+                      </th>
+                      <th style="text-align: left">
+                        Подпись
+                      </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td style="text-align: left;">С Правилами приема в Университет, Уставом Университета, с лицензией на осуществление образовательной
+                        деятельности, со свидетельством о государственной аккредитации и приложениями к ним, с образовательными
+                        программами и другими документами, регламентирующими Университет и осуществление образовательной деятельности,
+                        права и обязанности обучающихся, с информацией о проводимом конкурсе</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: left;">Подтверждаю подачу заявления не более чем в пять организаций высшего образования, включая Университет.
+                        При подаче нескольких заявлений в Университет и его филиалы подтверждаю одновременную подачу заявления о
+                        приеме не более чем по 3 направлениям подготовки/специальностям для одновременного участия в конкурсе</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: left;"><span style="color:pink;">(бюджет)</span> Подтверждаю отсутствие диплома бакалавра, диплома специалиста, диплома магистра
+                        <em>(исключение составляют лица признанные инвалидами I, II и III групп после получения ими высшего
+                          образования)</em></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: left;">С правилами подачи апелляции по результатам вступительных испытаний, проводимых Университетом</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: left;"><span style="color: pink">(в случае особого права)</span> Подтверждаю подачу заявления о приеме на
+                        основании особого права на прием без вступительных испытаний или права на прием без вступительных
+                        испытаний по результатам олимпиад школьников при поступлении на места в рамках контрольных цифр
+                        приема (бюджет) только в Университет, при подаче нескольких заявлений о приеме на основании
+                        соответствующего особого права только на одну образовательную программу</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: left;">С информацией об ответственности за достоверность сведений,
+                        указанных в заявлении о приеме, за подлинность документов, поданных при поступлении</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: left;"><span style="color: pink">(для платки)</span> С датами завершения заключения договора об оказании платных образовательных услуг</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: left;"><span style="color:pink;">(для бюджета)</span> С датами завершения выставления отметок о предоставлении оригинала на
+                        ЕПГУ и приема оригинала документа установленного образца, согласия на зачисление*</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" style="text-align: left;">
+                        <div class="d-flex flex-row w-100 align-items-center justify-content-between" style="height: 20mm">
+                          <div class="d-flex flex-column h-auto" style="margin-bottom: 5mm">
+                            <p class="m-0">«______»___________________ 2023 г</p>
+                          </div>
+                          <div class="d-flex flex-column h-auto" style="width: 15mm;margin-top: 5mm">
+                            <p class="m-0" style="border-bottom: 1px solid black;"></p>
+                            <p class="m-0" style="text-align: center"><em>подпись</em></p>
+                          </div>
+                          <div class="d-flex flex-column h-auto" style="width: 250px;margin-top: 5mm">
+                            <p class="m-0" style="border-bottom: 1px solid black;"></p>
+                            <p class="m-0" style="text-align: center"><em>ФИО</em></p>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    </tbody>
+                  </table>
+                  <p class="m-0"><em>*Для лиц, поступающих согласно Особенностям приема на обучение в связи с принятием в Российскую Федерацию Донецкой Народной Республики,
+                    Луганской Народной Республики, Запорожской области, Херсонской области</em></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  $(function() {
+    if ($(".modal-autoheight").length > 0) {
+      $(".modal").on("show.bs.modal", resize);
+      $(window).on("resize", resize);
+    }
+  });
+  function resize() {
+    var winHeight = $(window).height();
+    $(".modal-autoheight").css({
+      height: (winHeight - 60) + "px"
+    });
+    $(".modal-autoheight .modal-body-images").css("max-height", (winHeight - 180) + "px");
+  }
+  function print_statements(){
+    $("body").addClass("printSelected");
+    $("body").append('<div class="documents_printed"></div>');
+    $("#documents_print_statement").css('border','none').css('padding','0');
+    $("#documents_print_statement").clone().appendTo(".documents_printed");
+    window.print();
+
+    $("body").removeClass("printSelected");
+    $(".documents_printed").remove();
+    $("#documents_print_statement").css('border','1px solid var(--base-midnight-5)').css('padding','10mm 10mm 0mm 10mm');
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://kit.fontawesome.com/7a57c86913.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../Rosnou-v6.3/demo-files/demo.css">
+    <link rel="stylesheet" href="../Rosnou-v6.3/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="portal-ui.css">
+  <link rel="stylesheet" href="lk_styleshit.css">
+</head>
+<style>
+  @font-face { font-family: "PT Root";
+    src: local("../fonts/PT Root UI_Regular"),
+    url("../fonts/PT Root UI_Regular.woff2") format("woff2"),
+    url("../fonts/PT Root UI_Regular.woff") format("woff");
+    font-style: normal; font-weight: 400; font-display: swap; }
+
+  @font-face { font-family: "PT Root";
+    src: local("../fonts/PT Root UI_Medium"),
+    url("../fonts/PT Root UI_Medium.woff2") format("woff2"),
+    url("../fonts/PT Root UI_Medium.woff") format("woff");
+    font-style: normal; font-weight: 500; font-display: swap; }
+
+  @font-face { font-family: "PT Root";
+    src: local("../fonts/PT Root UI_Bold"),
+    url("../fonts/PT Root UI_Bold.woff2") format("woff2"),
+    url("../fonts/PT Root UI_Bold.woff") format("woff");
+    font-style: normal; font-weight: 700; font-display: swap; }
+  body{
+    background: #F8F9FB;
+  }
+</style>
+<body>
+<button type="button" class="btn btn-primary m-4" data-toggle="modal" data-target="#ModalDocument505" onclick="resize()">
+  Модалка с паспортом
+</button>
+<button type="button" class="btn btn-primary m-4" data-toggle="modal" data-target="#exampleModalGOSUSLUGI" onclick="resize()">
+    Гос Мать его услуги
+</button>
+<button type="button" class="btn btn-primary m-4" data-toggle="modal" data-target="#exampleModalAbitur" onclick="resize()">
+    Модалка на стороне абитуриента
+</button>
+<div class="m-4 d-flex flex-row w-100 flex-wrap" style="background: #F8F9FB;">
+    <div style="background: white; width: 426px;height: 888px; margin-right: 30px; margin-bottom: 30px">
+        <div class="modal-body p-4 h-100">
+            <div class="lateral_modal_panel h-100">
+                <div class="display-flex-column gap-24 w-100 documents_body_flex">
+                    <div class="lateral_modal_panel_header">
+                        <div class="display-flex-column gap-8">
+                            <div class="d-flex flex-row justify-content-between align-items-start">
+                                <h5 class="text-color-midnight-2">Диплом о начальном профессиональном образовании</h5>
+                                <button class="tertiary_button m-0  margin-right-5" id="dropDownNotesDocuments48" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="icon-menu-dots-24 text-color-midnight-4"></span></button>
+                                <ul class="dropdown-menu dropdownMenu" aria-labelledby="dropDownNotesDocuments48">
+                                    <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-tick-24 text-color-midnight-4 margin-right-12"></span>Подтвердить</li>
+                                    <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-back-24 text-color-midnight-4 margin-right-12"></span>На доработку</li>
+                                    <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-cross-24 text-color-midnight-4 margin-right-12"></span>Отклонить</li>
+                                    <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-pensil-24 text-color-midnight-4 margin-right-12"></span>Редактировать</li>
+                                </ul>
+                            </div>
+                            <p class="m-0 portal-ui text font-weight-500 text-color-midnight-3">12456486146 <span class="portal-ui text text-color-secondary">- 2019 г.</span></p>
+                        </div>
+                        <div class="d-inline-flex flex-row flex-wrap" style="gap:32px">
+                            <div class="display-flex-column gap-4">
+                                <p class="m-0 portal-ui text-capitals text-color-midnight-3">Выдан:</p>
+                                <p class="m-0 portal-ui text text-color-secondary">Колледж сферы услуг №10</p>
+                            </div>
+                            <div class="display-flex-column gap-4">
+                                <p class="m-0 portal-ui text-capitals text-color-midnight-3">Страна:</p>
+                                <p class="m-0 portal-ui text text-color-secondary">Россия</p>
+                            </div>
+                        </div>
+                        <div class="d-inline-flex flex-row flex-wrap" style="gap:32px">
+                            <div class="display-flex-column gap-4">
+                                <p class="m-0 portal-ui text-capitals text-color-midnight-3">Дата выдачи:</p>
+                                <p class="m-0 portal-ui text text-color-secondary">10.12.2019</p>
+                            </div>
+                            <div class="display-flex-column gap-4">
+                                <p class="m-0 portal-ui text-capitals text-color-midnight-3">Специальность</p>
+                                <p class="m-0 portal-ui text text-color-secondary">38.03.02 Менеджмент</p>
+                            </div>
+                        </div>
+                        <div class="display-flex-column gap-16">
+                            <div class="d-inline-flex flex-row flex-wrap gap-8 align-items-baseline portal-ui">
+                                <p class="m-0 portal-ui text-capitals text-color-midnight-3">Средний балл:<span class="margin-left-4 portal-ui text text-color-secondary" id="MarksCount" style="text-transform: none">Нет</span></p>
+                                <button id="buttonsMarksCount" class="tertiary_button text-color-secondary subtitle-text-small font-weight-500" onclick="InputModalsFlex()"><span class="icon-pensil-line-16 text-color-midnight-4"></span></button>
+                            </div>
+                            <div class="flex-row flex-wrap gap-16" style="display:none;" id="InputMarks">
+                                <div class="display-flex-column gap-4">
+                                    <p class="m-0 portal-ui text-capitals text-color-midnight-3">Оценок 5:</p>
+                                    <input class ="input_modals_marks" type="text" id="inputMarksFive" oninput="OnInputMath()">
+                                </div>
+                                <div class="display-flex-column gap-4">
+                                    <p class="m-0 portal-ui text-capitals text-color-midnight-3">Оценок 4:</p>
+                                    <input class ="input_modals_marks" type="text" id="inputMarksFour" oninput="OnInputMath()">
+                                </div>
+                                <div class="display-flex-column gap-4">
+                                    <p class="m-0 portal-ui text-capitals text-color-midnight-3">Оценок 3:</p>
+                                    <input class ="input_modals_marks" type="text"  id="inputMarksThree" oninput="OnInputMath()">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="display-flex-column gap-8">
+                        <h6 class="text-color-secondary">Статус проверки</h6>
+                        <p class="portal-ui text text-color-secondary m-0"><span class="icon-clock-24 text-color-midnight-4" style="margin-right: 10px"></span>Ожидает проверки</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="m-4 d-flex flex-row w-100 flex-wrap" style="background: #F8F9FB;">
+    <div style="background: white; width: 426px;height: 888px; margin-right: 30px; margin-bottom: 30px">
+        <div class="modal-body p-4 h-100">
+            <div class="lateral_modal_panel h-100">
+                <div class="documents_body_flex gap-24 display-flex-column w-100">
+                    <div class="display-flex-column-auto gap-8">
+                        <div class="d-flex flex-row justify-content-between align-items-baseline">
+                            <h5 class="text-color-midnight-2">Значок ГТО</h5>
+                        </div>
+                        <p class="m-0 portal-ui text font-weight-500 text-color-midnight-3">12456486146 <span class="portal-ui text text-color-secondary">- 2019 г.</span></p>
+                    </div>
+                    <div class="lateral_modal_panel_header">
+                        <div class="display-flex-column-auto gap-4">
+                            <p class="m-0 portal-ui text-capitals text-color-midnight-3">дата выдачи</p>
+                            <p class="m-0 portal-ui text text-color-secondary">11.10.2021</p>
+                        </div>
+                        <div class="display-flex-column-auto gap-4">
+                            <p class="m-0 portal-ui text-capitals text-color-midnight-3">УИН:</p>
+                            <p class="m-0 portal-ui text text-color-secondary">1235848</p>
+                        </div>
+                        <div class="display-flex-column-auto gap-4">
+                            <p class="m-0 portal-ui text-capitals text-color-midnight-3">Ступень:</p>
+                            <p class="m-0 portal-ui text text-color-secondary">16</p>
+                        </div>
+                        <div class="display-flex-column-auto gap-16" style="height: 40px">
+                            <div class="d-inline-flex flex-row flex-wrap gap-8 align-items-center portal-ui"  style="height: 40px">
+                                <p class="m-0 portal-ui text-capitals text-color-midnight-3" style="line-height: 28px">Балл за достижение :<span class="margin-left-4 portal-ui text text-color-secondary" id="individualBall" style="text-transform: none">Нет</span></p>
+                                <input class ="input_modals_marks input_achivements_lock" type="text" style="display:none; width: 30px;padding: 8px"  id="individualAchievementInput">
+                                <button id="individualAchievementButton" class="tertiary_button text-color-secondary subtitle-text-small font-weight-500" onclick="individualAchievementActivate()"><span class="icon-pensil-line-16 text-color-midnight-4"></span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="display-flex-column gap-8">
+                        <h6 class="text-color-secondary">Статус проверки</h6>
+                        <p class="portal-ui text text-color-secondary m-0"><span class="icon-clock-24 text-color-midnight-4" style="margin-right: 10px"></span>Ожидает проверки</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade bd-example-modal-xl modals_documents_pars" id="ModalDocument505" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+    <div class="modal-content modal_page modal-autoheight" style="background-clip: inherit;border: none;border-radius: 10px">
+        <button class="float_buttons_modals_switch float_buttons_modals_switch_position_left"  onclick="ModalsSwitch('ModalDocument505')"><div class="border_switch_float"><span class="icon-arrow-big-left-32"></span></div></button>
+        <button class="float_buttons_modals_switch float_buttons_modals_switch_position_right"  onclick="ModalsSwitch('ModalDocument505','plus')"><div class="border_switch_float"><span class="icon-arrow-big-right-32"></span></div></button>
+        <button class="float_buttons_modals_switch float_buttons_modals_switch_position_cross" aria-label="Close" data-dismiss="modal"><div class="border_switch_float"><span class="icon-cross-32"></span></div></button>
+        <div id ="buttons_one" class="col-8 p-0 d-flex align-items-center" style="background-color: #F8F9FB;border-radius: 10px;border: none;padding-right: 8px!important;">
+            <button class="float_buttons left_switch"><span class="icon-arrow-small-left-24 text-color-midnight-4"></span> </button>
+            <a class="float_buttons switch_download"><span class="icon-download-24 text-color-midnight-4"></span> </a>
+            <div class="dropleft info_switch_absolute">
+                <button class="float_buttons info_switch" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id ="infoSwitch" data-offset="0,30"><span style="font-size: 24px" class="icon-info-24 text-color-midnight-4"></span> </button>
+                <div class="dropdown-menu dropdownMenuModals" aria-labelledby="infoSwitch">
+                    <div class="d-flex flex-row">
+                        <div class="content_dropdown_modal m-3">
+                            <div class="display-flex-column gap-16">
+                                <p class="m-0 portal-ui text-capitals text-color-secondary">Прикрепить копии документов:</p>
+                                <div class="d-flex align-items-start">
+                                    <span class="icon-arrow-right-24 text-color-primary" style="padding: 0px 15px"></span>
+                                    <p class="m-0 portal-ui text text-color-secondary">Разворот документа об образовании с номером, ФИО и сведениями об образовательном учреждении</p>
+                                </div>
+                                <div class="d-flex align-items-start">
+                                    <span class="icon-arrow-right-24 text-color-primary" style="padding: 0px 15px"></span>
+                                    <p class="m-0 portal-ui text text-color-secondary">Приложение к документу об образовании (все страницы)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="window_dropdown_modal">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button  onclick="modalWidth('#buttons_one')" class="float_buttons switch_scale"><span class="icon-expand-24 text-color-midnight-4"></span> </button>
+            <button  onclick="modalTransform('#buttons_one')" class="float_buttons transform_scale"><span class="icon-back-24 text-color-midnight-4"></span> </button>
+            <button class="float_buttons right_switch"><span class="icon-arrow-small-right-24 text-color-midnight-4"></span> </button>
+            <div class="modal-body p-0 modal-body-images">
+                <div class="modals_img_position">
+                    <img class="image_modals" src = "image%201.png">
+                </div>
+            </div>
+        </div>
+        <div class="modal-body p-4 h-100">
+            <div class="lateral_modal_panel h-100">
+                <div class="display-flex-column gap-24 w-100 documents_body_flex">
+                    <div class="lateral_modal_panel_header">
+                        <div class="display-flex-column gap-8">
+                            <div class="d-flex flex-row justify-content-between align-items-start">
+                                <h5 class="text-color-midnight-2">Аттестат о среднем полном (общем) образовании</h5>
+                                <button class="tertiary_button m-0  margin-right-5" id="dropDownNotesDocuments48" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="icon-menu-dots-24 text-color-midnight-4"></span></button>
+                                <ul class="dropdown-menu dropdownMenu" aria-labelledby="dropDownNotesDocuments48">
+                                    <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-tick-24 text-color-midnight-4 margin-right-12"></span>Подтвердить</li>
+                                    <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-back-24 text-color-midnight-4 margin-right-12"></span>На доработку</li>
+                                    <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-cross-24 text-color-midnight-4 margin-right-12"></span>Отклонить</li>
+                                    <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-pensil-24 text-color-midnight-4 margin-right-12"></span>Редактировать</li>
+                                </ul>
+                            </div>
+                            <p class="m-0 portal-ui text font-weight-500 text-color-midnight-3">12456486146 <span class="portal-ui text text-color-secondary">- 2019 г.</span></p>
+                        </div>
+                        <div class="display-flex-column gap-4">
+                            <p class="m-0 portal-ui text-capitals text-color-midnight-3">Выдан:</p>
+                            <p class="m-0 portal-ui text text-color-secondary">МБОУ "Многопрофильный лицей № 11 имени В.Г.Мендельсона"</p>
+                        </div>
+                        <div class="d-inline-flex flex-row flex-wrap" style="gap:32px">
+                            <div class="display-flex-column gap-4">
+                                <p class="m-0 portal-ui text-capitals text-color-midnight-3">Страна:</p>
+                                <p class="m-0 portal-ui text text-color-secondary">Россия</p>
+                            </div>
+                            <div class="display-flex-column gap-4">
+                                <p class="m-0 portal-ui text-capitals text-color-midnight-3">Дата выдачи:</p>
+                                <p class="m-0 portal-ui text text-color-secondary">10.12.2019</p>
+                            </div>
+                            <div class="display-flex-column gap-4">
+                                <p class="m-0 portal-ui text-capitals text-color-midnight-3">Средний балл:</p>
+                                <p class="m-0 portal-ui text text-color-secondary">Незаполнено</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="display-flex-column gap-8">
+                        <h6 class="text-color-secondary">Статус проверки</h6>
+                        <p class="portal-ui text text-color-secondary m-0 d-flex align-items-center"><span class="icon-clock-24 text-color-midnight-4" style="margin-right: 10px"></span>Ожидает проверки</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade bd-example-modal-xl modals_documents_pars" id="ModalDocument89" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+        <div class="modal-content modal_page modal-autoheight" style="background-clip: inherit;border: none;border-radius: 10px">
+            <button class="float_buttons_modals_switch float_buttons_modals_switch_position_left" onclick="ModalsSwitch('ModalDocument89')"><div class="border_switch_float"><span class="icon-arrow-big-left-32"></span></div></button>
+            <button class="float_buttons_modals_switch float_buttons_modals_switch_position_right" onclick="ModalsSwitch('ModalDocument89','plus')"><div class="border_switch_float"><span class="icon-arrow-big-right-32"></span></div></button>
+            <button class="float_buttons_modals_switch float_buttons_modals_switch_position_cross" aria-label="Close" data-dismiss="modal"><div class="border_switch_float"><span class="icon-cross-32"></span></div></button>
+            <div id ="buttons_two" class="col-8 p-0 d-flex align-items-center" style="background-color: #F8F9FB;border-radius: 10px;border: none;padding-right: 8px !important;padding-bottom: 8px !important;">
+                <button class="float_buttons left_switch"><span class="icon-arrow-small-left-24 text-color-midnight-4"></span> </button>
+                <button class="float_buttons switch_download"><span class="icon-download-24 text-color-midnight-4"></span> </button>
+                <div class="dropleft info_switch_absolute">
+                    <button class="float_buttons info_switch" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id ="infoSwitch2" data-offset="0,30"><span style="font-size: 24px" class="icon-info-24 text-color-midnight-4"></span> </button>
+                    <div class="dropdown-menu dropdownMenuModals" aria-labelledby="infoSwitch2">
+                        <div class="d-flex flex-row">
+                            <div class="content_dropdown_modal m-3">
+                                <div class="display-flex-column gap-16">
+                                    <p class="m-0 portal-ui text-capitals text-color-secondary">Что должно быть в наличии:</p>
+                                    <div class="d-flex align-items-start">
+                                        <span class="icon-arrow-right-24 text-color-primary" style="padding: 0px 15px"></span>
+                                        <p class="m-0 portal-ui text text-color-secondary">Свидетельство о рождении</p>
+                                    </div>
+                                    <div class="d-flex align-items-start">
+                                        <span class="icon-arrow-right-24 text-color-primary" style="padding: 0px 15px"></span>
+                                        <p class="m-0 portal-ui text text-color-secondary">Свидетельство о смерти матери/отца</p>
+                                    </div>
+                                    <div class="d-flex align-items-start">
+                                        <span class="icon-arrow-right-24 text-color-primary" style="padding: 0px 15px"></span>
+                                        <p class="m-0 portal-ui text text-color-secondary">или справка ЗАГСа о внесении сведений об отце ребенка со слов о том, что отец в установленном законном порядке не значится. </p>
+                                    </div>
+                                    <div class="d-flex align-items-start">
+                                        <span class="icon-arrow-right-24 text-color-primary" style="padding: 0px 15px"></span>
+                                        <p class="m-0 portal-ui text text-color-secondary">или решение суда об объявлении отца и (или) матери умершим. </p>
+                                    </div>
+                                    <div class="d-flex align-items-start">
+                                        <span class="icon-arrow-right-24 text-color-primary" style="padding: 0px 15px"></span>
+                                        <p class="m-0 portal-ui text text-color-secondary">или остановление органов опеки и попечительства об установлении опеки или попечительства с указанием на то, что поступающий является сиротой или лицом из числа детей-сирот. </p>
+                                    </div>
+                                    <div class="d-flex align-items-start">
+                                        <span class="icon-arrow-right-24 text-color-primary" style="padding: 0px 15px"></span>
+                                        <p class="m-0 portal-ui text text-color-secondary">или постановление органов опеки и попечительства об установлении опеки или попечительства с указанием на то, что поступающий остался без попечения родителей</p>
+                                    </div>
+                                    <div class="d-flex align-items-start">
+                                        <span class="icon-arrow-right-24 text-color-primary" style="padding: 0px 15px"></span>
+                                        <p class="m-0 portal-ui text text-color-secondary">или справка из лечебного учреждения о нахождении отца и (или) матери на длительном стационарном лечении.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="window_dropdown_modal">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button  onclick="modalWidth('#buttons_two')" class="float_buttons switch_scale"><span class="icon-expand-24 text-color-midnight-4"></span> </button>
+                <button class="float_buttons right_switch"><span class="icon-arrow-small-right-24 text-color-midnight-4"></span> </button>
+                <div class="modal-body modal-body-images p-0">
+                    <div class="modals_img_position">
+                        <img class="image_modals"  src = "image%204.png">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body p-4 h-100">
+                <div class="lateral_modal_panel h-100">
+                    <div class="documents_body_flex gap-24 display-flex-column w-100">
+                        <div class="lateral_modal_panel_header">
+                            <div class="display-flex-column gap-8">
+                                <div class="d-flex flex-row justify-content-between align-items-start">
+                                    <h5 class="text-color-midnight-2">Аттестат о среднем полном (общем) образовании</h5>
+                                    <button class="tertiary_button m-0  margin-right-5" id="dropDownNotesDocuments48" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="icon-menu-dots-24 text-color-midnight-4"></span></button>
+                                    <ul class="dropdown-menu dropdownMenu" aria-labelledby="dropDownNotesDocuments48">
+                                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-tick-24 text-color-midnight-4 margin-right-12"></span>Подтвердить</li>
+                                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-back-24 text-color-midnight-4 margin-right-12"></span>На доработку</li>
+                                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-cross-24 text-color-midnight-4 margin-right-12"></span>Отклонить</li>
+                                        <li class="dropdown-item portal-ui text align-items-center" href="#"><span class="icon-pensil-24 text-color-midnight-4 margin-right-12"></span>Редактировать</li>
+                                    </ul>
+                                </div>
+                                <p class="m-0 portal-ui text font-weight-500 text-color-midnight-3">12456486146 <span class="portal-ui text text-color-secondary">- 2019 г.</span></p>
+                            </div>
+                            <div class="display-flex-column gap-4">
+                                <p class="m-0 portal-ui text-capitals text-color-midnight-3">Выдан:</p>
+                                <p class="m-0 portal-ui text text-color-secondary">МБОУ "Многопрофильный лицей № 11 имени В.Г.Мендельсона"</p>
+                            </div>
+                            <div class="d-inline-flex flex-row flex-wrap" style="gap:32px">
+                                <div class="display-flex-column gap-4">
+                                    <p class="m-0 portal-ui text-capitals text-color-midnight-3">Страна:</p>
+                                    <p class="m-0 portal-ui text text-color-secondary">Россия</p>
+                                </div>
+                                <div class="display-flex-column gap-4">
+                                    <p class="m-0 portal-ui text-capitals text-color-midnight-3">Дата выдачи:</p>
+                                    <p class="m-0 portal-ui text text-color-secondary">10.12.2019</p>
+                                </div>
+                                <div class="display-flex-column gap-4">
+                                    <p class="m-0 portal-ui text-capitals text-color-midnight-3">Средний балл:</p>
+                                    <p class="m-0 portal-ui text text-color-secondary">Незаполнено</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="display-flex-column gap-8">
+                            <h6 class="text-color-secondary">Статус проверки</h6>
+                            <p class="portal-ui text text-color-secondary m-0"><span class="icon-clock-24 text-color-midnight-4" style="margin-right: 10px"></span>Ожидает проверки</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade bd-example-modal-xl modals_documents_pars" id="ModalDocument120" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+        <div class="modal-content modal_page modal-autoheight" style="background-clip: inherit;border: none;border-radius: 10px">
+            <button class="float_buttons_modals_switch float_buttons_modals_switch_position_left" onclick="ModalsSwitch('ModalDocument120')"><div class="border_switch_float"><span class="icon-arrow-big-left-32"></span></div></button>
+            <button class="float_buttons_modals_switch float_buttons_modals_switch_position_right" onclick="ModalsSwitch('ModalDocument120','plus')"><div class="border_switch_float"><span class="icon-arrow-big-right-32"></span></div></button>
+            <button class="float_buttons_modals_switch float_buttons_modals_switch_position_cross" aria-label="Close" data-dismiss="modal"><div class="border_switch_float"><span class="icon-cross-32"></span></div></button>
+            <div id ="buttons_two" class="col-8 p-0 d-flex align-items-baseline" style="background-color: #F8F9FB;border-radius: 10px;border: none;padding-right: 8px !important;padding-bottom: 8px !important;">
+                <button class="float_buttons left_switch"><span class="icon-arrow-small-left-24 text-color-midnight-4"></span> </button>
+                <div class="dropleft info_switch_absolute_enrollee">
+                    <button class="float_buttons info_switch" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id ="infoSwitch2" data-offset="0,30"><span style="font-size: 24px" class="icon-info-24 text-color-midnight-4"></span> </button>
+                    <div class="dropdown-menu dropdownMenuModals" aria-labelledby="infoSwitch2">
+                        <div class="d-flex flex-row">
+                            <div class="content_dropdown_modal m-3">
+                                <div class="display-flex-column gap-16">
+                                    <p class="m-0 portal-ui text-capitals text-color-secondary">Что должно быть в наличии:</p>
+                                    <div class="d-flex align-items-start">
+                                        <span class="icon-arrow-right-24 text-color-primary" style="padding: 0px 15px"></span>
+                                        <p class="m-0 portal-ui text text-color-secondary">Свидетельство о рождении</p>
+                                    </div>
+                                    <div class="d-flex align-items-start">
+                                        <span class="icon-arrow-right-24 text-color-primary" style="padding: 0px 15px"></span>
+                                        <p class="m-0 portal-ui text text-color-secondary">Свидетельство о смерти матери/отца</p>
+                                    </div>
+                                    <div class="d-flex align-items-start">
+                                        <span class="icon-arrow-right-24 text-color-primary" style="padding: 0px 15px"></span>
+                                        <p class="m-0 portal-ui text text-color-secondary">или справка ЗАГСа о внесении сведений об отце ребенка со слов о том, что отец в установленном законном порядке не значится. </p>
+                                    </div>
+                                    <div class="d-flex align-items-start">
+                                        <span class="icon-arrow-right-24 text-color-primary" style="padding: 0px 15px"></span>
+                                        <p class="m-0 portal-ui text text-color-secondary">или решение суда об объявлении отца и (или) матери умершим. </p>
+                                    </div>
+                                    <div class="d-flex align-items-start">
+                                        <span class="icon-arrow-right-24 text-color-primary" style="padding: 0px 15px"></span>
+                                        <p class="m-0 portal-ui text text-color-secondary">или остановление органов опеки и попечительства об установлении опеки или попечительства с указанием на то, что поступающий является сиротой или лицом из числа детей-сирот. </p>
+                                    </div>
+                                    <div class="d-flex align-items-start">
+                                        <span class="icon-arrow-right-24 text-color-primary" style="padding: 0px 15px"></span>
+                                        <p class="m-0 portal-ui text text-color-secondary">или постановление органов опеки и попечительства об установлении опеки или попечительства с указанием на то, что поступающий остался без попечения родителей</p>
+                                    </div>
+                                    <div class="d-flex align-items-start">
+                                        <span class="icon-arrow-right-24 text-color-primary" style="padding: 0px 15px"></span>
+                                        <p class="m-0 portal-ui text text-color-secondary">или справка из лечебного учреждения о нахождении отца и (или) матери на длительном стационарном лечении.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="window_dropdown_modal">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button  onclick="modalWidth('#buttons_two')" class="float_buttons switch_scale_enrollee"><span class="icon-expand-24 text-color-midnight-4"></span> </button>
+                <button class="float_buttons right_switch"><span class="icon-arrow-small-right-24 text-color-midnight-4"></span> </button>
+                <div class="modal-body modal-body-images p-0">
+                    <div class="modals_img_position">
+                        <img class="image_modals"  src = "image%201.png">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body p-4 h-100">
+                <div class="lateral_modal_panel h-100">
+                    <div class="documents_body_flex gap-24 display-flex-column w-100">
+                        <div class="display-flex-column-auto gap-8">
+                                <div class="d-flex flex-row justify-content-between align-items-baseline">
+                                    <h5 class="text-color-midnight-2">Аттестат о среднем полном (общем) образовании</h5>
+                                    <button class="tertiary_button text-color-secondary subtitle-text-small font-weight-500"><span class="icon-pensil-24 text-color-midnight-4"></span></button>
+                                </div>
+                                <p class="m-0 portal-ui text font-weight-500 text-color-midnight-3">12456486146 <span class="portal-ui text text-color-secondary">- 2019 г.</span></p>
+                        </div>
+                        <div class="lateral_modal_panel_header">
+                            <div class="display-flex-column-auto gap-4">
+                                <p class="m-0 portal-ui text-capitals text-color-midnight-3">Выдан:</p>
+                                <p class="m-0 portal-ui text text-color-secondary">СШБОУ "Многопрофильный лицей № 11 имени В.Г.Мендельсона"</p>
+                            </div>
+                            <div class="display-flex-column-auto gap-4">
+                                <p class="m-0 portal-ui text-capitals text-color-midnight-3">Страна:</p>
+                                <p class="m-0 portal-ui text text-color-secondary">Россия</p>
+                            </div>
+                            <div class="display-flex-column-auto gap-4">
+                                <p class="m-0 portal-ui text-capitals text-color-midnight-3">Дата выдачи:</p>
+                                <p class="m-0 portal-ui text text-color-secondary">10.12.2019</p>
+                            </div>
+                            <div class="display-flex-column-auto gap-4">
+                                <p class="m-0 portal-ui text-capitals text-color-midnight-3">Средний балл:</p>
+                                <p class="m-0 portal-ui text text-color-secondary">Незаполнено</p>
+                            </div>
+                        </div>
+                        <div class="display-flex-column gap-8">
+                            <h6 class="text-color-secondary">Статус проверки</h6>
+                            <p class="portal-ui text text-color-secondary m-0"><span class="icon-clock-24 text-color-midnight-4" style="margin-right: 10px"></span>Ожидает проверки</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    let modalsDocuments = $('.modals_documents_pars');
+
+    function ModalsSwitch(idThisElem,action){
+        let indexModals;
+        modalsDocuments.each(function(index,element){
+            if (idThisElem == element.id){
+                indexModals = index;
+            }
+        })
+        if (action == 'plus'){
+            if (modalsDocuments.last().prop('id') == idThisElem) return;
+            $('#' + idThisElem).modal('hide');
+            $('#' + modalsDocuments[indexModals + 1].id).modal('show');
+        }else{
+            if (indexModals == 0) return;
+            $('#' + idThisElem).modal('hide');
+            $('#' + modalsDocuments[indexModals - 1].id).modal('show');
+        }
+    }
+    $(function() {
+        if ($(".modal-autoheight").length > 0) {
+            $(".modal").on("show.bs.modal", resize);
+            $(window).on("resize", resize);
+        }
+    });
+    function modalWidth(id){
+        if(($(id + ' .modals_img_position').hasClass('modal-body-images-width'))){
+            $(id+' .modal-body-images .modals_img_position').css("width", "100%");
+            $(id+' .modal-body-images .image_modals').css("width", "100%");
+            $(id+' .modals_img_position').removeClass("modal-body-images-width");
+            $(id+' .modal-body-images').removeClass("modal-body-images-width");
+            console.log('aaa');
+        }else{
+            console.log(($('.modals_img_position .modal-body-images-width')));
+            console.log(($(id + ' .modals_img_position').hasClass('modal-body-images-width')));
+            $(id+' .modal-body-images .modals_img_position').css("width", "max-content");
+            $(id+' .modal-body-images .image_modals').css("width", "fit-content");
+            $(id+' .modals_img_position').addClass("modal-body-images-width");
+            $(id+' .modal-body-images').addClass("modal-body-images-width");
+        }
+    }
+    function modalTransform(id){
+            $(id+' .modal-body-images .modals_img_position').css("width", "100%");
+    }
+    function resize() {
+        var winHeight = $(window).height();
+        $(".modal-autoheight").css({
+            height: (winHeight - 48) + "px"
+        });
+        $(".modal-autoheight .modal-body-images").css("max-height", (winHeight - 80) + "px");
+    }
+    function individualAchievementActivate (){
+        let individualBall;
+        $('#individualAchievementInput').css('display','inline-flex');
+        $('#individualBall').val().length >0 ? individualBall = parseFloat($('#individualBall').val()) : individualBall = 0;
+        $('#individualAchievementInput').attr('value',individualBall);
+        $('#individualAchievementButton').html('<span class="icon-save-16 text-color-primary"></span>Сохранить');
+        $('#individualBall').css('display','none');
+        return $("#individualAchievementButton").attr("onClick",'SaveAchBall()');
+    }
+    $('body').on('input', '.input_achivements_lock', function(){
+        this.value = this.value.replace(/[^0-9]/g, '');
+    });
+    function SaveAchBall(){
+        let individualBall;
+        $('#individualAchievementInput').css('display','none');
+        $('#individualAchievementButton').html('<span class="icon-pensil-line-16 text-color-midnight-4"></span>');
+        $('#individualAchievementInput').val().length >0 ? individualBall = parseFloat($('#individualAchievementInput').val()) : individualBall = 0;
+        $('#individualBall').css('display','inline-block').text(individualBall);
+        $('#individualAchievementInput').attr('value',individualBall);
+        return $("#individualAchievementButton").attr("onClick",'individualAchievementActivate()');
+    }
+
+    function InputModalsFlex(){
+        $('#InputMarks').css('display','inline-flex');
+        $('#MarksCount').html('0');
+        $('#buttonsMarksCount').html('<span class="icon-save-16 text-color-primary"></span>Сохранить');
+        $("#buttonsMarksCount").attr("onClick",'SaveMarks()');
+    }
+    function SaveMarks(){
+        $('#InputMarks').css('display','none');
+        CalcMarks() != 'NaN' ? $('#MarksCount').html(CalcMarks()) : $('#MarksCount').html('0') ;
+        $('#buttonsMarksCount').html('<span class="icon-pensil-line-16 text-color-midnight-4"></span>');
+        $("#buttonsMarksCount").attr("onClick",'InputModalsFlex()');
+    }
+    function OnInputMath(){
+        CalcMarks() != 'NaN' ? $('#MarksCount').html(CalcMarks()) : $('#MarksCount').html('0');
+    }
+    function CalcMarks(){
+        let fiveMarks,fourMarks,threeMarks;
+        $('#inputMarksFive').val().length >0 ? fiveMarks = parseFloat($('#inputMarksFive').val()) : fiveMarks = 0;
+        $('#inputMarksFour').val().length >0 ? fourMarks = parseFloat($('#inputMarksFour').val()) : fourMarks = 0;
+        $('#inputMarksThree').val().length >0 ? threeMarks = parseFloat($('#inputMarksThree').val()) : threeMarks = 0;
+        let result = ((fiveMarks*5)+(fourMarks*4)+(threeMarks*3))/(fiveMarks+fourMarks+threeMarks);
+        return result.toFixed(2);
+    }
+
+
+</script>
+</body>
+</html>
